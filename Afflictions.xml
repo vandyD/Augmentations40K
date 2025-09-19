@@ -1,0 +1,1666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <Affliction name="" identifier="warpcorrupt" description="" type="warppsychosis" limbspecific="false" indicatorlimb="Head" activationthreshold="0" showiconthreshold="201" showicontoothersthreshold="20" treatmentthreshold="0" karmachangeonapplied="-1" maxstrength="100" showinhealthscannerthreshold="201" dormantthreshold="30" MedicalSkillGain="0.0" sendmessages="true">
+    <Effect minstrength="0" maxstrength="25" dialogflag="warpcorrupt">
+      <StatusEffect type="OnSuccess" target="UseTarget" interval="1.0">
+        <ReduceAffliction type="faith" strength="4.0" />
+        <Affliction identifier="warpburn" amount="0.25" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="26" maxstrength="50" dialogflag="warpcorrupt">
+      <StatusEffect type="OnSuccess" target="UseTarget" interval="1.0">
+        <ReduceAffliction type="faith" strength="6.0" />
+        <Affliction identifier="warpburn" amount="0.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="51" maxstrength="75" dialogflag="warpcorrupt">
+      <StatusEffect type="OnSuccess" target="UseTarget" interval="1.0">
+        <ReduceAffliction type="faith" strength="8.0" />
+        <Affliction identifier="warpburn" amount="0.75" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="75" maxstrength="100" dialogflag="warpcorrupt">
+      <StatusEffect type="OnSuccess" target="UseTarget" interval="1.0">
+        <ReduceAffliction type="faith" strength="10.0" />
+        <Affliction identifier="warpburn" amount="1.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="0,0" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="warpcorinfluence" description="" type="warppsychosis" limbspecific="false" indicatorlimb="Head" activationthreshold="0" showiconthreshold="0" showicontoothersthreshold="20" treatmentthreshold="601" karmachangeonapplied="-1" maxstrength="600" showinhealthscannerthreshold="201" dormantthreshold="30" MedicalSkillGain="0.0" sendmessages="true">
+    <Effect minstrength="0" maxstrength="600" dialogflag="warpcorrupt" resistancefor="faith,warpcorrupt" minresistance="0.8" maxresistance="0.8" strengthchange="0.5">
+      <!--Always happens-->
+      <StatusEffect type="Always" target="This" interval="1.0">
+        <ReduceAffliction type="faith" strength="10.0" />
+        <ReduceAffliction type="warpcorrupt" strength="10.0" />
+      </StatusEffect>
+      <!--<StatusEffect target="Character" setvalue="true" comparison="And" interval="1.0">
+        <Conditional HasStatusTag="nurglechosen" />
+        <Conditional HasStatusTag="!equals tzeenchchosen" />
+        <Conditional ishuman="true" />
+        <Affliction identifier="nurglechosen" amount="5.0"/>
+      </StatusEffect>
+      <StatusEffect target="Character" setvalue="true" comparison="And" interval="1.0">
+        <Conditional HasStatusTag="khornechosen" />
+        <Conditional HasStatusTag="!equals slaaneshchchosen" />
+        <Conditional ishuman="true" />
+        <Affliction identifier="khornechosen" amount="5.0"/>
+      </StatusEffect>
+      <StatusEffect target="Character" setvalue="true" comparison="And" interval="1.0">
+        <Conditional HasStatusTag="tzeenchchosen" />
+        <Conditional HasStatusTag="!equals nurglechosen" />
+        <Conditional ishuman="true" />
+        <Affliction identifier="tzeenchchosen" amount="5.0"/>
+      </StatusEffect>
+      <StatusEffect target="Character" setvalue="true" comparison="And" interval="1.0">
+        <Conditional HasStatusTag="slaaneshchchosen" />
+        <Conditional HasStatusTag="!equals khornechosen" />
+        <Conditional ishuman="true" />
+        <Affliction identifier="slaaneshchchosen" amount="5.0"/>
+      </StatusEffect>-->
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="0,0" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="phosphorimpact" description="" type="phosphorimpact" causeofdeathdescription="phosphorimpact" selfcauseofdeathdescription="phosphorimpact" limbspecific="false" isbuff="false" indicatorlimb="Torso" showiconthreshold="0" treatmentthreshold="0" maxstrength="100" WeaponsSkillGain="0.005" MedicalSkillGain="0.0" sendmessages="true">
+    <Effect minstrength="0" maxstrength="25" strengthchange="0.1" dialogflag="phosphorimpact">
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <Affliction identifier="burn" amount="0.05" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="26" maxstrength="50" strengthchange="0.1" dialogflag="phosphorimpact">
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <Affliction identifier="burn" amount="0.5" />
+        <Affliction identifier="pain" strength="0.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="51" maxstrength="75" strengthchange="0.5" minchromaticaberration="0.0" maxchromaticaberration="1.0" maxvitalitydecrease="20" dialogflag="phosphorimpact">
+      <StatValue stattype="MovementSpeed" value="-0.4" />
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <Affliction identifier="burn" amount="2.5" />
+        <Affliction identifier="pain" strength="0.75" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="76" maxstrength="100" strengthchange="1.0" minchromaticaberration="1.0" maxchromaticaberration="5.0" minvitalitydecrease="21" maxvitalitydecrease="100" dialogflag="phosphorimpact">
+      <StatValue stattype="MovementSpeed" value="-0.6" />
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <Affliction identifier="burn" amount="5" />
+        <Affliction identifier="pain" strength="0.75" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="0,1" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="pain" identifier="pain" description="" type="pain" causeofdeathdescription="died because of pain shock" selfcauseofdeathdescription="you died because of pain shock" limbspecific="false" indicatorlimb="Torso" showiconthreshold="5" showicontoothersthreshold="5" treatmentthreshold="10" maxstrength="250" MedicalSkillGain="0.0" targets="human" sendmessages="true">
+    <Effect minstrength="0" maxstrength="50" strengthchange="-0.15">
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+    </Effect>
+    <Effect minstrength="51" maxstrength="100" strengthchange="-0.07" dialogflag="pain">
+      <StatValue stattype="RepairSpeed" value="-0.2" />
+      <StatValue stattype="AttackMultiplier" value="-0.15" />
+      <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true">
+        <Conditional HasStatusTag="!equals slaaneshchchosen" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="101" maxstrength="150" strengthchange="0.-05" minchromaticaberration="0.0" maxchromaticaberration="1.0" minvitalitydecrease="0" maxvitalitydecrease="20" dialogflag="pain">
+      <StatValue stattype="RepairSpeed" value="-1.0" />
+      <StatValue stattype="AttackMultiplier" value="-0.5" />
+      <StatValue stattype="SkillGainSpeed" minvalue="-0.3" maxvalue="0.3" />
+      <StatusEffect target="Character" SpeedMultiplier="0.4" setvalue="true">
+        <Conditional HasStatusTag="!equals slaaneshchchosen" />
+      </StatusEffect>
+      <StatusEffect target="Character" setvalue="true" comparison="And">
+        <Conditional HasStatusTag="slaaneshchchosen" />
+        <Conditional ishuman="true" />
+        <Conditional pain="gte 140" />
+        <Affliction identifier="ecstasyofagony" strength="50.0" />
+        <Affliction identifier="pain" strength="-50.0" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="151" maxstrength="200" strengthchange="0.0" minchromaticaberration="1.0" maxchromaticaberration="5.0" minvitalitydecrease="20" maxvitalitydecrease="100">
+      <StatValue stattype="RepairSpeed" value="-1.0" />
+      <StatValue stattype="AttackMultiplier" value="-0.5" />
+      <StatValue stattype="SkillGainSpeed" minvalue="-0.3" maxvalue="0.3" />
+      <StatValue stattype="MovementSpeed" value="-0.8" />
+    </Effect>
+    <Effect minstrength="201" maxstrength="250" strengthchange="0.0" minchromaticaberration="1.0" maxchromaticaberration="5.0" minvitalitydecrease="100" maxvitalitydecrease="1000">
+      <StatValue stattype="RepairSpeed" value="-1.0" />
+      <StatValue stattype="AttackMultiplier" value="-0.5" />
+      <StatValue stattype="SkillGainSpeed" minvalue="-0.3" maxvalue="0.3" />
+      <StatValue stattype="MovementSpeed" value="-1.0" />
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="1,0" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="admech" description="" type="admech" isbuff="true" limbspecific="false" showiconthreshold="11" showicontoothersthreshold="11" showinhealthscannerthreshold="11" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" tag="admech">
+      <StatusEffect tags="admech" target="Character" HideFace="true" duration="0.1" stackable="false" />
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="0,4" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="omnibless" description="" type="bless" isbuff="true" limbspecific="false" indicatorlimb="Head" maxstrength="200" hideiconafterdelay="true">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-0.5" resistancefor="damage" minresistance="0.5" maxresistance="0.5">
+      <StatValue stattype="RepairSpeed" value="0.5" />
+      <StatValue stattype="AttackMultiplier" value="0.15" />
+      <StatValue stattype="RepairToolStructureRepairMultiplier" minvalue="0" maxvalue="0.2" />
+    </Effect>
+    <Effect minstrength="101" maxstrength="200" strengthchange="-0.5" resistancefor="damage" minresistance="0.5" maxresistance="0.5">
+      <StatValue stattype="RepairSpeed" value="1.0" />
+      <StatValue stattype="AttackMultiplier" value="0.15" />
+      <StatValue stattype="SkillGainSpeed" minvalue="0.3" maxvalue="0.3" />
+      <StatValue stattype="RepairToolStructureRepairMultiplier" minvalue="0.2" maxvalue="0.4" />
+      <StatValue stattype="MovementSpeed" value="0.2" />
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="0,4" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="dominusomnibless" description="" type="bless" isbuff="true" limbspecific="false" indicatorlimb="Head" maxstrength="200" hideiconafterdelay="true">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-0.5">
+      <StatValue stattype="AttackMultiplier" value="0.25" />
+      <StatValue stattype="MovementSpeed" value="0.15" />
+      <StatValue stattype="RangedSpreadReduction" value="0.25" />
+      <StatValue stattype="TurretAttackSpeed" value="0.2" />
+    </Effect>
+    <Effect minstrength="101" maxstrength="200" strengthchange="-0.5">
+      <StatValue stattype="AttackMultiplier" value="0.25" />
+      <StatValue stattype="MovementSpeed" value="0.3" />
+      <StatValue stattype="RangedSpreadReduction" value="0.5" />
+      <StatValue stattype="TurretAttackSpeed" value="0.4" />
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="0,4" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="omnidebuff" description="" type="debuff" isbuff="false" limbspecific="false" indicatorlimb="Head" maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-0.5" resistancefor="damage,burn,stun" minresistance="-0.5" maxresistance="-0.5">
+      <StatValue stattype="RepairSpeed" value="-0.5" />
+      <StatValue stattype="AttackMultiplier" value="-0.75" />
+      <StatValue stattype="RangedSpreadReduction" minvalue="-0.5" maxvalue="-0.5" />
+      <StatValue stattype="RangedAttackSpeed" value="-0.5" />
+      <StatValue stattype="TurretAttackSpeed" minvalue="-0.4" maxvalue="-0.4" />
+      <StatValue stattype="MovementSpeed" value="-10.0" />
+    </Effect>
+    <icon texture="%ModDir%/UI/omnibless.png" sheetindex="0,0" sheetelementsize="128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="powershortage" description="" type="debuff" isbuff="false" limbspecific="false" indicatorlimb="Head" maxstrength="100">
+    <Effect minstrength="0" maxstrength="20" strengthchange="-0.5" />
+    <Effect minstrength="21" maxstrength="40" strengthchange="-0.5">
+      <StatValue stattype="RepairSpeed" value="-0.1" />
+      <StatValue stattype="AttackMultiplier" value="-0.1" />
+      <StatValue stattype="RangedSpreadReduction" value="-0.1" />
+      <StatValue stattype="RangedAttackSpeed" value="-0.1" />
+      <StatValue stattype="TurretAttackSpeed" value="-0.1" />
+      <StatValue stattype="MovementSpeed" value="-0.1" />
+    </Effect>
+    <Effect minstrength="41" maxstrength="60" strengthchange="-0.5" resistancefor="damage,burn,stun" minresistance="-0.1" maxresistance="-0.1">
+      <StatValue stattype="RepairSpeed" value="-0.2" />
+      <StatValue stattype="AttackMultiplier" value="-0.2" />
+      <StatValue stattype="RangedSpreadReduction" value="-0.2" />
+      <StatValue stattype="RangedAttackSpeed" value="-0.2" />
+      <StatValue stattype="TurretAttackSpeed" value="-0.2" />
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+    </Effect>
+    <Effect minstrength="61" maxstrength="80" strengthchange="-0.5" resistancefor="damage,burn,stun" minresistance="-0.2" maxresistance="-0.2">
+      <StatValue stattype="RepairSpeed" value="-0.3" />
+      <StatValue stattype="AttackMultiplier" value="-0.3" />
+      <StatValue stattype="RangedSpreadReduction" value="-0.3" />
+      <StatValue stattype="RangedAttackSpeed" value="-0.3" />
+      <StatValue stattype="TurretAttackSpeed" value="-0.3" />
+      <StatValue stattype="MovementSpeed" value="-0.3" />
+    </Effect>
+    <Effect minstrength="81" maxstrength="100" strengthchange="-0.5" resistancefor="damage,burn,stun" minresistance="-0.5" maxresistance="-0.5">
+      <StatValue stattype="RepairSpeed" value="-0.5" />
+      <StatValue stattype="AttackMultiplier" value="-0.5" />
+      <StatValue stattype="RangedSpreadReduction" value="-0.5" />
+      <StatValue stattype="RangedAttackSpeed" value="-0.5" />
+      <StatValue stattype="TurretAttackSpeed" value="-0.5" />
+      <StatValue stattype="MovementSpeed" value="-0.5" />
+    </Effect>
+    <icon texture="%ModDir%/UI/omnibless.png" sheetindex="0,0" sheetelementsize="128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="exploratoromnibless" description="" type="bless" isbuff="true" limbspecific="false" indicatorlimb="Head" maxstrength="200" hideiconafterdelay="true">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-0.5">
+      <StatValue stattype="RepairSpeed" value="0.75" />
+      <StatValue stattype="AttackMultiplier" value="0.25" />
+      <StatValue stattype="SkillGainSpeed" minvalue="0.2" maxvalue="0.2" />
+      <StatValue stattype="MovementSpeed" value="0.2" />
+    </Effect>
+    <Effect minstrength="101" maxstrength="200" strengthchange="-0.5">
+      <StatValue stattype="RepairSpeed" value="1.5" />
+      <StatValue stattype="AttackMultiplier" value="0.25" />
+      <StatValue stattype="SkillGainSpeed" minvalue="0.6" maxvalue="0.6" />
+      <StatValue stattype="MovementSpeed" value="0.6" />
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="0,4" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="noisedamage" description="" type="noisedamage" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="true" maxstrength="200" WeaponsSkillGain="0.5" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="3" />
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,0,128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Boltgun shot" identifier="bolterexplosiondamage" description="" type="damage" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="true" maxstrength="200" damageoverlayalpha="1" WeaponsSkillGain="0.5" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="0.1"></Effect>
+    <Effect minstrength="10" maxstrength="25" multiplybymaxvitality="true" minvitalitydecrease="0.1" maxvitalitydecrease="0.25" tag="damage_1-25">
+      <StatusEffect tags="damage_1-25" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect target="This, Limb" comparison="And" interval="1" stackable="false">
+        <Conditional immunity="lte 500" />
+        <Conditional closedwound="eq 0" />
+        <Conditional infectedwound="lt 1" />
+        <Conditional WorldHostility="gte high" />
+        <Conditional isplayer="true" />
+        <Affliction identifier="infectedwound" indicatorlimb="Limb" amount="2.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="25" maxstrength="50" multiplybymaxvitality="true" minvitalitydecrease="0.25" maxvitalitydecrease="0.50" tag="damage_25-50">
+      <StatusEffect tags="damage_25-50" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect target="This, Limb" comparison="And" interval="1" stackable="false">
+        <Conditional immunity="lte 500" />
+        <Conditional closedwound="eq 0" />
+        <Conditional infectedwound="lt 1" />
+        <Conditional WorldHostility="gte high" />
+        <Conditional isplayer="true" />
+        <Affliction identifier="infectedwound" indicatorlimb="Limb" amount="2.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="50" maxstrength="100" multiplybymaxvitality="true" minvitalitydecrease="0.5" maxvitalitydecrease="1.0" tag="damage_50-100">
+      <StatusEffect tags="damage_50-100" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect target="This, Limb" comparison="And" interval="1" stackable="false">
+        <Conditional immunity="lte 500" />
+        <Conditional closedwound="eq 0" />
+        <Conditional infectedwound="lt 1" />
+        <Conditional WorldHostility="gte high" />
+        <Conditional isplayer="true" />
+        <Affliction identifier="infectedwound" indicatorlimb="Limb" amount="2.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="100" maxstrength="200" multiplybymaxvitality="true" minvitalitydecrease="1.0" maxvitalitydecrease="2.0" tag="damage_100-400">
+      <StatusEffect tags="damage_100-400" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect target="This, Limb" comparison="And" interval="1" stackable="false">
+        <Conditional immunity="lte 500" />
+        <Conditional closedwound="eq 0" />
+        <Conditional infectedwound="lt 1" />
+        <Conditional WorldHostility="gte high" />
+        <Conditional isplayer="true" />
+        <Affliction identifier="infectedwound" indicatorlimb="Limb" amount="2.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,0,128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Ripped soul" identifier="theboxopened" description="" type="theboxmeme" causeofdeathdescription="Dead by unidentified reasons" selfcauseofdeathdescription="You opened the box and now you must go and taste exessive pleasures" limbspecific="false" maxstrength="100" damageoverlayalpha="1" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="100" multiplybymaxvitality="true" minvitalitydecrease="1000" maxvitalitydecrease="1000" />
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,0,128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Gauss shot" identifier="gaussdamage" description="" type="disruption" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="true" maxstrength="200" damageoverlayalpha="1" WeaponsSkillGain="0.5" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true" minvitalitydecrease="0.0" maxvitalitydecrease="3.0"></Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,0,128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Plasmagun shot" identifier="plasmadamage" description="" type="damage" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="true" maxstrength="400" burnoverlayalpha="1" WeaponsSkillGain="0.5" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="0.1"></Effect>
+    <Effect minstrength="10" maxstrength="25" multiplybymaxvitality="true" minvitalitydecrease="0.1" maxvitalitydecrease="0.25" tag="damage_1-25">
+      <StatusEffect tags="damage_1-25" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect target="This, Limb" comparison="And" interval="1" stackable="false">
+        <Conditional immunity="lte 500" />
+        <Conditional closedwound="eq 0" />
+        <Conditional infectedwound="lt 1" />
+        <Conditional WorldHostility="gte high" />
+        <Conditional isplayer="true" />
+        <Affliction identifier="infectedwound" indicatorlimb="Limb" amount="2.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="25" maxstrength="50" multiplybymaxvitality="true" minvitalitydecrease="0.25" maxvitalitydecrease="0.50" tag="damage_25-50">
+      <StatusEffect tags="damage_25-50" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect target="This, Limb" comparison="And" interval="1" stackable="false">
+        <Conditional immunity="lte 500" />
+        <Conditional closedwound="eq 0" />
+        <Conditional infectedwound="lt 1" />
+        <Conditional WorldHostility="gte high" />
+        <Conditional isplayer="true" />
+        <Affliction identifier="infectedwound" indicatorlimb="Limb" amount="2.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="50" maxstrength="100" multiplybymaxvitality="true" minvitalitydecrease="0.5" maxvitalitydecrease="1.0" tag="damage_50-100">
+      <StatusEffect tags="damage_50-100" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect target="This, Limb" comparison="And" interval="1" stackable="false">
+        <Conditional immunity="lte 500" />
+        <Conditional closedwound="eq 0" />
+        <Conditional infectedwound="lt 1" />
+        <Conditional WorldHostility="gte high" />
+        <Conditional isplayer="true" />
+        <Affliction identifier="infectedwound" indicatorlimb="Limb" amount="2.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="100" maxstrength="200" multiplybymaxvitality="true" minvitalitydecrease="1.0" maxvitalitydecrease="4.0" tag="damage_100-400">
+      <StatusEffect tags="damage_100-400" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect target="This, Limb" comparison="And" interval="1" stackable="false">
+        <Conditional immunity="lte 500" />
+        <Conditional closedwound="eq 0" />
+        <Conditional infectedwound="lt 1" />
+        <Conditional WorldHostility="gte high" />
+        <Conditional isplayer="true" />
+        <Affliction identifier="infectedwound" indicatorlimb="Limb" amount="2.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="0,7" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="Nova cannon shot" identifier="novaamage" description="" type="damage" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="true" maxstrength="400" damageoverlayalpha="1" WeaponsSkillGain="0.5" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="400" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="100" />
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="0,7" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="melta burn" identifier="meltadamage" description="" type="damage" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="true" maxstrength="200" burnoverlayalpha="1" WeaponsSkillGain="0.5" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="0.1"></Effect>
+    <Effect minstrength="10" maxstrength="25" multiplybymaxvitality="true" minvitalitydecrease="0.1" maxvitalitydecrease="0.25" tag="damage_1-25">
+      <StatusEffect tags="damage_1-25" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect target="This, Limb" comparison="And" interval="1" stackable="false">
+        <Conditional immunity="lte 500" />
+        <Conditional closedwound="eq 0" />
+        <Conditional infectedwound="lt 1" />
+        <Conditional WorldHostility="gte high" />
+        <Conditional isplayer="true" />
+        <Affliction identifier="infectedwound" indicatorlimb="Limb" amount="2.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="25" maxstrength="50" multiplybymaxvitality="true" minvitalitydecrease="0.25" maxvitalitydecrease="0.50" tag="damage_25-50">
+      <StatusEffect tags="damage_25-50" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect target="This, Limb" comparison="And" interval="1" stackable="false">
+        <Conditional immunity="lte 500" />
+        <Conditional closedwound="eq 0" />
+        <Conditional infectedwound="lt 1" />
+        <Conditional WorldHostility="gte high" />
+        <Conditional isplayer="true" />
+        <Affliction identifier="infectedwound" indicatorlimb="Limb" amount="2.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="50" maxstrength="100" multiplybymaxvitality="true" minvitalitydecrease="0.5" maxvitalitydecrease="1.0" tag="damage_50-100">
+      <StatusEffect tags="damage_50-100" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect target="This, Limb" comparison="And" interval="1" stackable="false">
+        <Conditional immunity="lte 500" />
+        <Conditional closedwound="eq 0" />
+        <Conditional infectedwound="lt 1" />
+        <Conditional WorldHostility="gte high" />
+        <Conditional isplayer="true" />
+        <Affliction identifier="infectedwound" indicatorlimb="Limb" amount="2.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="100" maxstrength="200" multiplybymaxvitality="true" minvitalitydecrease="1.0" maxvitalitydecrease="4.0" tag="damage_100-400">
+      <StatusEffect tags="damage_100-400" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect target="This, Limb" comparison="And" interval="1" stackable="false">
+        <Conditional immunity="lte 500" />
+        <Conditional closedwound="eq 0" />
+        <Conditional infectedwound="lt 1" />
+        <Conditional WorldHostility="gte high" />
+        <Conditional isplayer="true" />
+        <Affliction identifier="infectedwound" indicatorlimb="Limb" amount="2.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" color="195,104,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Intoxication" identifier="intoxication" description="" type="Intoxication" isbuff="false" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" treatmentthreshold="25" maxstrength="100" MedicalSkillGain="0.0" sendmessages="true">
+    <Effect minstrength="0" maxstrength="10" mingrainstrength="0.0" maxgrainstrength="0.0" strengthchange="-0.1" dialogflag="intoxication">
+      <StatusEffect target="Character">
+        <Affliction identifier="nausea" strength="10" probability="0.01" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="11" maxstrength="25" mingrainstrength="0.0" maxgrainstrength="0.0" strengthchange="-0.05" dialogflag="intoxication">
+      <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true">
+        <Affliction identifier="nausea" strength="10" probability="0.03" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="26" maxstrength="50" mingrainstrength="0.0" maxgrainstrength="0.0" strengthchange="-0.01" minchromaticaberration="0.0" maxchromaticaberration="0.5" maxvitalitydecrease="10" dialogflag="intoxicationmed">
+      <StatusEffect target="Character" SpeedMultiplier="0.7" setvalue="true"></StatusEffect>
+    </Effect>
+    <Effect minstrength="51" maxstrength="75" mingrainstrength="0.0" maxgrainstrength="0.0" strengthchange="0.5" minchromaticaberration="0.0" maxchromaticaberration="1.0" minvitalitydecrease="10" maxvitalitydecrease="30" dialogflag="intoxicationheavy">
+      <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true">
+        <Affliction identifier="pain" strength="0.1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="76" maxstrength="100" mingrainstrength="0.0" maxgrainstrength="0.0" strengthchange="1.0" minchromaticaberration="1.0" maxchromaticaberration="5.0" minvitalitydecrease="30" maxvitalitydecrease="100" dialogflag="intoxicationheavy">
+      <StatusEffect target="Character" SpeedMultiplier="0.4" setvalue="true">
+        <Affliction identifier="pain" strength="0.1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="0,2" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="Intoxication" identifier="drugintoxication" description="" type="Intoxication" isbuff="false" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" treatmentthreshold="0" maxstrength="100" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="100" mingrainstrength="0.0" maxgrainstrength="0.0" strengthchange="-0.1" minscreendistort="0" maxscreendistort="10.0" minscreenblur="0.1" maxscreenblur="10.0" minradialdistort="0.0" maxradialdistort="10.0" minchromaticaberration="0.0" maxchromaticaberration="10.0">
+      <StatusEffect target="Character">
+        <Affliction identifier="nausea" strength="10" probability="0.01" />
+        <Affliction identifier="stun" strength="100" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="0,2" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="feeded" type="feeded" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="120" iconcolors="0,75,0;0,111,0;0,211,0;0,247,0" MedicalSkillGain="0.0" hideiconafterdelay="true">
+    <Effect minstrength="0" maxstrength="60" strengthchange="-1.0">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="damage" strength="0.07" />
+        <ReduceAffliction type="burn" strength="0.1" />
+        <ReduceAffliction identifier="bloodloss" strength="0.05" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="60" maxstrength="120" strengthchange="-1.0">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="damage" strength="0.1" />
+        <ReduceAffliction type="burn" strength="0.15" />
+        <ReduceAffliction identifier="bloodloss" strength="0.07" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="0,3" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <WarpBurn name="Warp burn" identifier="Warpburn" description="The area is blistered and red, and skin is already beginning to peel away in sheets. The patient is in a great deal of pain." type="warpburn" causeofdeathdescription="Burned to death" selfcauseofdeathdescription="You have burned to death." limbspecific="true" maxstrength="200" burnoverlayalpha="3" healcostmultiplier="2.25" WeaponsSkillGain="0.25" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="1" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="0.01"></Effect>
+    <Effect minstrength="1" maxstrength="25" multiplybymaxvitality="true" minvitalitydecrease="0.01" maxvitalitydecrease="0.25"></Effect>
+    <Effect minstrength="25" maxstrength="50" multiplybymaxvitality="true" minvitalitydecrease="0.25" maxvitalitydecrease="0.50"></Effect>
+    <Effect minstrength="50" maxstrength="100" multiplybymaxvitality="true" minvitalitydecrease="0.5" maxvitalitydecrease="1.0"></Effect>
+    <Effect minstrength="100" maxstrength="200" multiplybymaxvitality="true" minvitalitydecrease="1.0" maxvitalitydecrease="2.0"></Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" color="195,104,60,255" origin="0,0" />
+  </WarpBurn>
+  <Affliction identifier="demonfury" type="buff" isbuff="true" limbspecific="false" maxstrength="60" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249" MedicalSkillGain="0.0" hideiconafterdelay="true">
+    <Effect minstrength="0" maxstrength="50" strengthchange="-1" minfacetint="155,0,0,10" maxfacetint="155,0,0,200" minbodytint="155,0,0,10" maxbodytint="155,0,0,200">
+      <StatValue stattype="AttackMultiplier" minvalue="0.1" maxvalue="0.5" />
+      <StatValue stattype="RangedAttackSpeed" minvalue="0.1" maxvalue="0.5" />
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0.1" maxvalue="0.5" />
+      <StatValue stattype="RangedSpreadReduction" minvalue="0.1" maxvalue="0.5" />
+    </Effect>
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="6,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="demonnicexhaustion" type="debuff" limbspecific="false" maxstrength="100" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1">
+      <StatValue stattype="AttackMultiplier" minvalue="-0.1" maxvalue="-0.5" />
+      <StatValue stattype="RangedAttackSpeed" minvalue="-0.1" maxvalue="-0.5" />
+      <StatValue stattype="RangedSpreadReduction" minvalue="-0.1" maxvalue="-0.5" />
+      <StatValue stattype="MaximumHealthMultiplier" minvalue="-0.01" maxvalue="-0.25" />
+      <StatValue stattype="MovementSpeed" minvalue="-0.1" maxvalue="-0.5" />
+      <StatValue stattype="FlowResistance" minvalue="-0.1" maxvalue="-0.5" />
+    </Effect>
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="6,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <!--community stuff-->
+  <Affliction name="Plasma burn" identifier="plasmadamageself" description="" type="plasmadamageself" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" maxstrength="100" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="100" burnoverlayalpha="1" MedicalSkillGain="0.0" WeaponsSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="100" multiplybymaxvitality="false" strengthchange="-1.0">
+      <StatusEffect target="Character" comparison="and">
+        <Conditional plasmadamageself="gt 25.0" />
+        <Conditional plasmadamageself="lt 50.0" />
+        <sound file="Content/Items/Weapons/Emp.ogg" range="5000" loop="false" volume="5.0" />
+        <Explosion range="50.0" structuredamage="5" levelwalldamage="0" itemdamage="0" stun="0" force="5.0" severlimbsprobability="0.10">
+          <Affliction identifier="plasmadamage" strength="40" />
+        </Explosion>
+        <Affliction identifier="plasmadamageself" strength="-200.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional plasmadamageself="gt 50.0" />
+        <Conditional plasmadamageself="lt 75.0" />
+        <sound file="%ModDir%/Items/Weapons/plasmaexplosion1.ogg" selectionmode="Random" range="5000" volume="3.5" />
+        <sound file="%ModDir%/Items/Weapons/plasmaexplosion1.ogg" selectionmode="Random" range="5000" volume="3.5" />
+        <sound file="%ModDir%/Items/Weapons/plasmaexplosion1.ogg" selectionmode="Random" range="5000" volume="3.5" />
+        <Explosion range="165.0" structuredamage="50" levelwalldamage="500" itemdamage="500" stun="2" force="20.0" severlimbsprobability="0.75">
+          <Affliction identifier="plasmadamage" strength="80" />
+          <Affliction identifier="explosiondamage" strength="60" />
+        </Explosion>
+        <Affliction identifier="plasmadamageself" strength="-300.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional plasmadamageself="gt 75.0" />
+        <Conditional plasmadamageself="lt 100.0" />
+        <sound file="%ModDir%/Items/Weapons/plasmaexplosion1.ogg" selectionmode="Random" range="5000" volume="3.5" />
+        <sound file="%ModDir%/Items/Weapons/plasmaexplosion1.ogg" selectionmode="Random" range="5000" volume="3.5" />
+        <sound file="%ModDir%/Items/Weapons/plasmaexplosion1.ogg" selectionmode="Random" range="5000" volume="3.5" />
+        <Explosion range="400.0" structuredamage="500" levelwalldamage="500" itemdamage="500" stun="6" force="40.0" severlimbsprobability="1.0">
+          <Affliction identifier="plasmadamage" strength="400" />
+          <Affliction identifier="explosiondamage" strength="100" />
+          <Affliction identifier="organdamage" strength="100" />
+          <Affliction identifier="burn" strength="100" />
+        </Explosion>
+        <Affliction identifier="plasmadamageself" strength="-400.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="0,7" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <!--community stuff-->
+  <Affliction name="Fury" identifier="furin" description="Patient feels unstoppable rage." type="furin" isbuff="true" limbspecific="false" maxstrength="600" MedicalSkillGain="0.1" hideiconafterdelay="true">
+    <Effect minstrength="0" maxstrength="600" strengthchange="-1" minspeedmultiplier="0.9" maxspeedmultiplier="1.5" resistancefor="pain" minresistance="1.0" maxresistance="1.0" minfacetint="255,0,0,10" maxfacetint="255,0,0,200" minbodytint="255,0,0,10" maxbodytint="255,0,0,200">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0" maxvalue="0.5" />
+      <StatValue stattype="SwimmingSpeed" minvalue="0.9" maxvalue="1.2" />
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="0" maxvalue="2.0" />
+    </Effect>
+    <!-- Greater than 1.48 and the ragdolls start snapping when turning and characters take damage from colliding with doors & walls -->
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="Brain stimulation" identifier="brainstim" description="the mental capabilities of the patient have increased significantly" type="brainstim" isbuff="true" limbspecific="false" maxstrength="600" MedicalSkillGain="0.1" hideiconafterdelay="true">
+    <Effect minstrength="0" maxstrength="600" strengthchange="-1" minfacetint="100,100,200,10" maxfacetint="100,100,200,200" minbodytint="100,100,200,10" maxbodytint="100,100,200,200">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0" maxvalue="-0.5" />
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="0.0" maxvalue="-0.5" />
+      <StatValue stattype="SkillGainSpeed" minvalue="2.0" maxvalue="3.0" />
+    </Effect>
+    <!-- Greater than 1.48 and the ragdolls start snapping when turning and characters take damage from colliding with doors & walls -->
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="3,0" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="Radiation sickness resistance" identifier="radiationsicknessres" description="Radiation be gone." type="resistance" isbuff="true" limbspecific="false" maxstrength="600" MedicalSkillGain="0.0" hideiconafterdelay="true">
+    <Effect minstrength="0" maxstrength="600" strengthchange="-1" resistancefor="radiationsickness" minresistance="1.0" maxresistance="1.0"></Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,768,128,128" color="0,155,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Radiation sickness" identifier="radiationsicknessgamma" description="Burns and sores can be seen on patient's skin. They seem to be spreading." type="gammaradiation" causeofdeathdescription="Died of radiation sickness." selfcauseofdeathdescription="You have died of radiation sickness." limbspecific="false" isbuff="false" indicatorlimb="Torso" karmachangeonapplied="-1" treatmentthreshold="25" maxstrength="200" grainburst="3" healcostmultiplier="4.0" WeaponsSkillGain="0.0" MedicalSkillGain="0.0">
+    <!-- Cause burns depending on strength -->
+    <Effect minstrength="25" maxstrength="50" mingrainstrength="0.5" maxgrainstrength="0.25" strengthchange="-0.07" maxvitalitydecrease="20" multiplybymaxvitality="false">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="burn" amount="0.06" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="50" maxstrength="75" mingrainstrength="1.0" maxgrainstrength="0.5" maxvitalitydecrease="40" strengthchange="-0.07" minchromaticaberration="0.0" maxchromaticaberration="1.0" minbodytint="255,0,0,0" maxbodytint="255,0,0,30" multiplybymaxvitality="false">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="burn" amount="0.15" />
+        <!-- nausea decreases by 1 per second, so effectively this increases it by 0.05 -->
+        <Affliction identifier="nausea" amount="1.05" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="75" maxstrength="100" mingrainstrength="1.0" maxgrainstrength="0.75" maxvitalitydecrease="80" strengthchange="-0.07" minchromaticaberration="1.0" maxchromaticaberration="5.0" minbodytint="255,0,0,30" maxbodytint="255,0,0,60" multiplybymaxvitality="false">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="burn" amount="0.3" />
+        <Affliction identifier="nausea" amount="1.1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="100" maxstrength="125" mingrainstrength="1.0" maxgrainstrength="1.0" strengthchange="-0.07" minchromaticaberration="1.0" maxchromaticaberration="5.0" minbodytint="255,0,0,60" maxbodytint="255,0,0,90">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="burn" amount="0.5" />
+        <Affliction identifier="nausea" amount="1.2" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="125" maxstrength="150" mingrainstrength="1.0" maxgrainstrength="1.0" strengthchange="-0.07" minchromaticaberration="1.0" maxchromaticaberration="5.0" minbodytint="255,0,0,90" maxbodytint="255,0,0,120">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="burn" amount="0.6" />
+        <Affliction identifier="nausea" amount="1.4" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="150" maxstrength="175" mingrainstrength="1.0" maxgrainstrength="1.0" strengthchange="-0.07" minchromaticaberration="1.0" maxchromaticaberration="5.0" minbodytint="255,0,0,120" maxbodytint="255,0,0,150">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="burn" amount="0.715" />
+        <Affliction identifier="nausea" amount="1.6" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="175" maxstrength="200" mingrainstrength="1.0" maxgrainstrength="1.0" strengthchange="-0.07" minchromaticaberration="1.0" maxchromaticaberration="5.0" minbodytint="255,0,0,150" maxbodytint="255,0,0,180">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="burn" amount="0.875" />
+        <Affliction identifier="nausea" amount="1.8" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,768,128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="eyeoftheomnissiah" description="" type="debuff" isbuff="false" limbspecific="false" indicatorlimb="Head" maxstrength="120" WeaponsSkillGain="0.1" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="40" strengthchange="-1.0">
+      <StatValue stattype="MovementSpeed" value="-0.5" />
+    </Effect>
+    <Effect minstrength="41" maxstrength="80" strengthchange="-1.0">
+      <StatValue stattype="MovementSpeed" value="-0.7" />
+    </Effect>
+    <Effect minstrength="81" maxstrength="120" strengthchange="-1.0">
+      <StatValue stattype="MovementSpeed" value="-0.9" />
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="1,4" color="195,136,60,255" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="bansheescream" description="" type="debuff" isbuff="false" limbspecific="false" indicatorlimb="Head" maxstrength="120" MedicalSkillGain="0.0" WeaponsSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="120" strengthchange="-1.0" dialogflag="bansheescream">
+      <StatValue stattype="AttackMultiplier" value="-0.25" />
+      <StatValue stattype="MeleeAttackSpeed" minvalue="-0.1" maxvalue="-0.35" />
+      <StatValue stattype="RangedAttackSpeed" minvalue="-0.1" maxvalue="-0.35" />
+      <StatValue stattype="RangedSpreadReduction" minvalue="-0.5" maxvalue="-0.5" />
+      <StatValue stattype="MovementSpeed" value="-1.0" />
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="1,0" color="195,136,60,255" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <AfflictionKhornPsychosis identifier="khornpsychosissword" type="khornpsychosis" isbuff="true" limbspecific="false" maxstrength="300" showiconthreshold="0" showinhealthscannerthreshold="400" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="30" maxvitalitydecrease="0" strengthchange="-0.05"></Effect>
+    <Effect minstrength="30" maxstrength="100" strengthchange="-0.05">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0.1" maxvalue="0.15" />
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="0.1" maxvalue="0.3" />
+    </Effect>
+    <Effect minstrength="101" maxstrength="200" strengthchange="-0.05">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0.1" maxvalue="0.3" />
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="0.1" maxvalue="0.5" />
+    </Effect>
+    <Effect minstrength="201" maxstrength="300" strengthchange="-0.05">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0.3" maxvalue="0.5" />
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="0.5" maxvalue="0.75" />
+    </Effect>
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="6,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </AfflictionKhornPsychosis>
+  <AfflictionKhornPsychosis identifier="khornpsychosisarmor" type="khornpsychosis" showinhealthscannerthreshold="400" isbuff="true" limbspecific="false" maxstrength="300" showiconthreshold="0" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="30" maxvitalitydecrease="0" strengthchange="-0.05"></Effect>
+    <Effect minstrength="30" maxstrength="100" strengthchange="-0.05">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0.1" maxvalue="0.15" />
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="0.1" maxvalue="0.3" />
+      <StatValue stattype="MovementSpeed" value="0.4" />
+    </Effect>
+    <Effect minstrength="101" maxstrength="200" strengthchange="-0.05">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0.1" maxvalue="0.3" />
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="0.1" maxvalue="0.5" />
+      <StatValue stattype="MovementSpeed" value="0.4" />
+    </Effect>
+    <Effect minstrength="201" maxstrength="300" strengthchange="-0.5">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0.3" maxvalue="0.5" />
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="0.5" maxvalue="1.0" />
+      <StatValue stattype="MovementSpeed" value="0.6" />
+    </Effect>
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="6,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </AfflictionKhornPsychosis>
+  <AcidBurn identifier="acidburntyr" type="tyranicacid" limbspecific="true" maxstrength="200" burnoverlayalpha="0" healcostmultiplier="2.25" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="4" />
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" color="195,104,60,255" origin="0,0" />
+  </AcidBurn>
+  <Affliction identifier="alientrinketbuff1" type="buff" isbuff="true" limbspecific="false" maxstrength="300" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="50" strengthchange="-1">
+      <StatValue stattype="HelmSkillBonus" value="5" />
+      <StatValue stattype="WeaponsSkillBonus" value="5" />
+      <StatValue stattype="MechanicalSkillBonus" value="5" />
+      <StatValue stattype="ElectricalSkillBonus" value="5" />
+      <StatValue stattype="MedicalSkillBonus" value="5" />
+      <StatValue stattype="SkillGainSpeed" minvalue="0" maxvalue="0.3" />
+    </Effect>
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="6,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="oxygenlowimmunity" type="oxygenlowimmunity" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0">
+      <StatusEffect target="Character" setvalue="true">
+        <ReduceAffliction type="oxygenlow" strength="0.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Immunity" identifier="immunity" description="" type="resistance" isbuff="true" limbspecific="false" maxstrength="700" showiconthreshold="800" showicontoothersthreshold="800" showinhealthscannerthreshold="0" MedicalSkillGain="0.0">
+    <Effect minstrength="1" maxstrength="100" strengthchange="0.5"></Effect>
+    <Effect minstrength="100" maxstrength="300" strengthchange="0.75">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="nurglegiftdebuff" amount="0.1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="300" maxstrength="500" strengthchange="0.85">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="nurglegiftdebuff" amount="0.1" />
+        <ReduceAffliction identifier="infectedwound" amount="0.05" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="500" maxstrength="600" strengthchange="0.9">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="nurglegiftdebuff" amount="0.25" />
+        <ReduceAffliction identifier="honkchosis" amount="0.25" />
+        <ReduceAffliction identifier="infectedwound" amount="0.15" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="600" maxstrength="700" strengthchange="0">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="nurglegiftdebuff" amount="0.5" />
+        <ReduceAffliction identifier="honkchosis" amount="0.5" />
+        <ReduceAffliction identifier="huskinfection" amount="0.25" />
+        <ReduceAffliction identifier="infectedwound" amount="0.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="afflictionsmanager" description="" type="resistance" isbuff="true" limbspecific="false" maxstrength="100" showiconthreshold="800" showicontoothersthreshold="800" showinhealthscannerthreshold="200" MedicalSkillGain="0.0">
+    <Effect minstrength="1" maxstrength="100">
+      <StatusEffect target="Character" comparison="And" interval="1.0" disabledeltatime="true">
+        <Conditional HasStatusTag="equals damage_1-25" />
+        <Conditional immunity="gt 20" />
+        <Affliction identifier="immunity" strength="-1.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And" interval="1.0" disabledeltatime="true">
+        <Conditional painblocked="eq 0" />
+        <Conditional pain="lt 50" />
+        <Conditional HasStatusTag="equals damage_1-25" />
+        <Affliction identifier="pain" indicatorlimb="Limb" strength="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And" interval="1.0" disabledeltatime="true">
+        <Conditional HasStatusTag="equals damage_25-50" />
+        <Conditional immunity="gt 20" />
+        <Affliction identifier="immunity" strength="-1.5" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And" interval="1.0" disabledeltatime="true">
+        <Conditional painblocked="eq 0" />
+        <Conditional pain="lt 150" />
+        <Conditional HasStatusTag="equals damage_25-50" />
+        <Affliction identifier="pain" indicatorlimb="Limb" strength="0.5" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And" interval="1.0" disabledeltatime="true">
+        <Conditional HasStatusTag="equals damage_50-100" />
+        <Conditional immunity="gt 20" />
+        <Affliction identifier="immunity" strength="-2.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And" interval="1.0" disabledeltatime="true">
+        <Conditional painblocked="eq 0" />
+        <Conditional pain="lt 200" />
+        <Conditional HasStatusTag="equals damage_50-100" />
+        <Affliction identifier="pain" indicatorlimb="Limb" strength="0.75" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And" interval="1.0" disabledeltatime="true">
+        <Conditional HasStatusTag="equals damage_100-400" />
+        <Conditional immunity="gt 20" />
+        <Affliction identifier="immunity" strength="-3.5" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And" interval="1.0" disabledeltatime="true">
+        <Conditional painblocked="eq 0" />
+        <Conditional HasStatusTag="equals damage_100-400" />
+        <Affliction identifier="pain" indicatorlimb="Limb" strength="1.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="painblocked" description="" type="resistance" isbuff="true" limbspecific="false" maxstrength="200" MedicalSkillGain="0.05">
+    <Effect minstrength="0" maxstrength="200" resistancefor="pain" minresistance="0" maxresistance="0.5" strengthchange="-0.2">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="pain" strength="0.1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="closedwound" description="" type="resistance" isbuff="true" limbspecific="false" maxstrength="200" MedicalSkillGain="0.05">
+    <Effect minstrength="0" maxstrength="200" resistancefor="infectedwound" minresistance="0" maxresistance="0.5" strengthchange="-0.2">
+      <StatusEffect target="Character" disabledeltatime="true" interval="1.0">
+        <ReduceAffliction identifier="infectedwound" strength="0.15" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Infected wound" identifier="infectedwound" description="" type="infection" limbspecific="true" maxstrength="100" showiconthreshold="101" showicontoothersthreshold="0" showinhealthscannerthreshold="0" treatmentthreshold="0" MedicalSkillGain="0.0" sendmessages="true" targets="human">
+    <Effect minstrength="0" maxstrength="50" strengthchange="0.5" dialogflag="infectedwoundlow">
+      <StatusEffect target="Character" comparison="And">
+        <Conditional immunity="gt 5" />
+        <ReduceAffliction identifier="immunity" amount="0.05" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional HasStatusTag="nurglechosen" />
+        <ReduceAffliction type="damage" amount="0.025" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="50" maxstrength="80" strengthchange="0.55" dialogflag="infectedwoundmed">
+      <StatusEffect target="Character" comparison="And">
+        <Conditional immunity="gt 5" />
+        <ReduceAffliction identifier="immunity" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional HasStatusTag="nurglechosen" />
+        <ReduceAffliction type="damage" amount="0.05" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="80" maxstrength="100" strengthchange="0.6" dialogflag="infectedwoundheavy">
+      <StatusEffect target="Character" comparison="And">
+        <Conditional immunity="gt 5" />
+        <ReduceAffliction identifier="immunity" amount="0.15" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional HasStatusTag="nurglechosen" />
+        <ReduceAffliction type="damage" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional immunity="lte 300" sepsis="gte 0" />
+        <Conditional HasStatusTag="!equals nurglechosen" />
+        <Affliction identifier="sepsis" amount="0.01" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Sepsis" identifier="sepsis" description="" type="infection" limbspecific="false" indicatorlimb="Torso" maxstrength="100" showiconthreshold="101" showicontoothersthreshold="10" showinhealthscannerthreshold="0" treatmentthreshold="0" causeofdeathdescription="Died because of sepsis" selfcauseofdeathdescription="You died because of sepsis" MedicalSkillGain="0.0" targets="human">
+    <Effect minstrength="0" maxstrength="15" strengthchange="0.1" minvitalitydecrease="0" maxvitalitydecrease="5.0" multiplybymaxvitality="true"></Effect>
+    <Effect minstrength="15" maxstrength="65" strengthchange="0.3" minvitalitydecrease="40." maxvitalitydecrease="50.0" multiplybymaxvitality="true" />
+    <Effect minstrength="65" maxstrength="100" strengthchange="0.5" minvitalitydecrease="50.0" maxvitalitydecrease="60.0" multiplybymaxvitality="true">
+      <StatusEffect target="Character" interval="1">
+        <Affliction identifier="organdamage" indicatorlimb="Limb" amount="0.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Amputated Right Arm" identifier="amputated_rightarm" description="" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="100" targets="human" type="amputation" limbspecific="False" indicatorlimb="RightArm" maxstrength="20" iconcolors="225,0,0,255">
+    <Effect minstrength="0" maxstrength="5" strengthchange="0">
+      <StatusEffect target="Character" disabledeltatime="true" interval="1.0" comparison="And">
+        <Conditional adamantiumhandright="lt 1" />
+        <Conditional adamantiumhandright_sm="lt 1" />
+        <Affliction identifier="amputated_rightarm" strength="1.0" />
+      </StatusEffect>
+      <StatusEffect TargetType="AllLimbs" Targets="RightForearm (14),RightHand (3)" Alpha="1.0" SetValue="True" />
+    </Effect>
+    <Effect minstrength="6" maxstrength="10" strengthchange="0">
+      <StatusEffect TargetType="AllLimbs" Targets="RightForearm (14),RightHand (3)" Alpha="0.0" SetValue="True" />
+      <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+        <Conditional adamantiumhandright_sm="lt 1" />
+        <Conditional adamantiumhandright="lt 1" />
+        <Affliction identifier="amputated_rightarm" strength="1.0" />
+      </StatusEffect>
+      <StatusEffect target="AllLimbs" Targets="RightArm (2)" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumhandright_sm="lt 1" />
+        <Conditional adamantiumhandright="lt 1" />
+        <Conditional closedwound="lt 1" />
+        <Affliction identifier="bleeding" strength="10.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumhandright_sm="lt 1" />
+        <Conditional adamantiumhandright="lt 1" />
+        <Conditional painblocked="lt 1" />
+        <Affliction identifier="pain" strength="2.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="11" maxstrength="20" strengthchange="0">
+      <StatusEffect TargetType="AllLimbs" Targets="RightForearm (14),RightHand (3)" Alpha="0.0" SetValue="True" />
+      <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+        <Conditional adamantiumhandright_sm="lt 1" />
+        <Conditional adamantiumhandright="lt 1" />
+        <Affliction identifier="amputated_rightarm" strength="1.0" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Conditional HasStatusTag="!equals rlock" />
+        <SpawnItem identifier="rhandoff" spawnposition="ThisInventory" SpawnIfCantBeContained="False" />
+      </StatusEffect>
+      <StatusEffect target="AllLimbs" Targets="RightArm (2)" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumhandright_sm="lt 1" />
+        <Conditional adamantiumhandright="lt 1" />
+        <Conditional closedwound="lt 1" />
+        <Affliction identifier="bleeding" strength="10.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumhandright_sm="lt 1" />
+        <Conditional adamantiumhandright="lt 1" />
+        <Conditional painblocked="lt 1" />
+        <Affliction identifier="pain" strength="2.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="3,1" sheetelementsize="128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Amputated Left Arm" identifier="amputated_leftarm" description="" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="100" targets="human" type="amputation" limbspecific="False" indicatorlimb="LeftArm" maxstrength="20" iconcolors="225,0,0,255">
+    <Effect minstrength="0" maxstrength="5" strengthchange="0">
+      <StatusEffect target="Character" disabledeltatime="true" interval="1.0" comparison="And">
+        <Conditional adamantiumhandleft="lt 1" />
+        <Conditional adamantiumhandleft_sm="lt 1" />
+        <Affliction identifier="amputated_leftarm" strength="1.0" />
+      </StatusEffect>
+      <StatusEffect TargetType="AllLimbs" Targets="LeftForearm (13),LeftHand (5)" Alpha="1.0" SetValue="True" />
+    </Effect>
+    <Effect minstrength="6" maxstrength="10" strengthchange="0">
+      <StatusEffect TargetType="AllLimbs" Targets="LeftForearm (13),LeftHand (5)" Alpha="0.0" SetValue="True" />
+      <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+        <Conditional adamantiumhandleft_sm="lt 1" />
+        <Conditional adamantiumhandleft="lt 1" />
+        <Affliction identifier="amputated_leftarm" strength="1.0" />
+      </StatusEffect>
+      <StatusEffect target="AllLimbs" Targets="LeftArm (4)" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumhandleft_sm="lt 1" />
+        <Conditional adamantiumhandleft="lt 1" />
+        <Conditional closedwound="lt 1" />
+        <Affliction identifier="bleeding" strength="10.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumhandleft_sm="lt 1" />
+        <Conditional adamantiumhandleft="lt 1" />
+        <Conditional painblocked="lt 1" />
+        <Affliction identifier="pain" strength="2.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="11" maxstrength="20" strengthchange="0">
+      <StatusEffect TargetType="AllLimbs" Targets="LeftForearm (13),LeftHand (5)" Alpha="0.0" SetValue="True" />
+      <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+        <Conditional adamantiumhandleft_sm="lt 1" />
+        <Conditional adamantiumhandleft="lt 1" />
+        <Affliction identifier="amputated_leftarm" strength="1.0" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Conditional HasStatusTag="!equals llock" />
+        <SpawnItem identifier="lhandoff" spawnposition="ThisInventory" SpawnIfCantBeContained="False" />
+      </StatusEffect>
+      <StatusEffect target="AllLimbs" Targets="LeftArm (4)" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumhandleft_sm="lt 1" />
+        <Conditional adamantiumhandleft="lt 1" />
+        <Conditional closedwound="lt 1" />
+        <Affliction identifier="bleeding" strength="10.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumhandleft_sm="lt 1" />
+        <Conditional adamantiumhandleft="lt 1" />
+        <Conditional painblocked="lt 1" />
+        <Affliction identifier="pain" strength="2.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="4,1" sheetelementsize="128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <!--<Affliction name="Amputated Left Leg" identifier="amputated_lefleg" description="" showiconthreshold="2" showicontoothersthreshold="2" showinhealthscannerthreshold="2" targets="human" type="amputation" limbspecific="False" indicatorlimb="LeftLeg" maxstrength="11" iconcolors="225,0,0,255">
+    <Effect minstrength="0" maxstrength="1" strengthchange="0">
+      <StatusEffect target="Character" disabledeltatime="true">
+        <Conditional adamantiumlegleft="lt 1"/>
+        <Affliction identifier="amputated_lefleg" strength="1.0" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="1" maxstrength="11" strengthchange="0">
+      <StatusEffect TargetType="AllLimbs" Targets="LeftLeg (7),LeftFoot (8)" Alpha="0.0" SetValue="True"/>
+      <StatusEffect target="Character" disabledeltatime="true">
+        <Conditional adamantiumlegleft="lt 1"/>
+        <Affliction identifier="amputated_lefleg" strength="1.0" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <TriggerAnimation Type="Walk" filename="HumanAmputatedLegWalk" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" filename="HumanAmputatedRun" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Crouch" filename="HumanAmputatedLegCrouch" priority="1" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <StatusEffect target="AllLimbs" Targets="LeftThigh (6)" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumlegleft="lt 1"/>
+        <Conditional closedwound="lt 1"/>
+        <Affliction identifier="bleeding" strength="10.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumlegleft="lt 1"/>
+        <Conditional painblocked="lt 1"/>
+        <Affliction identifier="pain" strength="2.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="3,2" sheetelementsize="128,128" color="195,136,60,255" origin="0,0"/>
+  </Affliction>-->
+  <Affliction name="Amputated Left Leg" identifier="amputated_lefleg" description="" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="100" targets="human" type="amputation" limbspecific="False" indicatorlimb="LeftLeg" isbuff="false" maxstrength="20" iconcolors="225,0,0,255">
+    <Effect minstrength="0" maxstrength="5" strengthchange="0">
+      <StatusEffect target="Character" disabledeltatime="true" interval="1.0" comparison="And">
+        <Conditional adamantiumlegleft_sm="lt 1" />
+        <Conditional adamantiumlegleft="lt 1" />
+        <Conditional adamantiumlegleftsicarian="lt 1" />
+        <Affliction identifier="amputated_lefleg" strength="1.0" />
+      </StatusEffect>
+      <StatusEffect TargetType="AllLimbs" Targets="LeftLeg (7),LeftFoot (8)" Alpha="1.0" SetValue="True">
+        <Conditional adamantiumlegleft_sm="lt 1" />
+        <Conditional adamantiumlegleft="lt 1" />
+        <Conditional adamantiumlegleftsicarian="lt 1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="6" maxstrength="10" strengthchange="0">
+      <StatusEffect TargetType="AllLimbs" Targets="LeftLeg (7),LeftFoot (8)" Alpha="0.0" SetValue="True" />
+      <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+        <Conditional adamantiumlegleft_sm="lt 1" />
+        <Conditional adamantiumlegleft="lt 1" />
+        <Conditional adamantiumlegleftsicarian="lt 1" />
+        <Affliction identifier="amputated_lefleg" strength="1.0" />
+      </StatusEffect>
+      <StatusEffect target="AllLimbs" Targets="LeftThigh (6)" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumlegleft_sm="lt 1" />
+        <Conditional adamantiumlegleft="lt 1" />
+        <Conditional adamantiumlegleftsicarian="lt 1" />
+        <Conditional closedwound="lt 1" />
+        <Affliction identifier="bleeding" strength="10.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumlegleft_sm="lt 1" />
+        <Conditional adamantiumlegleft="lt 1" />
+        <Conditional adamantiumlegleftsicarian="lt 1" />
+        <Conditional painblocked="lt 1" />
+        <Affliction identifier="pain" strength="2.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="11" maxstrength="20" strengthchange="0">
+      <StatusEffect TargetType="AllLimbs" Targets="LeftLeg (7),LeftFoot (8)" Alpha="0.0" SetValue="True" />
+      <StatusEffect target="Character" disabledeltatime="true">
+        <Conditional adamantiumlegleft_sm="lt 1" />
+        <Conditional adamantiumlegleft="lt 1" />
+        <Conditional adamantiumlegleftsicarian="lt 1" />
+        <Affliction identifier="amputated_lefleg" strength="1.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional adamantiumlegleft_sm="lt 1" />
+        <Conditional adamantiumlegleft="lt 1" />
+        <Conditional adamantiumlegleftsicarian="lt 1" />
+        <TriggerAnimation Type="Walk" filename="HumanAmputatedLegWalk" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" filename="HumanAmputatedRun" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Crouch" filename="HumanAmputatedLegCrouch" priority="1" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <StatusEffect target="AllLimbs" Targets="LeftThigh (6)" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumlegleft_sm="lt 1" />
+        <Conditional adamantiumlegleft="lt 1" />
+        <Conditional adamantiumlegleftsicarian="lt 1" />
+        <Conditional closedwound="lt 1" />
+        <Affliction identifier="bleeding" strength="10.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumlegleft="lt 1" />
+        <Conditional adamantiumlegleft_sm="lt 1" />
+        <Conditional adamantiumlegleftsicarian="lt 1" />
+        <Conditional painblocked="lt 1" />
+        <Affliction identifier="pain" strength="2.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="3,2" sheetelementsize="128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Amputated Right Leg" identifier="amputated_rightleg" description="" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="100" targets="human" type="amputation" limbspecific="False" indicatorlimb="RightLeg" isbuff="false" maxstrength="20" iconcolors="225,0,0,255">
+    <Effect minstrength="0" maxstrength="5" strengthchange="0">
+      <StatusEffect target="Character" disabledeltatime="true" interval="1.0" comparison="And">
+        <Conditional adamantiumlegright="lt 1" />
+        <Conditional adamantiumlegright_sm="lt 1" />
+        <Conditional adamantiumlegrightsicarian="lt 1" />
+        <Affliction identifier="amputated_rightleg" strength="1.0" />
+      </StatusEffect>
+      <StatusEffect TargetType="AllLimbs" Targets="RightLeg (10),RightFoot (11)" Alpha="1.0" SetValue="True" comparison="And">
+        <Conditional adamantiumlegright_sm="lt 1" />
+        <Conditional adamantiumlegright="lt 1" />
+        <Conditional adamantiumlegrightsicarian="lt 1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="6" maxstrength="10" strengthchange="0">
+      <StatusEffect TargetType="AllLimbs" Targets="RightLeg (10),RightFoot (11)" Alpha="0.0" SetValue="True" />
+      <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+        <Conditional adamantiumlegright_sm="lt 1" />
+        <Conditional adamantiumlegright="lt 1" />
+        <Conditional adamantiumlegrightsicarian="lt 1" />
+        <Affliction identifier="amputated_rightleg" strength="1.0" />
+      </StatusEffect>
+      <StatusEffect target="AllLimbs" Targets="RightThigh (9)" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumlegright_sm="lt 1" />
+        <Conditional adamantiumlegright="lt 1" />
+        <Conditional adamantiumlegrightsicarian="lt 1" />
+        <Conditional closedwound="lt 1" />
+        <Affliction identifier="bleeding" strength="10.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumlegright_sm="lt 1" />
+        <Conditional adamantiumlegright="lt 1" />
+        <Conditional adamantiumlegrightsicarian="lt 1" />
+        <Conditional painblocked="lt 1" />
+        <Affliction identifier="pain" strength="2.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="11" maxstrength="20" strengthchange="0">
+      <StatusEffect TargetType="AllLimbs" Targets="RightLeg (10),RightFoot (11)" Alpha="0.0" SetValue="True" />
+      <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+        <Conditional adamantiumlegright_sm="lt 1" />
+        <Conditional adamantiumlegright="lt 1" />
+        <Conditional adamantiumlegrightsicarian="lt 1" />
+        <Affliction identifier="amputated_rightleg" strength="1.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional adamantiumlegleft="lt 1" />
+        <Conditional adamantiumlegleftsicarian="lt 1" />
+        <TriggerAnimation Type="Walk" filename="HumanAmputatedLegWalk" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" filename="HumanAmputatedRun" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Crouch" filename="HumanAmputatedLegCrouch" priority="1" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <StatusEffect target="AllLimbs" Targets="RightThigh (9)" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumlegright_sm="lt 1" />
+        <Conditional adamantiumlegright="lt 1" />
+        <Conditional adamantiumlegrightsicarian="lt 1" />
+        <Conditional closedwound="lt 1" />
+        <Affliction identifier="bleeding" strength="10.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" comparison="And" disabledeltatime="true">
+        <Conditional adamantiumlegright_sm="lt 1" />
+        <Conditional adamantiumlegright="lt 1" />
+        <Conditional adamantiumlegrightsicarian="lt 1" />
+        <Conditional painblocked="lt 1" />
+        <Affliction identifier="pain" strength="2.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="2,2" sheetelementsize="128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Right arm facture" identifier="righthandfracture" description="" limbspecific="true" indicatorlimb="RightArm" type="fracture" maxstrength="100" MedicalSkillGain="0.0" treatmentthreshold="1" sendmessages="true" targets="human">
+    <Effect minstrength="0" maxstrength="50" strengthchange="0.5" dialogflag="righthandfracture">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="-0.7" maxvalue="-0.8" />
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="-0.15" maxvalue="-0.3" />
+      <StatValue stattype="RangedAttackSpeed" minvalue="-0.4" maxvalue="-0.5" />
+      <StatValue stattype="RangedSpreadReduction" minvalue="-0.4" maxvalue="-0.5" />
+      <StatValue stattype="TurretAttackSpeed" minvalue="-0.4" maxvalue="-0.4" />
+    </Effect>
+    <Effect minstrength="50" maxstrength="100" strengthchange="0.8">
+      <StatusEffect target="Character" targetlimbs="RightHand,RightArm,RightForearm">
+        <Conditional HasStatusTag="!equals rlock" />
+        <SpawnItem identifier="rhandoff" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect target="Character" targetlimbs="RightHand,RightArm,RightForearm">
+        <Affliction identifier="internaldamage" strength="0.25" />
+        <Affliction identifier="pain" strength="0.15" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,896,128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Left arm facture" identifier="lefthandfracture" description="" limbspecific="true" indicatorlimb="LeftArm" type="fracture" maxstrength="100" MedicalSkillGain="0.0" treatmentthreshold="1" sendmessages="true" targets="human">
+    <Effect minstrength="0" maxstrength="50" strengthchange="0.5" dialogflag="lefthandfracture">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="-0.7" maxvalue="-0.8" />
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="-0.15" maxvalue="-0.3" />
+      <StatValue stattype="RangedAttackSpeed" minvalue="-0.4" maxvalue="-0.5" />
+      <StatValue stattype="RangedSpreadReduction" minvalue="-0.4" maxvalue="-0.5" />
+      <StatValue stattype="TurretAttackSpeed" minvalue="-0.4" maxvalue="-0.4" />
+    </Effect>
+    <Effect minstrength="50" maxstrength="100" strengthchange="0.8">
+      <StatusEffect target="Character" targetlimbs="LeftHand,LeftArm,LeftForearm">
+        <Conditional HasStatusTag="!equals llock" />
+        <SpawnItem identifier="lhandoff" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect target="Character" targetlimbs="LeftHand,LeftArm,LeftForearm">
+        <Affliction identifier="internaldamage" strength="0.25" />
+        <Affliction identifier="pain" strength="0.15" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,896,128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Right leg facture" identifier="rightlegfracture" description="" limbspecific="true" indicatorlimb="RightLeg" type="fracture" maxstrength="100" MedicalSkillGain="0.0" treatmentthreshold="1" sendmessages="true" targets="human">
+    <Effect minstrength="0" maxstrength="50" strengthchange="0.5" dialogflag="rightlegfracture">
+      <AbilityFlag flagtype="MustWalk" />
+    </Effect>
+    <Effect minstrength="50" maxstrength="100" strengthchange="0.8">
+      <AbilityFlag flagtype="MustWalk" />
+      <StatValue stattype="MovementSpeed" value="-0.5" />
+      <StatusEffect target="Character" targetlimbs="RightThigh,RightLeg,RightFoot">
+        <Affliction identifier="internaldamage" strength="0.25" />
+        <Affliction identifier="pain" strength="0.15" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,896,128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Left leg facture" identifier="leftlegfracture" description="" limbspecific="true" indicatorlimb="LeftLeg" type="fracture" maxstrength="100" MedicalSkillGain="0.0" treatmentthreshold="1" sendmessages="true" targets="human">
+    <Effect minstrength="0" maxstrength="50" strengthchange="0.5" dialogflag="leftlegfracture">
+      <AbilityFlag flagtype="MustWalk" />
+    </Effect>
+    <Effect minstrength="50" maxstrength="100" strengthchange="0.8">
+      <AbilityFlag flagtype="MustWalk" />
+      <StatValue stattype="MovementSpeed" value="-0.5" />
+      <StatusEffect target="Character" targetlimbs="LeftThigh,LeftLeg,LeftFoot">
+        <Affliction identifier="internaldamage" strength="0.25" />
+        <Affliction identifier="pain" strength="0.15" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,896,128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Faith" identifier="faith" description="" type="faith" limbspecific="false" maxstrength="600" isbuff="true" showiconthreshold="0" showicontoothersthreshold="0" showinhealthscannerthreshold="0" MedicalSkillGain="0.0">
+    <Effect minstrength="1" maxstrength="100" strengthchange="0.5" resistancefor="warppsychosis,khornpsychosis,warpburn,nurrglesickness,pain" minresistance="0.2" maxresistance="0.2"></Effect>
+    <Effect minstrength="100" maxstrength="300" strengthchange="0.75" resistancefor="warppsychosis,khornpsychosis,warpburn,nurrglesickness,pain" minresistance="0.4" maxresistance="0.4">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="warppsychosis" amount="0.1" />
+        <ReduceAffliction type="khornpsychosis" amount="0.1" />
+        <ReduceAffliction type="warpburn" amount="0.1" />
+        <ReduceAffliction type="nurrglesickness" amount="0.1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="300" maxstrength="500" strengthchange="0.85" resistancefor="warppsychosis,khornpsychosis,warpburn,nurrglesickness,pain" minresistance="0.6" maxresistance="0.6">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="warppsychosis" amount="0.15" />
+        <ReduceAffliction type="khornpsychosis" amount="0.15" />
+        <ReduceAffliction type="warpburn" amount="0.15" />
+        <ReduceAffliction type="nurrglesickness" amount="0.15" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="500" maxstrength="600" strengthchange="0.9" resistancefor="warppsychosis,khornpsychosis,warpburn,nurrglesickness,pain" minresistance="0.9" maxresistance="0.9">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="warppsychosis" amount="0.25" />
+        <ReduceAffliction type="khornpsychosis" amount="0.25" />
+        <ReduceAffliction type="warpburn" amount="0.25" />
+        <ReduceAffliction type="nurrglesickness" amount="0.25" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="4,0" sheetelementsize="128,128" color="512,0,128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="Spineling poison" identifier="tyranidpoison" description="Patient feels sick." type="poison" isbuff="false" limbspecific="false" maxstrength="600" treatmentthreshold="0" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="50" strengthchange="0.025">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="-0.0" maxvalue="-0.1" />
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="-0.0" maxvalue="-0.1" />
+      <StatValue stattype="RangedAttackSpeed" minvalue="-0.0" maxvalue="-0.1" />
+      <StatValue stattype="RangedSpreadReduction" minvalue="-0.0" maxvalue="-0.1" />
+      <StatValue stattype="TurretAttackSpeed" minvalue="-0.0" maxvalue="-0.1" />
+    </Effect>
+    <Effect minstrength="50" maxstrength="100" strengthchange="0.025" minscreendistort="0" maxscreendistort="1.0" minscreenblur="0.0" maxscreenblur="1.0" minradialdistort="0.0" maxradialdistort="1.0" minchromaticaberration="0.0" maxchromaticaberration="1.0">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="-0.1" maxvalue="-0.25" />
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="-0.1" maxvalue="-0.25" />
+      <StatValue stattype="RangedAttackSpeed" minvalue="-0.1" maxvalue="-0.25" />
+      <StatValue stattype="RangedSpreadReduction" minvalue="-0.1" maxvalue="-0.25" />
+      <StatValue stattype="TurretAttackSpeed" minvalue="-0.1" maxvalue="-0.25" />
+    </Effect>
+    <Effect minstrength="100" maxstrength="150" strengthchange="0.025" minscreendistort="1.0" maxscreendistort="3.0" minscreenblur="1.0" maxscreenblur="3.0" minradialdistort="1.0" maxradialdistort="3.0" minchromaticaberration="1.0" maxchromaticaberration="3.0" minvitalitydecrease="0" maxvitalitydecrease="50">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="-0.25" maxvalue="-0.5" />
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="-0.25" maxvalue="-0.5" />
+      <StatValue stattype="RangedAttackSpeed" minvalue="-0.25" maxvalue="-0.5" />
+      <StatValue stattype="RangedSpreadReduction" minvalue="-0.25" maxvalue="-0.5" />
+      <StatValue stattype="TurretAttackSpeed" minvalue="-0.25" maxvalue="-0.5" />
+    </Effect>
+    <Effect minstrength="150" maxstrength="200" strengthchange="0.025" minscreendistort="3.0" maxscreendistort="5.0" minscreenblur="3.0" maxscreenblur="5.0" minradialdistort="3.0" maxradialdistort="5.0" minchromaticaberration="3.0" maxchromaticaberration="5.0" minvitalitydecrease="50" maxvitalitydecrease="200">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="-0.5" maxvalue="-1.0" />
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="-0.5" maxvalue="-1.0" />
+      <StatValue stattype="RangedAttackSpeed" minvalue="-0.5" maxvalue="-1.0" />
+      <StatValue stattype="RangedSpreadReduction" minvalue="-0.5" maxvalue="-1.0" />
+      <StatValue stattype="TurretAttackSpeed" minvalue="-0.5" maxvalue="-1.0" />
+    </Effect>
+    <!-- Greater than 1.48 and the ragdolls start snapping when turning and characters take damage from colliding with doors & walls -->
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="nurglechosen" type="warppsychosis" limbspecific="false" showiconthreshold="6" showicontoothersthreshold="6" showinhealthscannerthreshold="6" maxstrength="5" treatmentthreshold="1000" iconcolors="75,0,0;125,0,0;175,0,0;255,0,0">
+    <Effect minstrength="0" maxstrength="5" strengthchange="-1" resistancefor="pain" minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true" comparison="And">
+        <reduceaffliction type="damage" strength="0.1" />
+        <reduceaffliction identifier="burn" strength="0.1" />
+        <reduceaffliction identifier="pain" strength="0.1" />
+        <AbilityFlag flagtype="AlwaysStayConscious" />
+      </StatusEffect>
+    </Effect>
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="6,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="khornechosen" type="warppsychosis" limbspecific="false" showiconthreshold="6" showicontoothersthreshold="6" showinhealthscannerthreshold="6" maxstrength="5" treatmentthreshold="1000" iconcolors="75,0,0;125,0,0;175,0,0;255,0,0">
+    <Effect minstrength="0" maxstrength="5" strengthchange="-1">
+      <StatValue stattype="MeleeAttackSpeed" value="0.2" />
+      <StatValue stattype="MeleeAttackMultiplier" value="0.5" />
+      <StatValue stattype="RangedAttackSpeed" value="-0.5" />
+      <StatValue stattype="RangedSpreadReduction" value="-0.5" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.15" />
+    </Effect>
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="6,0" sheetelementsize="128,128" color="175,100,100,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="tzeenchchosen" type="warppsychosis" limbspecific="false" showiconthreshold="6" showicontoothersthreshold="6" showinhealthscannerthreshold="6" maxstrength="5" treatmentthreshold="1000" iconcolors="75,0,0;125,0,0;175,0,0;255,0,0">
+    <Effect minstrength="0" maxstrength="5" strengthchange="-1">
+      <StatValue stattype="SkillGainSpeed" minvalue="1.0" maxvalue="1.0" />
+    </Effect>
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="6,0" sheetelementsize="128,128" color="100,100,199,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="slaaneshchchosen" type="warppsychosis" limbspecific="false" showiconthreshold="6" showicontoothersthreshold="6" showinhealthscannerthreshold="6" maxstrength="5" treatmentthreshold="1000" iconcolors="75,0,0;125,0,0;175,0,0;255,0,0">
+    <Effect minstrength="0" maxstrength="5" strengthchange="-1" resistancefor="chemaddiction,opiateaddiction" minresistance="1.0" maxresistance="1.0">
+      <StatusEffect type="OnDamaged" target="Character">
+        <Affliction identifier="demonfury" strength="10" />
+      </StatusEffect>
+    </Effect>
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="6,0" sheetelementsize="128,128" color="199,100,199,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="nurgleblessing" type="nurrglesickness" limbspecific="false" maxstrength="60" treatmentthreshold="1000" iconcolors="0,75,0;0,125,0;0,175,0;0,255,0">
+    <Effect minstrength="0" maxstrength="60" strengthchange="-1">
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.25" />
+      <AbilityFlag flagtype="AlwaysStayConscious" />
+    </Effect>
+    <Icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="5,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Acute hemolysis" identifier="acutehemolysis" description="" type="medicalcomplication" isbuff="false" limbspecific="false" maxstrength="300" showiconthreshold="200" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="0" MedicalSkillGain="0.0" sendmessages="true">
+    <Effect minstrength="1" maxstrength="100" strengthchange="0.5" resistancefor="damage,oxygenlow" minresistance="-0.05" maxresistance="-0.25" minfacetint="0.7,0.5,0.5" maxfacetint="0.9,0.5,0.5" minbodytint="0.5,0.5,0.5" maxbodytint="0.5,0.5,0.5" dialogflag="acutehemolysis">
+      <StatusEffect target="Character" interval="1">
+        <Affliction identifier="pain" strength="0.16" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="100" maxstrength="200" strengthchange="0.75" resistancefor="damage,oxygenlow" minresistance="-0.25" maxresistance="-0.35" minfacetint="0.5,0.5,0.7" maxfacetint="0.9,0.5,0.9" minbodytint="0.5,0.5,0.5" maxbodytint="0.5,0.5,0.65" minscreenblur="0.0" maxscreenblur="1.0" minvitalitydecrease="0.0" maxvitalitydecrease="50.0">
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+      <StatusEffect target="Character" interval="1">
+        <Affliction identifier="pain" strength="0.25" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="200" maxstrength="300" strengthchange="1.0" resistancefor="damage,oxygenlow" minresistance="-0.35" maxresistance="-0.5" minfacetint="0.9,0.5,0.9" maxfacetint="0.9,0.5,0.9" minbodytint="0.5,0.5,0.65" maxbodytint="0.5,0.5,0.65" minscreenblur="0.0" maxscreenblur="1.0" minvitalitydecrease="50.0" maxvitalitydecrease="500.0">
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+      <StatusEffect target="Character" interval="1">
+        <Affliction identifier="pain" strength="0.35" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="incensedamageboost" description="" type="buff" limbspecific="false" maxstrength="60" showiconthreshold="0" showicontoothersthreshold="0" showinhealthscannerthreshold="0" hideiconafterdelay="true" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="60" strengthchange="-1">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0.1" maxvalue="0.2" />
+      <StatValue stattype="AttackMultiplier" minvalue="0.1" maxvalue="0.3" />
+      <StatValue stattype="RangedAttackSpeed" minvalue="0.1" maxvalue="0.2" />
+      <StatValue stattype="RangedSpreadReduction" minvalue="0.1" maxvalue="0.5" />
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="4,0" sheetelementsize="128,128" color="512,0,128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="incensehpregen" description="" type="buff" limbspecific="false" maxstrength="60" showiconthreshold="0" showicontoothersthreshold="0" showinhealthscannerthreshold="0" hideiconafterdelay="true" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="60" strengthchange="-1">
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <ReduceAffliction type="damage" strength="0.15" />
+        <ReduceAffliction type="burn" strength="0.2" />
+        <ReduceAffliction type="pain" strength="0.2" />
+        <ReduceAffliction type="warpburn" strength="0.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="4,0" sheetelementsize="128,128" color="512,0,128,128" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="stunimmunity" translationoverride="psychosisresistance" type="immunity" isbuff="true" limbspecific="false" indicatorlimb="Head" maxstrength="60" affectmachines="false">
+    <Effect minstrength="0" maxstrength="60" strengthchange="-1" resistancefor="stun" minresistance="1.0" maxresistance="1.0" />
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,896,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="phaseshift" type="immunity" isbuff="true" limbspecific="false" indicatorlimb="Head" maxstrength="60" affectmachines="false">
+    <Effect minstrength="0" maxstrength="60" strengthchange="-1" resistancefor="damage" minresistance="1.0" maxresistance="1.0" minfacetint="0,255,0,155" maxfacetint="0,255,0,255" minbodytint="0,255,0,155" maxbodytint="0,255,0,255" />
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,896,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Antibiotic concentration" identifier="antibioticconcentration" description="" type="utility" isbuff="true" limbspecific="false" maxstrength="300" showiconthreshold="301" showicontoothersthreshold="0" showinhealthscannerthreshold="0" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-0.5" />
+    <Effect minstrength="100" maxstrength="200" strengthchange="-0.25" />
+    <Effect minstrength="200" maxstrength="300" strengthchange="-0.05" />
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Antibiotic overdose" identifier="t1antibioticoverdose" description="" type="antibioticoverdose" isbuff="false" limbspecific="false" maxstrength="100" showiconthreshold="200" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="0" MedicalSkillGain="0.0">
+    <Effect minstrength="1" maxstrength="100" strengthchange="-0.1" minfacetint="0.7,0.5,0.5" maxfacetint="0.9,0.5,0.5" minbodytint="0.5,0.5,0.5" maxbodytint="0.5,0.5,0.5">
+      <StatusEffect target="Character" interval="1">
+        <Affliction identifier="stun" strength="1.0" probability="0.1" />
+        <Affliction identifier="psychosis" strength="0.1" />
+        <Affliction identifier="intoxication" strength="1.0" probability="0.1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Antibiotic overdose" identifier="t2antibioticoverdose" description="" type="antibioticoverdose" isbuff="false" limbspecific="false" maxstrength="100" showiconthreshold="200" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="0" MedicalSkillGain="0.0">
+    <Effect minstrength="1" maxstrength="100" strengthchange="-0.1">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <Affliction identifier="oxygenlow" strength="5.0" probability="0.1" />
+        <Affliction identifier="pain" strength="0.15" />
+        <Affliction identifier="intoxication" strength="1.0" probability="0.1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="ashblindness" type="geneseeddefect" isbuff="true" limbspecific="false" maxstrength="100" showiconthreshold="0" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-0.5" minscreenblur="0.1" maxscreenblur="1.0" minchromaticaberration="0.1" maxchromaticaberration="1.0" minscreendistort="0.1" maxscreendistort="1.0" minradialdistort="0.1" maxradialdistort="1.0">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0.5" maxvalue="0.75" />
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="1.0" maxvalue="1.0" />
+      <StatValue stattype="RangedAttackSpeed" minvalue="0.6" maxvalue="0.75" />
+      <StatValue stattype="RangedSpreadReduction" minvalue="0.75" maxvalue="0.9" />
+      <StatValue stattype="TurretAttackSpeed" minvalue="0.6" maxvalue="0.6" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="redthirst" type="geneseeddefect" limbspecific="false" isbuff="false" maxstrength="100" showiconthreshold="0" healcostmultiplier="10.0" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0.25" minscreenblur="0.1" maxscreenblur="1.5" minchromaticaberration="0.1" maxchromaticaberration="1.5" minscreendistort="0.1" maxscreendistort="1.5" minradialdistort="0.1" maxradialdistort="1.5">
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="0.1" maxvalue="1.5" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </Affliction>
+  <!--<AfflictionHusk
+    name="Genestealer infection"
+    identifier="genestealerinfection"
+    description="Something dark and unpleasant moves in the mouth. They are rendered completely mute, save for occasional clicking sounds apparently emanating from deep within the throat."
+    type="alieninfection"
+    isbuff="false"
+    targets="human"
+    huskedspeciesname="genestealerhusk"
+    causeofdeathdescription="Taken over by a husk parasite"
+    selfcauseofdeathdescription="You have been taken over by the husk parasite."
+    limbspecific="false"
+    indicatorlimb="Torso"
+    activationthreshold="0"
+    showiconthreshold="40"
+    showinhealthscannerthreshold="20"
+    karmachangeonapplied="-1"
+    maxstrength="100"
+    transferbuffs="false"
+    dormantthreshold="50"
+    activethreshold="75"
+    transformthresholdondeath="75"
+    transitionthreshold="100"
+    healcostmultiplier="2.5"
+    basehealcost="200"
+    ControlHusk="true"
+    iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
+    <Effect minstrength="0" maxstrength="75"
+      maxvitalitydecrease="0"
+      strengthchange="0.3"
+      minbodytint="195,195,195,0"
+      maxbodytint="195,195,195,150"
+      blocktransformation="genestealerinfection"/>
+    <Effect minstrength="75" maxstrength="100"
+      maxvitalitydecrease="0"
+      strengthchange="0.3"
+      minbodytint="195,195,195,150"
+      maxbodytint="195,195,195,200"
+      tag="genestealerinfected"
+      blocktransformation="genestealerinfection"/>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="1,7" sheetelementsize="128,128" origin="0,0"/>
+  </AfflictionHusk>-->
+  <!--<AfflictionHusk
+    identifier="genestealersymbiosis"
+    type="alieninfection"    
+    targets="human"
+    isbuff="false"
+    huskedspeciesname="[speciesname]genestealerhusk"
+    limbspecific="false"
+    indicatorlimb="Head"
+    activationthreshold="0"
+    showiconthreshold="75"
+    showicontoothersthreshold="0"
+    showinhealthscannerthreshold="0"
+    karmachangeonapplied="-1"
+    maxstrength="100"
+    transferbuffs="true"
+    causespeechimpediment="false"
+    dormantthreshold="50"
+    activethreshold="75"
+    transformthresholdondeath="99"
+    transitionthreshold="1000"
+    healableinmedicalclinic="false"
+    iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
+    <Effect minstrength="0" maxstrength="25"
+      maxvitalitydecrease="0"
+      strengthchange="0.5"
+      minbodytint="255,255,255,0"
+      maxbodytint="255,255,255,55"
+      minfacetint="255,255,255,0"
+      maxfacetint="255,255,255,55"
+      tag="genestealerinfected" blocktransformation="genestealerinfection"
+      resistancefor="genestealerinfection"  minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="Character" type="OnActive">
+        <ReduceAffliction identifier="genestealerinfection" amount="1000" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="25" maxstrength="75"
+      maxvitalitydecrease="0"
+      strengthchange="0.5"
+      minbodytint="255,255,255,55"
+      maxbodytint="55,75,180,155"
+      minfacetint="255,255,255,55"
+      maxfacetint="55,75,180,155"
+      tag="genestealerinfected" blocktransformation="genestealerinfection"
+      resistancefor="genestealerinfection"  minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="Character" type="OnActive">
+        <ReduceAffliction identifier="genestealerinfection" amount="1000" />
+        <Affliction identifier="psychosis" amount="0.1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="75" maxstrength="100"
+      maxvitalitydecrease="0"
+      strengthchange="1"
+      minbodytint="55,75,180,155"
+      maxbodytint="80,55,180,155"
+      minfacetint="55,75,180,155"
+      maxfacetint="80,55,180,155"
+      tag="genestealerinfected" blocktransformation="genestealerinfection"
+      resistancefor="genestealerinfection"  minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="Character" type="OnActive">
+        <ReduceAffliction identifier="genestealerinfection" amount="1000" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="1,7" sheetelementsize="128,128" origin="0,0"/>
+  </AfflictionHusk>-->
+  <Affliction name="" identifier="hyperadrenaline" description="Gotta go fast." type="buff" isbuff="true" limbspecific="false" maxstrength="600" MedicalSkillGain="0.01">
+    <Effect minstrength="0" maxstrength="600" strengthchange="-1">
+      <StatValue stattype="MeleeAttackSpeed" minvalue="0.5" maxvalue="0.5" />
+      <StatValue stattype="FabricationSpeed" minvalue="0.5" maxvalue="0.5" />
+      <StatValue stattype="TurretChargeSpeed" minvalue="0.5" maxvalue="0.5" />
+      <StatValue stattype="TurretAttackSpeed" minvalue="0.5" maxvalue="0.5" />
+      <StatValue stattype="RangedAttackSpeed" minvalue="0.5" maxvalue="0.5" />
+      <StatValue stattype="MovementSpeed" minvalue="0" maxvalue="0.5" />
+      <StatusEffect target="Character" comparison="And" interval="1" disabledeltatime="true">
+        <Conditional hyperadrenaline="lte 10" />
+        <Affliction identifier="exhaustion" indicatorlimb="Limb" strength="10" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="128,896,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Exhaustion" identifier="exhaustion" description="" type="debuff" isbuff="false" limbspecific="false" maxstrength="60" MedicalSkillGain="0.01">
+    <Effect minstrength="0" maxstrength="60" strengthchange="-1">
+      <StatValue stattype="MovementSpeed" minvalue="-0" maxvalue="-0.5" />
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="128,896,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="touchofagony" description="" type="debuff" isbuff="false" limbspecific="false" indicatorlimb="Head" maxstrength="60">
+    <Effect minstrength="0" maxstrength="60" strengthchange="-0.5" resistancefor="damage,pain" minresistance="-0.25" maxresistance="-0.25"></Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="0,0" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="ecstasyofagony" description="" type="buff" isbuff="true" limbspecific="false" indicatorlimb="Head" maxstrength="60">
+    <Effect minstrength="0" maxstrength="60" strengthchange="-0.5" minchromaticaberration="0.5" maxchromaticaberration="1.5" minscreenblur="0.0" maxscreenblur="0.5">
+      <StatValue stattype="AttackMultiplier" value="0.7" />
+      <StatValue stattype="MeleeAttackSpeed" value="0.3" />
+      <StatValue stattype="TurretChargeSpeed" value="0.3" />
+      <StatValue stattype="TurretAttackSpeed" value="0.3" />
+      <StatValue stattype="RangedAttackSpeed" value="0.3" />
+      <StatValue stattype="WeaponsSkillBonus" value="10" />
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="0,0" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="implantdisabler" description="" type="implantdisabler" isbuff="true" limbspecific="false" maxstrength="60" MedicalSkillGain="0.05">
+    <Effect minstrength="0" maxstrength="60" strengthchange="-1" />
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="Right lung pneumothorax" identifier="rightlungpneumothorax" description="" type="pneumothorax" causeofdeathdescription="" selfcauseofdeathdescription="" showiconthreshold="50" showicontoothersthreshold="0" showinhealthscannerthreshold="0" limbspecific="false" indicatorlimb="Torso" targets="human" basehealcost="500" maxstrength="100">
+    <Description textidentifier="afflictiondescription.pneumothorax.self" target="Self" minstrength="0" maxstrength="100" />
+    <Description textidentifier="afflictiondescription.pneumothorax" target="OtherCharacter" minstrength="0" maxstrength="100" />
+    <Effect minstrength="0" maxstrength="50" multiplybymaxvitality="true" strengthchange="0.5">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="oxygenlow" amount="11" />
+      </StatusEffect>
+      <StatusEffect target="Character" SpeedMultiplier="0.5" setvalue="true" comparison="And">
+        <Conditional leftlungpneumothorax="gte 1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="51" maxstrength="100" multiplybymaxvitality="true" strengthchange="0.5">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="oxygenlow" amount="11" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And" interval="1">
+        <Conditional painblocked="eq 0" />
+        <Affliction identifier="pain" indicatorlimb="Limb" strength="0.5" />
+      </StatusEffect>
+      <StatusEffect target="Character" SpeedMultiplier="0.5" setvalue="true" comparison="And">
+        <Conditional leftlungpneumothorax="gte 1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="1,1" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="Left lung pneumothorax" identifier="leftlungpneumothorax" description="" type="pneumothorax" causeofdeathdescription="" selfcauseofdeathdescription="" showiconthreshold="50" showicontoothersthreshold="0" showinhealthscannerthreshold="0" limbspecific="false" indicatorlimb="Torso" targets="human" basehealcost="500" maxstrength="100">
+    <Description textidentifier="afflictiondescription.pneumothorax.self" target="Self" minstrength="0" maxstrength="100" />
+    <Description textidentifier="afflictiondescription.pneumothorax" target="OtherCharacter" minstrength="0" maxstrength="100" />
+    <Effect minstrength="0" maxstrength="50" multiplybymaxvitality="true" strengthchange="0.5">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="oxygenlow" amount="11" />
+      </StatusEffect>
+      <StatusEffect target="Character" SpeedMultiplier="0.5" setvalue="true" comparison="And">
+        <Conditional rightlungpneumothorax="gte 1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="51" maxstrength="100" multiplybymaxvitality="true" strengthchange="0.5">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="oxygenlow" amount="11" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And" interval="1">
+        <Conditional painblocked="eq 0" />
+        <Affliction identifier="pain" indicatorlimb="Limb" strength="0.5" />
+      </StatusEffect>
+      <StatusEffect target="Character" SpeedMultiplier="0.5" setvalue="true" comparison="And">
+        <Conditional rightlungpneumothorax="gte 1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="1,2" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="Left lung open pneumothorax" identifier="leftlungopenpneumothorax" description="" type="pneumothorax" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Torso" targets="human" basehealcost="750" maxstrength="100">
+    <Description textidentifier="afflictiondescription.pneumothoraxopen.self" target="Self" minstrength="0" maxstrength="100" />
+    <Description textidentifier="afflictiondescription.pneumothoraxopen" target="OtherCharacter" minstrength="0" maxstrength="100" />
+    <Effect minstrength="0" maxstrength="100" multiplybymaxvitality="true" strengthchange="0.1" minfacetint="150,120,225,100" maxfacetint="150,120,225,150">
+      <StatusEffect target="Character" comparison="And" interval="1">
+        <Conditional rightlungopenpneumothorax="gte 1" />
+        <Affliction identifier="stun" strength="100" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And" targetlimbs="Torso" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="oxygenlow" amount="11" />
+        <Affliction identifier="pain" indicatorlimb="Limb" strength="0.25" />
+        <Affliction identifier="bleeding" indicatorlimb="Limb" strength="5.0" probability="0.25" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="1,2" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="Right lung open pneumothorax" identifier="rightlungopenpneumothorax" description="" type="pneumothorax" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Torso" targets="human" basehealcost="750" maxstrength="100">
+    <Description textidentifier="afflictiondescription.pneumothoraxopen.self" target="Self" minstrength="0" maxstrength="100" />
+    <Description textidentifier="afflictiondescription.pneumothoraxopen" target="OtherCharacter" minstrength="0" maxstrength="100" />
+    <Effect minstrength="0" maxstrength="100" multiplybymaxvitality="true" strengthchange="0.1" minfacetint="150,120,225,100" maxfacetint="150,120,225,150">
+      <StatusEffect target="Character" comparison="And" interval="1">
+        <Conditional leftlungopenpneumothorax="gte 1" />
+        <Affliction identifier="stun" strength="100" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And" targetlimbs="Torso" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="oxygenlow" amount="11" />
+        <Affliction identifier="pain" indicatorlimb="Limb" strength="0.25" />
+        <Affliction identifier="bleeding" indicatorlimb="Limb" strength="5.0" probability="0.25" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="1,1" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="Hemothorax" identifier="hemothorax" description="" type="hemothorax" causeofdeathdescription="" selfcauseofdeathdescription="" showiconthreshold="25" showicontoothersthreshold="0" showinhealthscannerthreshold="0" limbspecific="false" indicatorlimb="Torso" targets="human" basehealcost="500" maxstrength="75">
+    <Description textidentifier="afflictiondescription.hemothorax.self.low" target="Self" minstrength="0" maxstrength="25" />
+    <Description textidentifier="afflictiondescription.hemothorax.self.medium" target="Self" minstrength="26" maxstrength="50" />
+    <Description textidentifier="afflictiondescription.hemothorax.self.high" target="Self" minstrength="51" maxstrength="75" />
+    <Description textidentifier="afflictiondescription.hemothorax.low" target="OtherCharacter" minstrength="0" maxstrength="25" />
+    <Description textidentifier="afflictiondescription.hemothorax.medium" target="OtherCharacter" minstrength="26" maxstrength="50" />
+    <Description textidentifier="afflictiondescription.hemothorax.high" target="OtherCharacter" minstrength="51" maxstrength="75" />
+    <Effect minstrength="0" maxstrength="25" multiplybymaxvitality="true" strengthchange="0.25">
+      <StatusEffect target="Character" comparison="And" targetlimbs="Torso" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="pain" indicatorlimb="Limb" strength="0.1" />
+        <Affliction identifier="internalbleeding" strength="0.2" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="26" maxstrength="50" multiplybymaxvitality="true" strengthchange="0.5">
+      <StatusEffect target="Character" comparison="And" targetlimbs="Torso" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="oxygenlow" amount="11" />
+        <Affliction identifier="internalbleeding" strength="0.5" />
+        <Affliction identifier="pain" indicatorlimb="Limb" strength="0.25" />
+        <Affliction identifier="exhaustion" indicatorlimb="Limb" strength="1.2" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="51" maxstrength="75" multiplybymaxvitality="true" strengthchange="0.5" minscreendistort="0.02" maxscreendistort="0.1" minscreenblur="0.1" maxscreenblur="2.0" screeneffectfluctuationfrequency="0.05">
+      <StatusEffect target="Character" comparison="And" targetlimbs="Torso" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="oxygenlow" amount="12" />
+        <Affliction identifier="internalbleeding" strength="1.0" />
+        <Affliction identifier="pain" indicatorlimb="Limb" strength="0.25" />
+        <Affliction identifier="exhaustion" indicatorlimb="Limb" strength="1.2" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="1,3" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <internalbleeding name="Internal bleeding" identifier="internalbleeding" type="internalbleeding" causeofdeathdescription="Bled to death" selfcauseofdeathdescription="You have bled to death." limbspecific="false" indicatorlimb="Torso" maxstrength="100" karmachangeonapplied="-1" damageoverlayalpha="0.6" healcostmultiplier="2.5" WeaponsSkillGain="1.0">
+    <Description textidentifier="afflictiondescription.internalbleeding.self.low" target="Self" minstrength="0" maxstrength="20" />
+    <Description textidentifier="afflictiondescription.internalbleeding.self.medium" target="Self" minstrength="20" maxstrength="60" />
+    <Description textidentifier="afflictiondescription.internalbleeding.self.high" target="Self" minstrength="60" maxstrength="100" />
+    <Description textidentifier="afflictiondescription.internalbleeding.low" target="OtherCharacter" minstrength="0" maxstrength="20" />
+    <Description textidentifier="afflictiondescription.internalbleeding.medium" target="OtherCharacter" minstrength="20" maxstrength="60" />
+    <Description textidentifier="afflictiondescription.internalbleeding.high" target="OtherCharacter" minstrength="60" maxstrength="100" />
+    <Effect minstrength="0" maxstrength="100" minvitalitydecrease="0" maxvitalitydecrease="10" strengthchange="0.1" minscreendistort="0.0" maxscreendistort="0.5" minscreenblur="0.0" maxscreenblur="1.0" screeneffectfluctuationfrequency="0.05">
+      <StatValue stattype="AttackMultiplier" minvalue="-0.1" maxvalue="-0.5" />
+      <StatValue stattype="MeleeAttackSpeed" minvalue="-0.1" maxvalue="-0.5" />
+      <StatValue stattype="TurretChargeSpeed" minvalue="-0.1" maxvalue="-0.5" />
+      <StatValue stattype="TurretAttackSpeed" minvalue="-0.1" maxvalue="-0.5" />
+      <StatValue stattype="RangedAttackSpeed" minvalue="-0.1" maxvalue="-0.5" />
+      <StatValue stattype="FlowResistance" minvalue="-0.1" maxvalue="-0.5" />
+      <StatValue stattype="MovementSpeed" minvalue="-0.1" maxvalue="-0.5" />
+      <StatusEffect target="Character">
+        <Affliction identifier="bloodloss" amount="1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,640,128,128" color="139,60,42,255" origin="0,0" />
+  </internalbleeding>
+  <Affliction name="Traumatic aorta rupture (open)" identifier="traumaticaortarupture" description="" type="aortarupture" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Torso" basehealcost="750" targets="human" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="true" strengthchange="1.0">
+      <StatusEffect target="Character" comparison="And" targetlimbs="Torso" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="pain" indicatorlimb="Limb" strength="1.0" />
+        <Affliction identifier="bleeding" indicatorlimb="Limb" strength="15" />
+        <Affliction identifier="bloodloss" amount="1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="1,5" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="Traumatic aorta rupture (closed)" identifier="traumaticaortaruptureclosed" description="" type="aortarupture" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Torso" basehealcost="750" targets="human" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="true" strengthchange="1.0">
+      <StatusEffect target="Character" comparison="And" targetlimbs="Torso" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="pain" indicatorlimb="Limb" strength="0.75" />
+        <Affliction identifier="internalbleeding" indicatorlimb="Limb" strength="5" />
+        <Affliction identifier="hemothorax" indicatorlimb="Limb" strength="5" probability="0.25" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="1,5" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="missingeyeright" description="" type="missingeye" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Head" basehealcost="1000" targets="human" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="true" strengthchange="1.0" mingrainstrength="90.0" maxgrainstrength="100.0" graincolor="0,0,0,255"></Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="1,6" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="missingeyeleft" description="" type="missingeye" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" indicatorlimb="Head" basehealcost="1000" targets="human" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="true" strengthchange="1.0" mingrainstrength="90.0" maxgrainstrength="100.0" graincolor="0,0,0,255"></Effect>
+    <icon texture="%ModDir%/UI/afflictionicons.png" sheetindex="1,6" sheetelementsize="128,128" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="lifeeater" description="" type="lifeeater" limbspecific="false" maxstrength="10" showiconthreshold="0" showicontoothersthreshold="0" showinhealthscannerthreshold="0" treatmentthreshold="0" MedicalSkillGain="0.0">
+    <Effect minstrength="0" maxstrength="10">
+      <StatusEffect target="Character">
+        <Affliction identifier="sepsis" strength="1.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </Affliction>
+  <!--For testing purposes only-->
+  <Affliction name="" identifier="godmode" description="" isbuff="true" showiconthreshold="00" showicontoothersthreshold="00" showinhealthscannerthreshold="00" limbspecific="false" type="buff" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" strengthchange="0.0">
+      <AbilityFlag flagtype="CanNotDieToAfflictions" />
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+</Afflictions>

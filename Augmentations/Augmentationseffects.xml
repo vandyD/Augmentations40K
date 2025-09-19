@@ -1,0 +1,792 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <AfflictionHusk name="Mechadendrite" identifier="robo_arm_1" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0"></Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="robo_arm_1">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="robo_arm_1" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Mechadendrite" identifier="robo_arm_2" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0"></Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="robo_arm_2">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="robo_arm_2" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Mechadendrite" identifier="robo_arm_3" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0"></Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="robo_arm_3">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="robo_arm_3" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Mechadendrite" identifier="robo_arm_4" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0"></Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="robo_arm_4">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="robo_arm_4" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Mechadendrite" identifier="robo_arm_5" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0"></Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="robo_arm_5">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="robo_arm_5" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Optic implant" identifier="mechoptics" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0">
+      <StatValue stattype="RangedSpreadReduction" minvalue="0.1" maxvalue="0.1" />
+    </Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="mechoptics">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="mechoptics" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Optic implant" identifier="t2mechoptics" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" ThermalOverlayRange="1500" ThermalOverlayColor="253,182,134,150">
+      <StatValue stattype="RangedSpreadReduction" minvalue="0.25" maxvalue="0.25" />
+      <StatValue stattype="RangedAttackSpeed" minvalue="0.1" maxvalue="0.1" />
+    </Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="t2mechoptics">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="t2mechoptics" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Optic implant" identifier="t3mechoptics" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" ThermalOverlayRange="1500" ThermalOverlayColor="253,182,134,150">
+      <StatValue stattype="RangedSpreadReduction" minvalue="0.5" maxvalue="0.5" />
+      <StatValue stattype="RangedAttackSpeed" minvalue="0.2" maxvalue="0.2" />
+    </Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="t3mechoptics">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="t3mechoptics" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Gun socket" identifier="gunarm" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0"></Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="gunarm">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="gunarm" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Gun socket" identifier="gunarm2" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0"></Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="gunarm2">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="gunarm2" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Gun socket" identifier="gunarm3" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0"></Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="gunarm3">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="gunarm3" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Gun socket" identifier="gunarm4" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0"></Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="gunarm4">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="gunarm4" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="adamantium leg right" identifier="adamantiumlegright" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" resistancefor="rightlegfracture" minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="Character" type="Always" disabledeltatime="true">
+        <Conditional amputated_rightleg="lt 5" />
+        <Affliction identifier="amputated_rightleg" strength="100.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1.0">
+        <Conditional amputated_rightleg="gte 10" />
+        <ReduceAffliction identifier="amputated_rightleg" strength="6.0" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="adamantiumlegright">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="adamantiumlegright" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="adamantium leg left" identifier="adamantiumlegleft" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" resistancefor="leftlegfracture" minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="Character" type="Always" disabledeltatime="true">
+        <Conditional amputated_lefleg="lt 5" />
+        <Affliction identifier="amputated_lefleg" strength="100.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1.0">
+        <Conditional amputated_lefleg="gte 10" />
+        <ReduceAffliction identifier="amputated_lefleg" strength="6.0" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="adamantiumlegleft">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="adamantiumlegleft" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="adamantium leg right sicarian" identifier="adamantiumlegrightsicarian" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" resistancefor="rightlegfracture" minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="Character" type="Always" disabledeltatime="true">
+        <Conditional amputated_rightleg="lt 5" />
+        <Affliction identifier="amputated_rightleg" strength="100.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1.0">
+        <Conditional amputated_rightleg="gte 10" />
+        <ReduceAffliction identifier="amputated_rightleg" strength="6.0" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Conditional adamantiumlegleftsicarian="gt 1" />
+        <TriggerAnimation Type="Walk" filename="HumanSicarianWalk" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" filename="HumanSicarianRun" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Crouch" filename="HumanSicarianCrouch" priority="1" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional adamantiumlegleftsicarian="lt 1" />
+        <TriggerAnimation Type="Walk" filename="HumanAmputatedLegWalk" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" filename="HumanAmputatedRun" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Crouch" filename="HumanAmputatedLegCrouch" priority="1" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <StatValue stattype="WalkingSpeed" minvalue="0.1" maxvalue="0.1" />
+    </Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="adamantiumlegrightsicarian">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="adamantiumlegrightsicarian" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="adamantium leg left sicarian" identifier="adamantiumlegleftsicarian" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" resistancefor="leftlegfracture" minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="Character" type="Always" disabledeltatime="true">
+        <Conditional amputated_lefleg="lt 5" />
+        <Affliction identifier="amputated_lefleg" strength="100.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1.0">
+        <Conditional amputated_lefleg="gte 10" />
+        <ReduceAffliction identifier="amputated_lefleg" strength="6.0" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Conditional adamantiumlegrightsicarian="gt 1" />
+        <TriggerAnimation Type="Walk" filename="HumanSicarianWalk" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" filename="HumanSicarianRun" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Crouch" filename="HumanSicarianCrouch" priority="1" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="And">
+        <Conditional adamantiumlegrightsicarian="lt 1" />
+        <TriggerAnimation Type="Walk" filename="HumanAmputatedLegWalk" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" filename="HumanAmputatedRun" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Crouch" filename="HumanAmputatedLegCrouch" priority="1" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <StatValue stattype="WalkingSpeed" minvalue="0.1" maxvalue="0.1" />
+    </Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="adamantiumlegleftsicarian">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="adamantiumlegleftsicarian" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="adamantium leg right" identifier="adamantiumlegright_sm" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" resistancefor="rightlegfracture" minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="Character" type="Always" disabledeltatime="true">
+        <Conditional amputated_rightleg="lt 5" />
+        <Affliction identifier="amputated_rightleg" strength="100.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1.0">
+        <Conditional amputated_rightleg="gte 10" />
+        <ReduceAffliction identifier="amputated_rightleg" strength="6.0" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="adamantiumlegright_sm">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="adamantiumlegright_sm" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="adamantium leg left" identifier="adamantiumlegleft_sm" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" resistancefor="leftlegfracture" minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="Character" type="Always" disabledeltatime="true">
+        <Conditional amputated_lefleg="lt 5" />
+        <Affliction identifier="amputated_lefleg" strength="100.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1.0">
+        <Conditional amputated_lefleg="gte 10" />
+        <ReduceAffliction identifier="amputated_lefleg" strength="6.0" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="adamantiumlegleft_sm">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="adamantiumlegleft_sm" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="adamantium hand right" identifier="adamantiumhandright" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" resistancefor="righthandfracture" minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="Character" type="Always" disabledeltatime="true">
+        <Conditional amputated_rightarm="lt 5" />
+        <Affliction identifier="amputated_rightarm" strength="100.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1.0">
+        <Conditional amputated_rightarm="gte 10" />
+        <ReduceAffliction identifier="amputated_rightarm" strength="6.0" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="adamantiumhandright">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="adamantiumhandright" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="adamantium hand left" identifier="adamantiumhandleft" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" resistancefor="lefthandfracture" minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="Character" type="Always" disabledeltatime="true">
+        <Conditional amputated_leftarm="lt 5" />
+        <Affliction identifier="amputated_leftarm" strength="100.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1.0">
+        <Conditional amputated_leftarm="gte 10" />
+        <ReduceAffliction identifier="amputated_leftarm" strength="6.0" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="adamantiumhandleft">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="adamantiumhandleft" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="adamantium hand right" identifier="adamantiumhandright_sm" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" resistancefor="righthandfracture" minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="Character" type="Always" disabledeltatime="true">
+        <Conditional amputated_rightarm="lt 5" />
+        <Affliction identifier="amputated_rightarm" strength="100.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1.0">
+        <Conditional amputated_rightarm="gte 10" />
+        <ReduceAffliction identifier="amputated_rightarm" strength="6.0" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="adamantiumhandright_sm">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="adamantiumhandright_sm" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="adamantium hand left" identifier="adamantiumhandleft_sm" type="augmentation" limbspecific="false" indicatorlimb="Head" targets="human,HumanPriest" isbuff="true" huskedspeciesname="Priest" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" maxstrength="5" needsair="True" crushdepth="1300" iconcolors="40,60,255,255" healableinmedicalclinic="false" sendmessages="false" causespeechimpediment="false" dormantthreshold="1" activethreshold="1" transitionthreshold="5" transformthresholdondeath="5">
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" resistancefor="lefthandfracture" minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="Character" type="Always" disabledeltatime="true">
+        <Conditional amputated_leftarm="lt 5" />
+        <Affliction identifier="amputated_leftarm" strength="100.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1.0">
+        <Conditional amputated_leftarm="gte 10" />
+        <ReduceAffliction identifier="amputated_leftarm" strength="6.0" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="4" maxstrength="5" strengthchange="0" blocktransformation="adamantiumhandleft_sm">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="adamantiumhandleft_sm" strength="2.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </AfflictionHusk>
+  <Affliction name="" identifier="muscularstabiliser" description="" isbuff="true" limbspecific="false" indicatorlimb="RightLeg,LeftLeg" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="FlowResistance" minvalue="0.5" maxvalue="0.5" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="t2muscularstabiliser" description="" isbuff="true" limbspecific="false" indicatorlimb="RightLeg,LeftLeg" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="FlowResistance" value="1.0" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="turretinterface" description="" isbuff="true" limbspecific="false" indicatorlimb="RightLeg,LeftLeg" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="TurretAttackSpeed" value="0.25" />
+      <StatValue stattype="TurretPowerCostReduction" value="0.25" />
+      <StatValue stattype="TurretChargeSpeed" value="0.25" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="breathofmars" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0" resistancefor="oxygenlow" minresistance="0.2" maxresistance="0.2">
+      <StatValue stattype="HoldBreathMultiplier" minvalue="0.2" maxvalue="0.2" />
+      <StatusEffect target="Character">
+        <ReduceAffliction type="pneumothorax" strength="10" />
+        <ReduceAffliction type="hemothorax" strength="10" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="t2breathofmars" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0" resistancefor="oxygenlow" minresistance="0.5" maxresistance="0.5">
+      <StatValue stattype="HoldBreathMultiplier" minvalue="0.5" maxvalue="0.5" />
+      <StatusEffect target="Character">
+        <ReduceAffliction type="breathofmars" strength="100.0" />
+        <ReduceAffliction type="pneumothorax" strength="10" />
+        <ReduceAffliction type="hemothorax" strength="10" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="t3breathofmars" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0" resistancefor="oxygenlow" minresistance="0.9" maxresistance="0.9">
+      <StatValue stattype="HoldBreathMultiplier" minvalue="0.9" maxvalue="0.9" />
+      <StatusEffect target="Character" SpeedMultiplier="1.1" setvalue="true">
+        <ReduceAffliction type="t2breathofmars" strength="100.0" />
+        <ReduceAffliction type="breathofmars" strength="100.0" />
+        <ReduceAffliction type="pneumothorax" strength="10" />
+        <ReduceAffliction type="hemothorax" strength="10" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="autosanguination" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0" resistancefor="poison,bleeding,bloodloss" minresistance="0.2" maxresistance="0.2">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="bleeding" strength="0.1" />
+        <ReduceAffliction type="bloodloss" strength="0.1" />
+        <ReduceAffliction identifier="autosanguinationarcheotech" strength="100" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="toxiphage" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0" resistancefor="poison,chemaddiction" minresistance="0.35" maxresistance="0.35">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="poison" strength="0.2" />
+        <ReduceAffliction type="chemaddiction" strength="0.2" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="autosanguinationarcheotech" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0" resistancefor="poison,bleeding,bloodloss,internalbleeding,traumaticaortarupture" minresistance="0.5" maxresistance="0.5">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="poison" strength="0.25" />
+        <ReduceAffliction type="bleeding" strength="0.25" />
+        <ReduceAffliction type="bloodloss" strength="0.25" />
+        <ReduceAffliction type="internalbleeding" strength="0.25" />
+        <ReduceAffliction type="traumaticaortarupture" strength="1.5" />
+        <ReduceAffliction identifier="autosanguination" strength="100" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="nanoservitorsarcheotech" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatusEffect target="Character" Type="OnDamaged" disabledeltatime="true" duration="1.0">
+        <Conditional vitality="lt 50" />
+        <ReduceAffliction type="damage" strength="0.2" />
+        <ReduceAffliction type="burn" strength="0.2" />
+        <ReduceAffliction type="warpburn" strength="0.2" />
+        <ReduceAffliction type="tyranicacid" strength="0.2" />
+        <ReduceAffliction type="bleeding" strength="0.2" />
+        <ReduceAffliction type="bloodloss" strength="0.2" />
+        <ReduceAffliction type="internalbleeding" strength="0.2" />
+        <ReduceAffliction type="traumaticaortarupture" strength="1.5" />
+        <ReduceAffliction type="fracture" strength="1.5" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <ReduceAffliction type="damage" strength="0.2" />
+        <ReduceAffliction type="burn" strength="0.2" />
+        <ReduceAffliction type="warpburn" strength="0.2" />
+        <ReduceAffliction type="tyranicacid" strength="0.2" />
+        <ReduceAffliction type="bleeding" strength="0.2" />
+        <ReduceAffliction type="bloodloss" strength="0.2" />
+        <ReduceAffliction type="internalbleeding" strength="0.2" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="secondchancearcheotech" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatusEffect target="Character" disabledeltatime="true" interval="60.0">
+        <Conditional vitality="lt 5" />
+        <Affliction identifier="chameliolincoating" strength="30.0" />
+        <Affliction identifier="secondchancebuff" strength="30.0" />
+        <ReduceAffliction type="stun" strength="30.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="secondchancebuff" description="" isbuff="true" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="100" limbspecific="false" type="buff" maxstrength="60" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="60" strengthchange="-1.0">
+      <AbilityFlag flagtype="AlwaysStayConscious" />
+      <AbilityFlag flagtype="CanNotDieToAfflictions" />
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="celluarregeneratorarcheotech" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <ReduceAffliction type="poison" strength="0.5" />
+        <ReduceAffliction type="bleeding" strength="0.5" />
+        <ReduceAffliction type="bloodloss" strength="0.5" />
+        <ReduceAffliction type="internalbleeding" strength="0.5" />
+        <ReduceAffliction type="damage" strength="0.5" />
+        <ReduceAffliction type="burn" strength="0.5" />
+        <ReduceAffliction type="warpburn" strength="0.4" />
+        <ReduceAffliction type="tyranicacid" strength="0.4" />
+        <ReduceAffliction type="pain" strength="1.0" />
+        <ReduceAffliction type="phosphorimpact" strength="1.5" />
+        <ReduceAffliction type="fracture" strength="0.8" />
+        <ReduceAffliction type="pneumothorax" strength="1.0" />
+        <ReduceAffliction type="hemothorax" strength="1.0" />
+        <ReduceAffliction type="noisedamage" strength="0.4" />
+        <ReduceAffliction type="disruption" strength="0.4" />
+        <ReduceAffliction type="traumaticaortarupture" strength="1.5" />
+        <ReduceAffliction identifier="blessedautosimulacra" strength="100" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="injector" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatusEffect target="Character" type="OnDamaged" interval="1.0" comparison="And">
+        <Conditional injectorchemconcentration="gte 10" />
+        <Conditional vitality="lt 50" />
+        <ReduceAffliction type="damage" strength="40.0" />
+        <ReduceAffliction type="burn" strength="40.0" />
+        <ReduceAffliction type="augmentationutility" strength="10.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="injectorchemconcentration" description="" isbuff="true" limbspecific="false" showiconthreshold="0" showicontoothersthreshold="0" showinhealthscannerthreshold="0" hideiconafterdelay="true" type="augmentationutility" maxstrength="100" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0.0"></Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="secondlifearcheotech" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatusEffect target="Character" type="OnDamaged" interval="1.0" comparison="And" disabledeltatime="true">
+        <Conditional vitality="lt 20" />
+        <Conditional secondlifebuff="eq 0" />
+        <ReduceAffliction type="damage" strength="20.0" />
+        <ReduceAffliction type="burn" strength="20.0" />
+        <ReduceAffliction type="bloodloss" strength="20.0" />
+        <ReduceAffliction type="oxygenlow" strength="20.0" />
+        <Affliction identifier="secondlifebuff" strength="60.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1.0" comparison="And" disabledeltatime="true">
+        <Conditional secondlifebuff="eq 0" />
+        <Conditional secondlifedebuff="gt 1" />
+        <ReduceAffliction identifier="secondlifearcheotech" strength="60.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="secondlifebuff" description="" isbuff="true" showiconthreshold="00" showicontoothersthreshold="00" showinhealthscannerthreshold="0" limbspecific="false" type="buff" maxstrength="60" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="60" strengthchange="-1.0">
+      <StatValue stattype="MaximumHealthMultiplier" value="0.25" />
+      <StatValue stattype="FlowResistance" value="0.5" />
+      <StatValue stattype="AttackMultiplier" value="0.5" />
+      <AbilityFlag flagtype="AlwaysStayConscious" />
+      <AbilityFlag flagtype="CanNotDieToAfflictions" />
+      <StatusEffect target="Character" interval="1.0" comparison="And" disabledeltatime="true">
+        <Conditional secondlifebuff="gt 5" />
+        <ReduceAffliction type="damage" strength="0.5" />
+        <ReduceAffliction type="burn" strength="0.5" />
+        <ReduceAffliction type="bloodloss" strength="0.5" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1.0" comparison="And" disabledeltatime="true">
+        <Conditional secondlifebuff="lt 2" />
+        <Affliction identifier="secondlifedebuff" strength="60.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="secondlifedebuff" description="" showiconthreshold="00" showicontoothersthreshold="00" showinhealthscannerthreshold="0" limbspecific="false" type="debuff" maxstrength="60">
+    <Effect minstrength="0" maxstrength="60" strengthchange="-1.0" resistancefor="buff" minresistance="1.0" maxresistance="1.0" healableinmedicalclinic="false">
+      <StatValue stattype="FlowResistance" value="-0.5" />
+      <StatValue stattype="AttackMultiplier" value="-0.5" />
+      <StatValue stattype="MovementSpeed" value="-0.25" />
+      <StatValue stattype="BuffDurationMultiplier" value="-1.0" />
+      <StatValue stattype="MedicalItemEffectivenessMultiplier" value="-0.5" />
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="193,10,10,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="skullcircuit" description="" isbuff="true" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="0" type="augmentation" maxstrength="100" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0.0">
+      <StatValue stattype="HelmSkillBonus" value="10" />
+      <StatValue stattype="ElectricalSkillBonus" value="10" />
+      <StatValue stattype="MechanicalSkillBonus" value="10" />
+      <StatValue stattype="MedicalSkillBonus" value="10" />
+      <StatValue stattype="WeaponsSkillBonus" value="10" />
+      <StatValue stattype="SkillGainSpeed" minvalue="0.3" maxvalue="0.3" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="corticalenhancer" description="" isbuff="true" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="0" type="augmentation" maxstrength="100" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0.0">
+      <StatValue stattype="ExtraLevelGain" value="1" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="radfurnace" description="" isbuff="true" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="0" type="augmentation" maxstrength="100" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0.0" resistancefor="radiationsickness" minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="NearbyCharacters" range="600" interval="5" disabledeltatime="true">
+        <Affliction identifier="radiationsickness" strength="15" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="blessedautosimulacra" description="" isbuff="true" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="0" type="augmentation" maxstrength="100" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0.0">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <ReduceAffliction type="bleeding" strength="0.25" />
+        <ReduceAffliction type="bloodloss" strength="0.25" />
+        <ReduceAffliction type="internalbleeding" strength="0.25" />
+        <ReduceAffliction type="damage" strength="0.1" />
+        <ReduceAffliction type="burn" strength="0.1" />
+        <ReduceAffliction type="warpburn" strength="0.1" />
+        <ReduceAffliction type="tyranicacid" strength="0.1" />
+        <ReduceAffliction type="noisedamage" strength="0.1" />
+        <ReduceAffliction identifier="celluarregeneratorarcheotech" strength="100" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="armoredmusculature" description="" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0" resistancefor="stun,damage" minresistance="0.1" maxresistance="0.1"></Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="armoredmusculaturet2" description="" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0" resistancefor="stun,damage" minresistance="0.15" maxresistance="0.15">
+      <StatValue stattype="MaximumHealthMultiplier" minvalue="0.1" maxvalue="0.1" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="logisanalyzer" description="" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="ExperienceGainMultiplier" value="0.1" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="builtinbiomonitor" description="" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="MedicalItemEffectivenessMultiplier" value="0.15" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="metabolismregulator" description="" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="BuffDurationMultiplier" value="0.25" />
+      <StatValue stattype="DebuffDurationMultiplier" value="0.1" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="flippersimplant" description="" isbuff="true" limbspecific="false" indicatorlimb="RightLeg,LeftLeg" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="SwimmingSpeed" value="0.25" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="t2flippersimplant" description="" isbuff="true" limbspecific="false" indicatorlimb="RightLeg,LeftLeg" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="SwimmingSpeed" value="0.5" />
+      <StatValue stattype="FlowResistance" value="0.25" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="corticalimplant" description="" isbuff="true" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="WeaponsSkillBonus" value="10" />
+      <StatValue stattype="SkillGainSpeed" minvalue="-0.25" maxvalue="-0.25" />
+      <StatusEffect target="Character" type="OnDamaged">
+        <requiredaffliction type="damage" minstrength="3" />
+        <Affliction identifier="increasedmeleedamage_temporary" amount="10" />
+        <Affliction identifier="strengthen" amount="10" />
+        <Affliction identifier="haste" amount="10" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="rebreatherimplant" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="HoldBreathMultiplier" minvalue="0.2" maxvalue="0.2" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="berserkerimplantt1" description="" isbuff="true" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0" minscreenblur="0.1" maxscreenblur="0.2" minscreendistort="0.1" maxscreendistort="0.2">
+      <StatValue stattype="SkillGainSpeed" minvalue="-0.5" maxvalue="-0.5" />
+      <StatusEffect target="Character" type="OnDamaged">
+        <requiredaffliction type="damage" minstrength="3" />
+        <Affliction identifier="increasedmeleedamage_temporary" amount="10" />
+        <Affliction identifier="strengthen" amount="10" />
+        <Affliction identifier="haste" amount="10" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="berserkerimplantt2" description="" isbuff="true" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0" minscreenblur="0.1" maxscreenblur="0.1" minscreendistort="0.1" maxscreendistort="0.1">
+      <StatValue stattype="SkillGainSpeed" minvalue="-0.25" maxvalue="-0.25" />
+      <StatValue stattype="WeaponsSkillBonus" value="5" />
+      <StatusEffect target="Character" type="OnDamaged">
+        <requiredaffliction type="damage" minstrength="3" />
+        <Affliction identifier="increasedmeleedamage_temporary" amount="10" />
+        <Affliction identifier="strengthen" amount="10" />
+        <Affliction identifier="haste" amount="10" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="berserkerimplantt3" description="" isbuff="true" limbspecific="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="SkillGainSpeed" minvalue="-0.25" maxvalue="-0.25" />
+      <StatValue stattype="WeaponsSkillBonus" value="10" />
+      <StatusEffect target="Character" type="OnDamaged">
+        <requiredaffliction type="damage" minstrength="3" />
+        <Affliction identifier="increasedmeleedamage_temporary" amount="20" />
+        <Affliction identifier="strengthen" amount="15" />
+        <Affliction identifier="haste" amount="15" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="recirculatorimplant" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="bleeding" strength="0.1" />
+        <ReduceAffliction type="bloodloss" strength="0.1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="thrustersimplant" description="" isbuff="true" limbspecific="false" indicatorlimb="RightLeg,LeftLeg" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="SwimmingSpeed" value="0.1" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="dialogusimplantt1" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="StoreSellMultiplier" minvalue="0.1" maxvalue="0.1" />
+      <StatValue stattype="StoreBuyMultiplier" minvalue="0.1" maxvalue="0.1" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="dialogusimplantt2" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="StoreSellMultiplier" minvalue="0.15" maxvalue="0.15" />
+      <StatValue stattype="StoreBuyMultiplier" minvalue="0.15" maxvalue="0.15" />
+      <StatValue stattype="ShipyardBuyMultiplier" minvalue="0.05" maxvalue="0.05" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="dialogusimplantt3" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="StoreSellMultiplier" minvalue="0.2" maxvalue="0.2" />
+      <StatValue stattype="StoreBuyMultiplier" minvalue="0.2" maxvalue="0.2" />
+      <StatValue stattype="StoreBuyMultiplierAffiliated" minvalue="0.1" maxvalue="0.1" />
+      <StatValue stattype="ShipyardBuyMultiplier" minvalue="0.1" maxvalue="0.1" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="factorumimplant" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="FabricationSpeed" minvalue="0.2" maxvalue="0.2" />
+      <StatValue stattype="DeconstructorSpeedMultiplier" minvalue="0.2" maxvalue="0.2" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="directconnectionimplant" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0">
+      <StatValue stattype="RepairSpeed" minvalue="0.2" maxvalue="0.2" />
+      <StatValue stattype="RepairToolStructureRepairMultiplier" minvalue="0.2" maxvalue="0.2" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="bioniceye" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0" mingrainstrength="2.0" maxgrainstrength="2.0" graincolor="0,155,0,55">
+      <StatusEffect target="Character" comparison="And" interval="1" disabledeltatime="true">
+        <Conditional bioniceye="gte 8" />
+        <ReduceAffliction type="missingeye" strength="100" />
+        <ReduceAffliction identifier="bioniceye" strength="3" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="bioniceyered" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0" mingrainstrength="2.0" maxgrainstrength="2.0" graincolor="155,0,0,55">
+      <StatusEffect target="Character" comparison="And" interval="1" disabledeltatime="true">
+        <Conditional bioniceyered="gte 8" />
+        <ReduceAffliction type="missingeye" strength="100" />
+        <ReduceAffliction identifier="bioniceyered" strength="3" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="bioniceyearcheotech" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0" mingrainstrength="2.0" maxgrainstrength="2.0" graincolor="0,155,0,55" ThermalOverlayRange="1500" ThermalOverlayColor="253,182,134,150">
+      <StatusEffect target="Character" comparison="And" interval="1" disabledeltatime="true">
+        <ReduceAffliction type="missingeye" strength="100" />
+      </StatusEffect>
+      <StatValue stattype="RangedSpreadReduction" value="0.5" />
+      <StatValue stattype="RangedAttackSpeed" value="0.2" />
+      <StatValue stattype="TurretChargeSpeed" value="0.3" />
+      <StatValue stattype="TurretAttackSpeed" value="0.3" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="bioniceyeredarcheotech" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0" mingrainstrength="2.0" maxgrainstrength="2.0" graincolor="155,0,0,55" ThermalOverlayRange="1500" ThermalOverlayColor="253,182,134,150">
+      <StatusEffect target="Character" comparison="And" interval="1" disabledeltatime="true">
+        <ReduceAffliction type="missingeye" strength="100" />
+      </StatusEffect>
+      <StatValue stattype="RangedSpreadReduction" value="0.5" />
+      <StatValue stattype="RangedAttackSpeed" value="0.2" />
+      <StatValue stattype="TurretChargeSpeed" value="0.3" />
+      <StatValue stattype="TurretAttackSpeed" value="0.3" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+  <Affliction name="" identifier="bioniceyebluearcheotech" description="" isbuff="true" limbspecific="false" showiconthreshold="100" showicontoothersthreshold="100" showinhealthscannerthreshold="0" type="augmentation" maxstrength="10" healableinmedicalclinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.0" mingrainstrength="2.0" maxgrainstrength="2.0" graincolor="0,0,155,55" ThermalOverlayRange="1500" ThermalOverlayColor="253,182,134,150">
+      <StatusEffect target="Character" comparison="And" interval="1" disabledeltatime="true">
+        <ReduceAffliction type="missingeye" strength="100" />
+      </StatusEffect>
+      <StatValue stattype="RangedSpreadReduction" value="0.5" />
+      <StatValue stattype="RangedAttackSpeed" value="0.2" />
+      <StatValue stattype="TurretChargeSpeed" value="0.3" />
+      <StatValue stattype="TurretAttackSpeed" value="0.3" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons2.png" sourcerect="772,133,120,120" origin="0,0" />
+  </Affliction>
+</Afflictions>

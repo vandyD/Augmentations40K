@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<huskappendage>
+  <limb Name="LeftMetalLeg (46)" ID="46" Type="LeftLeg" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="15" Height="50" Width="0" Density="10" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="60" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="4" Friction="0.3" Restitution="0.05">
+    <sprite SourceRect="80,128,80,128" Texture="%ModDir%/Items/Augmentations/AugmeticLimbs.png" Origin="0.5,0.5" Depth="0.131" IgnoreTint="True" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+  </limb>
+  <limb Name="LeftMetalFoot (47)" ID="47" Type="LeftFoot" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="90" InheritLimbDepth="None" SteerForce="0" Radius="12" Height="0" Width="32" Density="10" IgnoreCollisions="True" AngularDamping="7" AttackPriority="1" PullPos="-2.8043144,-11.4667225" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="60" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="4" Friction="0.3" Restitution="0.05">
+    <sprite SourceRect="336,208,64,48" Texture="%ModDir%/Items/Augmentations/AugmeticLimbs.png" Origin="0.48,0.55" Depth="0.132" IgnoreTint="True" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <sound Tag="footstep_metal" />
+    <!-- Stop force ragdoll when affliction applied -->
+    <StatusEffect Type="Always" OneShot="True" TargetType="Character,This,Limb" disabledeltatime="true">
+      <ReduceAffliction identifier="stun" amount="1000" />
+    </StatusEffect>
+  </limb>
+  <joint Name="Joint 7 - 46" Limb1="7" Limb2="46" Limb1Anchor="-0.6,41.3" Limb2Anchor="-0.6,41.3" CanBeSevered="True" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="-5" LowerLimit="-145" Stiffness="0.25" Scale="1" WeldJoint="True" ClockWiseRotation="True" />
+  <joint Name="Joint 8 - 47" Limb1="46" Limb2="47" Limb1Anchor="0.5,-41.2" Limb2Anchor="-10.9,6" CanBeSevered="True" SeveranceProbabilityModifier="0" BreakSound="gore" LimitEnabled="True" UpperLimit="30" LowerLimit="-70" Stiffness="0.25" Scale="1" WeldJoint="True" ClockWiseRotation="False" />
+</huskappendage>
