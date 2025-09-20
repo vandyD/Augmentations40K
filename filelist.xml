@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Augments40K" modversion="0.1" corepackage="False" gameversion="1.9.8.0">
+  <Item file="%ModDir%/Items/Augmentations/AdamantiumHandLeft.xml" />
+  <Item file="%ModDir%/Items/Augmentations/AdamantiumHandLeft_sm.xml" />
+  <Item file="%ModDir%/Items/Augmentations/AdamantiumHandRight.xml" />
+  <Item file="%ModDir%/Items/Augmentations/AdamantiumHandRight_sm.xml" />
+  <Item file="%ModDir%/Items/Augmentations/AdamantiumLegLeft.xml" />
+  <Item file="%ModDir%/Items/Augmentations/AdamantiumLegLeft_sicarian.xml" />
+  <Item file="%ModDir%/Items/Augmentations/AdamantiumLegLeft_sm.xml" />
+  <Item file="%ModDir%/Items/Augmentations/AdamantiumLegRight.xml" />
+  <Item file="%ModDir%/Items/Augmentations/AdamantiumLegRight_sicarian.xml" />
+  <Item file="%ModDir%/Items/Augmentations/AdamantiumLegRight_sm.xml" />
+  <Item file="%ModDir%/Items/Augmentations/admechoptic_limb.xml" />
+  <Item file="%ModDir%/Items/Augmentations/Augmentations.xml" />
+  <Item file="%ModDir%/Items/Augmentations/Augmentationseffects.xml" />
+  <Item file="%ModDir%/Items/Augmentations/gunarm_limb.xml" />
+  <Item file="%ModDir%/Items/Augmentations/gunarm_limb2.xml" />
+  <Item file="%ModDir%/Items/Augmentations/gunarm_limb3.xml" />
+  <Item file="%ModDir%/Items/Augmentations/gunarm_limb4.xml" />
+  <Item file="%ModDir%/Items/Augmentations/lowqualityaugmentations.xml" />
+  <Item file="%ModDir%/Items/Augmentations/mecharm_limb.xml" />
+  <Item file="%ModDir%/Items/Augmentations/mecharm_limb2.xml" />
+  <Item file="%ModDir%/Items/Augmentations/mecharm_limb3.xml" />
+  <Item file="%ModDir%/Items/Augmentations/mecharm_limb4.xml" />
+  <Item file="%ModDir%/Items/Augmentations/mecharm_limb5.xml" />
+  <Item file="%ModDir%/Items/Augmentations/mechback.xml" />
+  <Item file="%ModDir%/Items/Augmentations/ServitorHBArm.xml" />
+  <Afflictions file="%ModDir%/Afflictions.xml" />
+</contentpackage>
