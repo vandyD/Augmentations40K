@@ -1,0 +1,997 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Override>
+    <Item name="" identifier="desinfectant" category="Material" maxstacksize="8" Tags="smallitem,commonmaterial" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.150" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" secondary="medcontainer" minamount="1" maxamount="4" spawnprobability="0.25" />
+      <PreferredContainer secondary="abandonedstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+      <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+      <Price baseprice="100">
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmech" multiplier="0.8" minavailable="10" maxavailable="20" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="carbon" copycondition="true" />
+        <Item identifier="plastic" copycondition="true" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="20">
+        <RequiredSkill identifier="medical" level="10" />
+        <RequiredItem identifier="chlorine" />
+        <RequiredItem identifier="plastic" />
+      </Fabricate>
+      <InventoryIcon texture="desinfectant.png" sourcerect="0,0,200,200" />
+      <Sprite texture="desinfectant.png" sourcerect="0,0,200,200" depth="0.55" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="gypsummedical" category="Material" maxstacksize="8" Tags="smallitem,commonmaterial" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" secondary="medcontainer" minamount="1" maxamount="4" spawnprobability="0.5" notcampaign="true" />
+      <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+      <PreferredContainer secondary="abandonedstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+      <Price baseprice="100">
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmech" multiplier="0.8" minavailable="10" maxavailable="20" />
+      </Price>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="20">
+        <RequiredSkill identifier="medical" level="10" />
+        <RequiredItem identifier="calcium" />
+        <RequiredItem identifier="sulphuricacid" />
+      </Fabricate>
+      <Deconstruct time="5" />
+      <InventoryIcon texture="whmat1.png" sourcerect="0,64,64,64" />
+      <Sprite texture="whmat1.png" sourcerect="0,64,64,64" depth="0.55" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="emptysyringe" category="Material" maxstacksize="8" Tags="smallitem,ressyringe,commonmaterial" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" secondary="medcontainer" />
+      <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+      <PreferredContainer secondary="abandonedstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+      <Price baseprice="200">
+        <Price storeidentifier="merchantresearch" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantresearchseparatis" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmech" multiplier="0.8" minavailable="10" maxavailable="20" />
+      </Price>
+      <Deconstruct time="5"></Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="50" amount="2">
+        <RequiredSkill identifier="medical" level="10" />
+        <RequiredItem identifier="steel" />
+        <RequiredItem identifier="silicon" />
+      </Fabricate>
+      <Fabricate suitablefabricators="autoclave" requiredtime="50">
+        <RequiredSkill identifier="medical" level="15" />
+        <RequiredItem identifier="emptysyringedirty" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Medicine/Medicines3.png" sourcerect="0,444,37,69" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Items/Medicine/Medicines3.png" sourcerect="0,444,37,69" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="emptysyringedirty" category="Material" maxstacksize="8" Tags="smallitem,ressyringe" canbepicked="true" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+      <PreferredContainer secondary="abandonedstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+      <PreferredContainer primary="medfabcab" />
+      <Deconstruct time="5" />
+      <InventoryIcon texture="%ModDir%/Items/Medicine/Medicines3.png" sourcerect="37,444,37,69" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Items/Medicine/Medicines3.png" sourcerect="37,444,37,69" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="emptysyringewarped" nameidentifier="emptysyringedirty" hideinmenus="true" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Deconstruct time="5" />
+      <InventoryIcon texture="%ModDir%/Items/Medicine/Medicines3.png" sourcerect="75,444,37,69" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Items/Medicine/Medicines3.png" sourcerect="75,444,37,69" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="emptysyringeplastic" category="Material" maxstacksize="8" Tags="smallitem,ressyringe,commonmaterial" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" secondary="medcontainer" />
+      <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+      <PreferredContainer secondary="abandonedstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+      <Price baseprice="100">
+        <Price storeidentifier="merchantresearch" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantresearchseparatis" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmech" multiplier="0.8" minavailable="10" maxavailable="20" />
+      </Price>
+      <Deconstruct time="5"></Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="50" amount="4">
+        <RequiredSkill identifier="medical" level="10" />
+        <RequiredItem identifier="plastic" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Medicine/Medicines3.png" sourcerect="0,0,28,128" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Items/Medicine/Medicines3.png" sourcerect="0,0,28,128" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="opium" category="Material" maxstacksize="8" Tags="smallitem,commonmaterial" description="" cargocontaineridentifier="chemicalcrate" scale="0.5" useinhealthinterface="true" RequireAimToUse="True">
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+      <PreferredContainer secondary="abandonedmedcab,wreckmedcab" minamount="1" maxamount="2" spawnprobability="0.5" notcampaign="true" />
+      <PreferredContainer primary="medfabcab" secondary="medcontainer" minamount="4" maxamount="12" spawnprobability="0.5" />
+      <PreferredContainer secondary="outposttrashcan" amount="1" spawnprobability="0.2" />
+      <Price baseprice="40">
+        <Price storeidentifier="merchantcity" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchantcityseparatist" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchantresearch" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantresearchseparatis" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmech" multiplier="0.8" minavailable="5" maxavailable="10" />
+      </Price>
+      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,768,64,64" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="406,452,29,58" depth="0.6" origin="0.5,0.5" />
+      <Body width="30" height="58" density="20" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" holdangle="220" msg="ItemMsgPickUpSelect"></Holdable>
+    </Item>
+    <Item name="" identifier="emptybottle" category="Material" maxstacksize="8" Tags="smallitem,commonmaterial" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+      <PreferredContainer secondary="abandonedstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+      <Price baseprice="100">
+        <Price storeidentifier="merchantresearch" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantresearchseparatis" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="10" maxavailable="20" />
+        <Price storeidentifier="merchantmech" multiplier="0.8" minavailable="10" maxavailable="20" />
+      </Price>
+      <Deconstruct time="5" />
+      <Fabricate suitablefabricators="fabricator" requiredtime="50" amount="2">
+        <RequiredSkill identifier="medical" level="10" />
+        <RequiredItem identifier="steel" />
+        <RequiredItem identifier="plastic" />
+        <RequiredItem identifier="silicon" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Materials/Chems.png" sourcerect="0,0,64,64" />
+      <Sprite texture="%ModDir%/Items/Materials/Chems.png" sourcerect="0,0,64,64" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="flaskofantibiotics" category="Material" maxstacksize="8" Tags="smallitem,commonmaterial" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="100" sold="false" />
+      <Deconstruct time="5" />
+      <InventoryIcon texture="%ModDir%/Items/Materials/Chems.png" sourcerect="64,128,64,64" />
+      <Sprite texture="%ModDir%/Items/Materials/Chems.png" sourcerect="64,128,64,64" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="false" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="bottleofmorphine" category="Material" maxstacksize="8" Tags="smallitem,commonmaterial" canbepicked="true" cargocontaineridentifier="chemicalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="100">
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="5" maxavailable="10" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="emptybottle" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="40" requiresrecipe="true">
+        <RequiredSkill identifier="medical" level="18" />
+        <RequiredItem identifier="emptybottle" />
+        <RequiredItem identifier="opium" amount="2" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Materials/Chems.png" sourcerect="64,0,64,64" />
+      <Sprite texture="%ModDir%/Items/Materials/Chems.png" sourcerect="64,0,64,64" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This" delay="0.5">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <ItemComponent>
+        <StatusEffect type="Always" target="This" Condition="-50.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringe" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringe">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringeplastic">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringe" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringe" type="Contained" />
+          <SpawnItem identifier="antidama1" spawnposition="SameInventory" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringeplastic" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+          <SpawnItem identifier="antidama1single" spawnposition="SameInventory" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="1" maxstacksize="1">
+        <Containable items="ressyringe" />
+      </ItemContainer>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="bottleoffentanyl" category="Material" maxstacksize="8" Tags="smallitem,commonmaterial" canbepicked="true" cargocontaineridentifier="chemicalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="250" buyingpricemultiplier="2">
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="5" maxavailable="10" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="emptybottle" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="45" requiresrecipe="true">
+        <RequiredSkill identifier="medical" level="50" />
+        <RequiredItem identifier="emptybottle" />
+        <RequiredItem identifier="opium" amount="2" />
+        <RequiredItem identifier="adrenaline" />
+        <RequiredItem identifier="ethanol" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Materials/Chems.png" sourcerect="128,0,64,64" />
+      <Sprite texture="%ModDir%/Items/Materials/Chems.png" sourcerect="128,0,64,64" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This" delay="0.5">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <ItemComponent>
+        <StatusEffect type="Always" target="This" Condition="-50.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringe" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringe">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringeplastic">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringe" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringe" type="Contained" />
+          <SpawnItem identifier="antidama2" spawnposition="SameInventory" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringeplastic" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+          <SpawnItem identifier="antidama2single" spawnposition="SameInventory" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="1" maxstacksize="1">
+        <Containable items="ressyringe" />
+      </ItemContainer>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="bottleofdeusizine" category="Material" maxstacksize="8" Tags="smallitem,commonmaterial" canbepicked="true" cargocontaineridentifier="chemicalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="350" buyingpricemultiplier="2">
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="5" maxavailable="10" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="emptybottle" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="60" amount="2" requiresrecipe="true">
+        <RequiredSkill identifier="medical" level="70" />
+        <RequiredItem identifier="emptybottle" amount="2" />
+        <RequiredItem identifier="antibleeding3" amount="2" />
+        <RequiredItem identifier="bottleoffentanyl" />
+        <RequiredItem identifier="liquidoxygenite" amount="2" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Materials/Chems.png" sourcerect="192,0,64,64" />
+      <Sprite texture="%ModDir%/Items/Materials/Chems.png" sourcerect="192,0,64,64" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This" delay="0.5">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <ItemComponent>
+        <StatusEffect type="Always" target="This" Condition="-50.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringe" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringe">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringeplastic">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringe" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringe" type="Contained" />
+          <SpawnItem identifier="deusizine" spawnposition="SameInventory" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringeplastic" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+          <SpawnItem identifier="deusizinesingle" spawnposition="SameInventory" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="1" maxstacksize="1">
+        <Containable items="ressyringe" />
+      </ItemContainer>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="bottleofcalyxanide" category="Material" maxstacksize="8" Tags="smallitem,commonmaterial" canbepicked="true" cargocontaineridentifier="chemicalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="500">
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="5" maxavailable="10" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="emptybottle" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="30" requiresrecipe="true">
+        <RequiredSkill identifier="medical" level="30" />
+        <RequiredItem identifier="emptybottle" />
+        <RequiredItem identifier="huskeggs" />
+        <RequiredItem identifier="antibiotics" />
+        <RequiredItem identifier="stabilozine" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Materials/Chems.png" sourcerect="256,0,64,64" />
+      <Sprite texture="%ModDir%/Items/Materials/Chems.png" sourcerect="256,0,64,64" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This" delay="0.5">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <ItemComponent>
+        <StatusEffect type="Always" target="This" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringeplastic">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringeplastic" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+          <SpawnItem identifier="calyxanide" spawnposition="SameInventory" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="1" maxstacksize="1">
+        <Containable items="ressyringe" />
+      </ItemContainer>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="bottleofmeth" category="Material" maxstacksize="8" Tags="smallitem,rarematerial" canbepicked="true" cargocontaineridentifier="chemicalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="250" minleveldifficulty="15" buyingpricemultiplier="2">
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="3" maxavailable="5" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="3" maxavailable="5" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="3" maxavailable="5" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="3" maxavailable="5" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="5" maxavailable="10" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="emptybottle" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="30" requiresrecipe="true">
+        <RequiredSkill identifier="medical" level="30" />
+        <RequiredItem identifier="emptybottle" />
+        <RequiredItem identifier="phosphorus" />
+        <RequiredItem identifier="chlorine" amount="2" />
+        <RequiredItem identifier="carbon" amount="2" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Materials/Chems.png" sourcerect="320,0,64,64" />
+      <Sprite texture="%ModDir%/Items/Materials/Chems.png" sourcerect="320,0,64,64" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This" delay="0.5">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <ItemComponent>
+        <StatusEffect type="Always" target="This" Condition="-50.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringe" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" Condition="-50.0" disabledeltatime="true">
+          <RequiredItem identifier="steroids" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem identifier="steroidssingle" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringe">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="steroids">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringeplastic">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="steroidssingle">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringe" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringe" type="Contained" />
+          <SpawnItem identifier="meth" spawnposition="SameInventory" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringeplastic" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+          <SpawnItem identifier="methsingle" spawnposition="SameInventory" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="steroids" comparison="And" delay="0.2">
+          <RequiredItem identifier="steroids" type="Contained" />
+          <SpawnItem identifier="hyperzine" spawnposition="SameInventory" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="steroidssingle" comparison="And" delay="0.2">
+          <RequiredItem identifier="steroidssingle" type="Contained" />
+          <SpawnItem identifier="hyperzinesingle" spawnposition="SameInventory" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="1" maxstacksize="1">
+        <Containable items="ressyringe,steroids,steroidssingle" />
+      </ItemContainer>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="bottleofsteroids" category="Material" maxstacksize="8" Tags="smallitem,rarematerial" canbepicked="true" cargocontaineridentifier="chemicalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="250" minleveldifficulty="15" buyingpricemultiplier="2">
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="3" maxavailable="5" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="3" maxavailable="5" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="3" maxavailable="5" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="3" maxavailable="5" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="5" maxavailable="10" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="emptybottle" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="30" requiresrecipe="true">
+        <RequiredSkill identifier="medical" level="30" />
+        <RequiredItem identifier="emptybottle" />
+        <RequiredItem identifier="tonicliquid" />
+        <RequiredItem identifier="antidama2single" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Materials/Chems.png" sourcerect="384,0,64,64" />
+      <Sprite texture="%ModDir%/Items/Materials/Chems.png" sourcerect="383,0,64,64" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This" delay="0.5">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <ItemComponent>
+        <StatusEffect type="Always" target="This" Condition="-50.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringe" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" Condition="-50.0" disabledeltatime="true">
+          <RequiredItem identifier="meth" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem identifier="methsingle" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringe">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="meth">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringeplastic">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="methsingle">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringe" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringe" type="Contained" />
+          <SpawnItem identifier="steroids" spawnposition="SameInventory" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringeplastic" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+          <SpawnItem identifier="steroidssingle" spawnposition="SameInventory" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="meth" comparison="And" delay="0.2">
+          <RequiredItem identifier="meth" type="Contained" />
+          <SpawnItem identifier="hyperzine" spawnposition="SameInventory" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="methsingle" comparison="And" delay="0.2">
+          <RequiredItem identifier="methsingle" type="Contained" />
+          <SpawnItem identifier="hyperzinesingle" spawnposition="SameInventory" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="1" maxstacksize="1">
+        <Containable items="ressyringe,meth,methsingle" />
+      </ItemContainer>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="bottleofmorbusine" category="Material" maxstacksize="8" Tags="smallitem,rarematerial" canbepicked="true" cargocontaineridentifier="chemicalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="750" minleveldifficulty="15">
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="3" maxavailable="5" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="3" maxavailable="5" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="3" maxavailable="5" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="3" maxavailable="5" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="5" maxavailable="10" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="emptybottle" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="90" requiresrecipe="true">
+        <RequiredSkill identifier="medical" level="60" />
+        <RequiredItem identifier="emptybottle" />
+        <RequiredItem identifier="sulphuricacid" />
+        <RequiredItem identifier="deusizinesingle" count="2" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Materials/Chems.png" sourcerect="0,64,64,64" />
+      <Sprite texture="%ModDir%/Items/Materials/Chems.png" sourcerect="0,64,64,64" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This" delay="0.5">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <ItemComponent>
+        <StatusEffect type="Always" target="This" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringeplastic">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringeplastic" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+          <SpawnItem identifier="morbusine" spawnposition="SameInventory" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="1" maxstacksize="1">
+        <Containable items="ressyringe" />
+      </ItemContainer>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="bottleofchloralhydrate" category="Material" maxstacksize="8" Tags="smallitem,commonmaterial" canbepicked="true" cargocontaineridentifier="chemicalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="300">
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="5" maxavailable="10" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="emptybottle" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="90" requiresrecipe="true">
+        <RequiredSkill identifier="medical" level="50" />
+        <RequiredItem identifier="emptybottle" />
+        <RequiredItem identifier="chlorine" count="2" />
+        <RequiredItem identifier="ethanol" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Materials/Chems.png" sourcerect="64,64,64,64" />
+      <Sprite texture="%ModDir%/Items/Materials/Chems.png" sourcerect="64,64,64,64" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This" delay="0.5">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <ItemComponent>
+        <StatusEffect type="Always" target="This" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringeplastic">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringeplastic" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+          <SpawnItem identifier="chloralhydrate" spawnposition="SameInventory" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="1" maxstacksize="1">
+        <Containable items="ressyringe" />
+      </ItemContainer>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="bottleofcyanide" category="Material" maxstacksize="8" Tags="smallitem,commonmaterial" canbepicked="true" cargocontaineridentifier="chemicalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="350">
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="5" maxavailable="10" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="emptybottle" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="90" requiresrecipe="true">
+        <RequiredSkill identifier="medical" level="54" />
+        <RequiredItem identifier="emptybottle" />
+        <RequiredItem identifier="chloralhydrate" />
+        <RequiredItem identifier="sodium" count="2" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Materials/Chems.png" sourcerect="128,64,64,64" />
+      <Sprite texture="%ModDir%/Items/Materials/Chems.png" sourcerect="128,64,64,64" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This" delay="0.5">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <ItemComponent>
+        <StatusEffect type="Always" target="This" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringeplastic">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringeplastic" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+          <SpawnItem identifier="cyanide" spawnposition="SameInventory" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="1" maxstacksize="1">
+        <Containable items="ressyringe" />
+      </ItemContainer>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="bottleofradiotoxin" category="Material" maxstacksize="8" Tags="smallitem,commonmaterial" canbepicked="true" cargocontaineridentifier="chemicalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="350">
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="5" maxavailable="10" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="emptybottle" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="90" requiresrecipe="true">
+        <RequiredSkill identifier="medical" level="56" />
+        <RequiredItem identifier="emptybottle" />
+        <RequiredItem identifier="ethanol" count="2" />
+        <RequiredItem identifier="thorium" />
+        <RequiredItem identifier="uranium" count="2" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Materials/Chems.png" sourcerect="192,64,64,64" />
+      <Sprite texture="%ModDir%/Items/Materials/Chems.png" sourcerect="192,64,64,64" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This" delay="0.5">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <ItemComponent>
+        <StatusEffect type="Always" target="This" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringeplastic">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringeplastic" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+          <SpawnItem identifier="radiotoxin" spawnposition="SameInventory" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="1" maxstacksize="1">
+        <Containable items="ressyringe" />
+      </ItemContainer>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="bottleofsufforin" category="Material" maxstacksize="8" Tags="smallitem,commonmaterial" canbepicked="true" cargocontaineridentifier="chemicalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="400">
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="5" maxavailable="10" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="emptybottle" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="90" requiresrecipe="true">
+        <RequiredSkill identifier="medical" level="60" />
+        <RequiredItem identifier="emptybottle" />
+        <RequiredItem identifier="ethanol" count="2" />
+        <RequiredItem identifier="sulphuricacid" count="2" />
+        <RequiredItem identifier="flashpowder" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Materials/Chems.png" sourcerect="256,64,64,64" />
+      <Sprite texture="%ModDir%/Items/Materials/Chems.png" sourcerect="256,64,64,64" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This" delay="0.5">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <ItemComponent>
+        <StatusEffect type="Always" target="This" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringeplastic">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringeplastic" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+          <SpawnItem identifier="sufforin" spawnposition="SameInventory" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="1" maxstacksize="1">
+        <Containable items="ressyringe" />
+      </ItemContainer>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="bottleofdeliriumine" category="Material" maxstacksize="8" Tags="smallitem,commonmaterial" canbepicked="true" cargocontaineridentifier="chemicalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="250">
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="5" maxavailable="10" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="emptybottle" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="90" requiresrecipe="true">
+        <RequiredSkill identifier="medical" level="50" />
+        <RequiredItem identifier="emptybottle" />
+        <RequiredItem identifier="dementonite" />
+        <RequiredItem identifier="ethanol" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Materials/Chems.png" sourcerect="320,64,64,64" />
+      <Sprite texture="%ModDir%/Items/Materials/Chems.png" sourcerect="320,64,64,64" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This" delay="0.5">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <ItemComponent>
+        <StatusEffect type="Always" target="This" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringeplastic">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringeplastic" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+          <SpawnItem identifier="deliriumine" spawnposition="SameInventory" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="1" maxstacksize="1">
+        <Containable items="ressyringe" />
+      </ItemContainer>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="bottleofparalyzant" category="Material" maxstacksize="8" Tags="smallitem,commonmaterial" canbepicked="true" cargocontaineridentifier="chemicalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="350">
+        <Price storeidentifier="merchantmedicalseparatist" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="ammerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="smmerchantmedical" multiplier="0.9" minavailable="5" maxavailable="10" />
+        <Price storeidentifier="merchanthospitaller" multiplier="0.9" minavailable="5" maxavailable="10" />
+      </Price>
+      <Deconstruct time="5">
+        <Item identifier="emptybottle" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="90" requiresrecipe="true">
+        <RequiredSkill identifier="medical" level="40" />
+        <RequiredItem identifier="emptybottle" />
+        <RequiredItem identifier="chloralhydrate" />
+        <RequiredItem identifier="paralyxis" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Items/Materials/Chems.png" sourcerect="384,64,64,64" />
+      <Sprite texture="%ModDir%/Items/Materials/Chems.png" sourcerect="384,64,64,64" depth="0.6" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This" delay="0.5">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <ItemComponent>
+        <StatusEffect type="Always" target="This" Condition="-25.0" disabledeltatime="true">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="Contained" targetidentifiers="emptysyringeplastic">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This,Contained" targetidentifiers="emptysyringeplastic" comparison="And" delay="0.2">
+          <RequiredItem identifier="emptysyringeplastic" type="Contained" />
+          <SpawnItem identifier="paralyzant" spawnposition="SameInventory" />
+        </StatusEffect>
+      </ItemComponent>
+      <ItemContainer capacity="1" maxstacksize="1">
+        <Containable items="ressyringe" />
+      </ItemContainer>
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="humanskull" category="Material" maxstacksize="8" Tags="smallitem,rarematerial" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="storagecab" />
+      <Price baseprice="500" soldeverywhere="false" minleveldifficulty="15">
+        <Price storeidentifier="chmerchant" minavailable="1" maxavailable="3" />
+        <Price storeidentifier="merchantgenetic" minavailable="3" maxavailable="5" />
+      </Price>
+      <InventoryIcon texture="humanskull.png" sourcerect="0,0,128,128" />
+      <Sprite texture="humanskull.png" sourcerect="0,0,128,128" depth="0.55" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="85,-10" handle1="0,0" attachable="true" aimable="true" />
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="humanbrain" category="Material" maxstacksize="8" Tags="smallitem,veryrarematerial" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="700" soldeverywhere="false" minleveldifficulty="25">
+        <Price storeidentifier="chmerchant" multiplier="1.0" minavailable="0" maxavailable="1" />
+        <Price storeidentifier="merchantgenetic" multiplier="1.0" minavailable="1" maxavailable="2" />
+      </Price>
+      <Deconstruct time="120" chooserandom="true" amount="1">
+        <Item identifier="graymatter" commonness="0.1" />
+        <Item identifier="biomaterial" commonness="0.9" />
+      </Deconstruct>
+      <InventoryIcon texture="organs.png" sourcerect="0,0,64,64" />
+      <Sprite texture="organs.png" sourcerect="0,896,128,128" depth="0.55" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="humanguts" category="Material" maxstacksize="8" Tags="smallitem,veryrarematerial" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="650" soldeverywhere="false" minleveldifficulty="25">
+        <Price storeidentifier="chmerchant" multiplier="1.0" minavailable="0" maxavailable="1" />
+        <Price storeidentifier="merchantgenetic" multiplier="1.0" minavailable="1" maxavailable="2" />
+      </Price>
+      <Deconstruct time="120">
+        <Item identifier="biomaterial" />
+      </Deconstruct>
+      <InventoryIcon texture="organs.png" sourcerect="64,0,64,64" />
+      <Sprite texture="organs.png" sourcerect="128,896,128,128" depth="0.55" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="humanliver" category="Material" maxstacksize="8" Tags="smallitem,veryrarematerial" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="600" soldeverywhere="false" minleveldifficulty="25">
+        <Price storeidentifier="chmerchant" multiplier="1.0" minavailable="0" maxavailable="1" />
+        <Price storeidentifier="merchantgenetic" multiplier="1.0" minavailable="1" maxavailable="2" />
+      </Price>
+      <Deconstruct time="120">
+        <Item identifier="biomaterial" />
+      </Deconstruct>
+      <InventoryIcon texture="organs.png" sourcerect="128,0,64,64" />
+      <Sprite texture="organs.png" sourcerect="256,896,128,128" depth="0.55" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="humankidney" category="Material" maxstacksize="8" Tags="smallitem,veryrarematerial" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="600" soldeverywhere="false" minleveldifficulty="25">
+        <Price storeidentifier="chmerchant" multiplier="1.0" minavailable="0" maxavailable="1" />
+        <Price storeidentifier="merchantgenetic" multiplier="1.0" minavailable="1" maxavailable="2" />
+      </Price>
+      <Deconstruct time="120">
+        <Item identifier="biomaterial" />
+      </Deconstruct>
+      <InventoryIcon texture="organs.png" sourcerect="192,0,64,64" />
+      <Sprite texture="organs.png" sourcerect="384,896,128,128" depth="0.55" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="humanbone" category="Material" maxstacksize="8" Tags="smallitem,rarematerial" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="300" soldeverywhere="false" minleveldifficulty="15">
+        <Price storeidentifier="chmerchant" minavailable="1" maxavailable="3" />
+        <Price storeidentifier="merchantgenetic" minavailable="3" maxavailable="5" />
+      </Price>
+      <InventoryIcon texture="organs.png" sourcerect="256,0,64,64" />
+      <Sprite texture="organs.png" sourcerect="512,896,128,128" depth="0.55" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+    <Item name="" identifier="humanlung" category="Material" maxstacksize="8" Tags="smallitem,veryrarematerial" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medfabcab" />
+      <Price baseprice="700" soldeverywhere="false" minleveldifficulty="25">
+        <Price storeidentifier="chmerchant" multiplier="1.0" minavailable="0" maxavailable="1" />
+        <Price storeidentifier="merchantgenetic" multiplier="1.0" minavailable="1" maxavailable="2" />
+      </Price>
+      <Deconstruct time="120">
+        <Item identifier="biomaterial" />
+      </Deconstruct>
+      <InventoryIcon texture="organs.png" sourcerect="320,0,64,64" />
+      <Sprite texture="organs.png" sourcerect="640,896,128,128" depth="0.55" origin="0.5,0.5" />
+      <Body width="50" height="25" density="50" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+      <AiTarget sightrange="1000" static="true" />
+    </Item>
+  </Override>
+</Items>
