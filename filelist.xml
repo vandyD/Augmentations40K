@@ -3,7 +3,9 @@
   <Item file="%ModDir%/Items/Augmentations/Augmentations.xml" />
   <Item file="%ModDir%/Items/Augmentations/lowqualityaugmentations.xml" />
   <Item file="%ModDir%/Items/Genetic/Genetic.xml" />
+  <Item file="%ModDir%/Items/Augmentations/AdamantiumHandLeft.xml" />
   <Afflictions file="%ModDir%/Afflictions.xml" />
   <Afflictions file="%ModDir%/Items/Genetic/AfflictionsGenetic.xml" />
   <Afflictions file="%ModDir%/Items/Augmentations/Augmentationseffects.xml" />
+  <Text file="%ModDir%/Texts/Russian.xml" />
 </contentpackage>
