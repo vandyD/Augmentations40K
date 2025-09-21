@@ -7,4 +7,5 @@
   <Afflictions file="%ModDir%/Items/Genetic/AfflictionsGenetic.xml" />
   <Afflictions file="%ModDir%/Items/Augmentations/Augmentationseffects.xml" />
   <Text file="%ModDir%/Texts/Russian.xml" />
+  <Character file="%ModDir%/Characters/HumanPriest/HumanPriest.xml" />
 </contentpackage>
