@@ -25,7 +25,7 @@
   <!-- <huskappendage affliction="servitorGunhand1" path="%ModDir%/Items/Augmentations/ServitorHBArm.xml" onlyfromafflictions="true" /> -->
   <names path="%ModDir%/Creatures/HumanPriest/names.xml" />
   <ragdolls folder="default" />
-  <animations folder="default" />
+  <animations path="%ModDir%/Characters/HumanPriest/Animations" />
   <damageemitter drawontop="True" Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.25" ScaleMax="0.5" VelocityMin="50" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
   <gibemitter Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="1" VelocityMin="200" VelocityMax="700" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="20" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
   <gibemitter Particle="heavygib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="1" VelocityMin="50" VelocityMax="500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
