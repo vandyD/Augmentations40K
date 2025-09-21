@@ -198,7 +198,7 @@
       <RequiredSkill identifier="mechanical" level="40" />
       <RequiredSksill identifier="electrical" level="40" />
       <RequiredItem identifier="fpgacircuit" amount="4" />
-      <RequiredItem identifier="stackofadamantium" amount="2" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
     </Fabricate>
     <GeneticMaterial effect="adamantiumlegleft_sm" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
       <RequiredSkill identifier="medical" level="80" />
@@ -364,7 +364,7 @@
       <RequiredItem identifier="fpgacircuit" amount="4" />
       <RequiredItem identifier="copper" amount="2" />
       <RequiredItem identifier="rubber" amount="2" />
-      <RequiredItem identifier="gold" amount="2" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
       <RequiredItem identifier="t2admechoptics1" />
     </Fabricate>
     <GeneticMaterial effect="t3mechoptics" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
@@ -488,7 +488,7 @@
       <dItem identifier="rubber" />
       <dItem identifier="rubber" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="60" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="60" />
