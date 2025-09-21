@@ -301,6 +301,7 @@
       <dItem identifier="silicon" />
       <dItem identifier="silicon" />
       <dItem identifier="rubber" />
+    </Price>
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="50" />
