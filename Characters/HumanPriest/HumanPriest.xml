@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character specifiertags="true" SpeciesName="HumanPriest" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="Human" Humanoid="True" HasInfo="False" CanInteract="True" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="True" NeedsAir="True" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="True" ShowHealthBar="True" UseBossHealthBar="False" Noise="0" Visibility="0" BloodDecal="none" BleedParticleAir="none" BleedParticleWater="none" BleedParticleMultiplier="0" CanEat="True" EatingSpeed="10" UsePathFinding="False" PathFinderPriority="1" HideInSonar="True" HideInThermalGoggles="True" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
+  <huskappendage affliction="robo_arm_1" path="%ModDir%/Items/Augmentations/mecharm_limb.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="robo_arm_2" path="%ModDir%/Items/Augmentations/mecharm_limb2.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="robo_arm_3" path="%ModDir%/Items/Augmentations/mecharm_limb3.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="robo_arm_4" path="%ModDir%/Items/Augmentations/mecharm_limb4.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="robo_arm_5" path="%ModDir%/Items/Augmentations/mecharm_limb5.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="mechoptics" path="%ModDir%/Items/Augmentations/admechoptic_limb.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="t2mechoptics" path="%ModDir%/Items/Augmentations/admechoptic_limb.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="t3mechoptics" path="%ModDir%/Items/Augmentations/admechoptic_limb.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="gunarm" path="%ModDir%/Items/Augmentations/gunarm_limb.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="gunarm2" path="%ModDir%/Items/Augmentations/gunarm_limb2.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="gunarm3" path="%ModDir%/Items/Augmentations/gunarm_limb3.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="gunarm4" path="%ModDir%/Items/Augmentations/gunarm_limb4.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="adamantiumlegleft" path="%ModDir%/Items/Augmentations/AdamantiumLegLeft.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="adamantiumlegright" path="%ModDir%/Items/Augmentations/AdamantiumLegRight.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="adamantiumlegrightsicarian" path="%ModDir%/Items/Augmentations/AdamantiumLegRight_sicarian.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="adamantiumlegleftsicarian" path="%ModDir%/Items/Augmentations/AdamantiumLegLeft_sicarian.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="adamantiumlegright_sm" path="%ModDir%/Items/Augmentations/AdamantiumLegRight_sm.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="adamantiumlegleft_sm" path="%ModDir%/Items/Augmentations/AdamantiumLegLeft_sm.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="adamantiumhandright" path="%ModDir%/Items/Augmentations/AdamantiumHandRight.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="adamantiumhandleft" path="%ModDir%/Items/Augmentations/AdamantiumHandLeft.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="adamantiumhandright_sm" path="%ModDir%/Items/Augmentations/AdamantiumHandRight_sm.xml" onlyfromafflictions="true" />
+  <huskappendage affliction="adamantiumhandleft_sm" path="%ModDir%/Items/Augmentations/AdamantiumHandLeft_sm.xml" onlyfromafflictions="true" />
+  <!-- <huskappendage affliction="servitorGunhand1" path="%ModDir%/Items/Augmentations/ServitorHBArm.xml" onlyfromafflictions="true" /> -->
+  <names path="%ModDir%/Creatures/HumanPriest/names.xml" />
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <damageemitter drawontop="True" Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.25" ScaleMax="0.5" VelocityMin="50" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <gibemitter Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="1" VelocityMin="200" VelocityMax="700" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="20" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <gibemitter Particle="heavygib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="1" VelocityMin="50" VelocityMax="500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <health Vitality="100" DoesBleed="False" CrushDepth="1300" UseHealthWindow="True" BleedingReduction="0" BurnReduction="0.075" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="True" Immunities="">
+    <MedUISilhouette texture="Content/UI/Health/MedUI_Silhouette.png" columns="8" rows="2" sourcerect="0,0,1008,748" />
+    <MedUIExtra texture="Content/UI/Health/MedUIExtra.png" columns="4" rows="4" sourcerect="0,0,1024,1024" />
+    <Limb name="Head">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="1,0,126,374" highlightarea="41,0,45,54" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="1,515,126,374" />
+    </Limb>
+    <Limb name="Torso">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="631,0,126,374" highlightarea="29,56,70,134" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="631,515,126,374" />
+    </Limb>
+    <Limb name="LeftArm">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="379,0,126,374" highlightarea="1,69,27,140" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="379,515,126,374" />
+    </Limb>
+    <Limb name="RightArm">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="127,0,126,374" highlightarea="100,69,27,140" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="127,515,126,374" />
+    </Limb>
+    <Limb name="LeftLeg">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="505,0,126,374" highlightarea="3,180,57,194" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="505,515,126,374" />
+    </Limb>
+    <Limb name="RightLeg">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="253,0,126,374" highlightarea="68,180,57,194" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="253,515,126,374" />
+    </Limb>
+  </health>
+  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="True" Commonness="1" />
+  <AI CombatStrength="1" Sight="1" Hearing="1" MaxPerceptionDistance="-1" AggressionHurt="100" AggressionGreed="10" FleeHealthThreshold="0" AttackWhenProvoked="False" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="True" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target" PlayDeadProbability="0" />
+</Character>
