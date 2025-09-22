@@ -184,7 +184,7 @@
       <sprite name="Electoo Wearable Left Leg" texture="%ModDir%/Items/Augmentations/electoowearable.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
     </Wearable>
   </Item>
-   <Item name="" identifier="adamantiumlegleft_sm" category="Medical" maxstacksize="1" tags="smallitem,smlfootimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+  <Item name="" identifier="adamantiumlegleft_sm" category="Medical" maxstacksize="1" tags="smallitem,smlfootimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <Price baseprice="1000" soldeverywhere="false" buyingpricemultiplier="2.5" minleveldifficulty="20">
       <Price storeidentifier="merchantmedical" minavailable="0" maxavailable="1" />
     </Price>
@@ -213,6 +213,54 @@
         <Affliction identifier="organdamage" amount="30" />
         <Affliction identifier="stun" amount="0.5" />
         <ReduceAffliction identifier="adamantiumlegleft_sm" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" origin="0.5,0.5" sourcerect="640,256,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" depth="0.6" origin="0.5,0.5" sourcerect="640,256,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <Item name="" identifier="adamantiumlegright_sm" category="Medical" maxstacksize="1" tags="smallitem,smrfootimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="1000" soldeverywhere="false" buyingpricemultiplier="2.5" minleveldifficulty="20">
+      <Price storeidentifier="merchantaugmentations" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantmedicalseparatist" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="ammerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="smmerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantforge" minavailable="0" maxavailable="1" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="60" />
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredItem identifier="fpgacircuit" amount="4" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+    </Fabricate>
+    <GeneticMaterial effect="adamantiumlegright_sm" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="adamantiumlegright_sm" strength="50" />
       </StatusEffect>
       <StatusEffect type="OnSevered" target="This" duration="0.0">
         <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
@@ -518,10 +566,6 @@
     </GeneticMaterial>
     <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="3,0" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="384,0,128,128" />
     <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="3,0" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="384,0,128,128" />
-    <Body width="23" height="31" density="20" />
-    <Holdable handle1="0,0" slots="Any"></Holdable>
-    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" origin="0.5,0.5" sourcerect="0,0,64,128" />
-    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" depth="0.6" origin="0.5,0.5" sourcerect="0,0,64,128" />
     <Body width="23" height="31" density="20" />
     <Holdable handle1="0,0" slots="Any"></Holdable>
   </Item>

@@ -164,15 +164,15 @@
       </StatusEffect>
       <StatusEffect target="Character">
         <Conditional adamantiumlegleftsicarian="gt 1" />
-        <TriggerAnimation Type="Walk" filename="HumanSicarianWalk" priority="1" ExpectedSpecies="Human" />
-        <TriggerAnimation Type="Run" filename="HumanSicarianRun" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Walk" path="%ModDir%/Items/Augmentations/HumanSicarianWalk.xml" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run"  path="%ModDir%/Items/Augmentations/HumanSicarianRun.xml" priority="1" ExpectedSpecies="Human" />
         <TriggerAnimation Type="Crouch" filename="HumanSicarianCrouch" priority="1" ExpectedSpecies="Human" />
       </StatusEffect>
       <StatusEffect target="Character" comparison="And">
         <Conditional adamantiumlegleftsicarian="lt 1" />
-        <TriggerAnimation Type="Walk" filename="HumanAmputatedLegWalk" priority="1" ExpectedSpecies="Human" />
-        <TriggerAnimation Type="Run" filename="HumanAmputatedRun" priority="1" ExpectedSpecies="Human" />
-        <TriggerAnimation Type="Crouch" filename="HumanAmputatedLegCrouch" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Walk" path="%ModDir%/Items/Augmentations/HumanAmputatedLegWalk.xml" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" path="%ModDir%/Items/Augmentations/HumanAmputatedRun.xml" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Crouch" path="%ModDir%/Items/Augmentations/HumanAmputatedLegCrouch.xml" priority="1" ExpectedSpecies="Human" />
       </StatusEffect>
       <StatValue stattype="WalkingSpeed" minvalue="0.1" maxvalue="0.1" />
     </Effect>
@@ -195,15 +195,15 @@
       </StatusEffect>
       <StatusEffect target="Character">
         <Conditional adamantiumlegrightsicarian="gt 1" />
-        <TriggerAnimation Type="Walk" filename="HumanSicarianWalk" priority="1" ExpectedSpecies="Human" />
-        <TriggerAnimation Type="Run" filename="HumanSicarianRun" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Walk" path="%ModDir%/Items/Augmentations/HumanSicarianWalk.xml" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" path="%ModDir%/Items/Augmentations/HumanSicarianRun.xml" priority="1" ExpectedSpecies="Human" />
         <TriggerAnimation Type="Crouch" filename="HumanSicarianCrouch" priority="1" ExpectedSpecies="Human" />
       </StatusEffect>
       <StatusEffect target="Character" comparison="And">
         <Conditional adamantiumlegrightsicarian="lt 1" />
-        <TriggerAnimation Type="Walk" filename="HumanAmputatedLegWalk" priority="1" ExpectedSpecies="Human" />
-        <TriggerAnimation Type="Run" filename="HumanAmputatedRun" priority="1" ExpectedSpecies="Human" />
-        <TriggerAnimation Type="Crouch" filename="HumanAmputatedLegCrouch" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Walk" path="%ModDir%/Items/Augmentations/HumanAmputatedLegWalk.xml" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" path="%ModDir%/Items/Augmentations/HumanAmputatedRun.xml" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Crouch" path="%ModDir%/Items/Augmentations/HumanAmputatedLegCrouch.xml" priority="1" ExpectedSpecies="Human" />
       </StatusEffect>
       <StatValue stattype="WalkingSpeed" minvalue="0.1" maxvalue="0.1" />
     </Effect>
