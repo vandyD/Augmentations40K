@@ -90,7 +90,7 @@
       <sprite name="Electoo Wearable Left Leg" texture="%ModDir%/Items/Augmentations/electoowearable.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
     </Wearable>
   </Item>
-<Item name="" identifier="electoo" scale="0.4" category="Equipment" subcategory="augmentation" tags="smallitem,electoo" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="electoo" scale="0.4" category="Equipment" subcategory="augmentation" tags="smallitem,electoo" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
     <Deconstruct time="10">
       <dItem identifier="carbon" />
       <dItem identifier="carbon" />
@@ -241,7 +241,7 @@
       <dItem identifier="fpgacircuit" />
       <dItem identifier="titaniumaluminiumalloy" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="60" />
       <RequiredSkill identifier="mechanical" level="40" />
       <RequiredSkill identifier="electrical" level="40" />
