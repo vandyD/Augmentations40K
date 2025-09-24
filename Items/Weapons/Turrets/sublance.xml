@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="sublancetower" description="" damagedbyexplosions="false" damagedbyprojectiles="false" Tags="turret,lancetower" category="Machine" interactthroughwalls="true" Scale="1.0" interactdistance="10" focusonselected="true" offsetonselected="900" linkable="true" allowedlinks="lancetowerammosource">
+    <Sprite texture="%ModDir%/Items/Weapons/Turrets/sublancetowerlight.png" depth="0.1" sourcerect="0,0,256,200" canflipy="false" origin="0.5,0.5" />
+    <SwappableItem price="25000" replacementonuninstall="towerhardpoint" origin="128,215" swapidentifier="towerturret">
+      <SchematicSprite texture="%ModDir%/UI/WeaponUI2.png" sourcerect="780,218,313,184" origin="0.5,0.5" />
+      <SwapConnectedItem tag="periscope" swapto="periscope" />
+      <SwapConnectedItem tag="turretammosource" swapto="lancetowerloader" />
+    </SwappableItem>
+    <MinimapIcon name="Command_Weapons_sublance" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="896,896,128,128" />
+    <UpgradePreviewSprite scale="2" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="780,690,128,75" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret launchimpulse="80.0" canbeselected="false" characterusable="false" linkable="true" barrelpos="145,85" rotationlimits="-50,0" powerconsumption="50000.0" showchargeindicator="true" showprojectileindicator="true" reload="10.0" recoildistance="50" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
+      <StatusEffect type="OnUse" target="This">
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot1.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot2.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot3.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot4.ogg" range="10000" type="OnUse" />
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="10.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+      <WeaponIndicator texture="%ModDir%/UI/WeaponUI2.png" sourcerect="362,803,90,40" origin="0.227, 0.5" />
+      <RailSprite texture="%ModDir%/Items/Weapons/Turrets/sublancetowerlight.png" origin="0.5,0.5" sourcerect="256,256,10,10" depth="0.111" />
+      <BarrelSprite texture="%ModDir%/Items/Weapons/Turrets/sublancetowerlight.png" origin="0.5,0.9" sourcerect="256,0,66,168" depth="0.109" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" alphablend="false" range="2048" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="10000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.25" mindeteriorationdelay="240" maxdeteriorationdelay="300" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="amaxe,wrench,chamaxe" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+  </Item>
+  <Item name="" identifier="sublancetowerheavy" description="" damagedbyexplosions="false" damagedbyprojectiles="false" Tags="turret,lancetower" category="Machine" interactthroughwalls="true" Scale="1.0" interactdistance="10" focusonselected="true" offsetonselected="900" linkable="true" allowedlinks="lancetowerammosource">
+    <Sprite texture="%ModDir%/Items/Weapons/Turrets/sublancetowerheavy.png" depth="0.1" sourcerect="0,0,256,200" canflipy="false" origin="0.5,0.5" />
+    <SwappableItem price="50000" replacementonuninstall="towerhardpoint" origin="128,215" swapidentifier="towerturret">
+      <SchematicSprite texture="%ModDir%/UI/WeaponUI2.png" sourcerect="779,1,330,202" origin="0.5,0.5" />
+      <SwapConnectedItem tag="periscope" swapto="periscope" />
+      <SwapConnectedItem tag="turretammosource" swapto="lancetowerloader" />
+    </SwappableItem>
+    <MinimapIcon name="Command_Weapons_subheavylance" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="768,896,128,128" />
+    <UpgradePreviewSprite scale="2" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="650,690,128,75" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret launchimpulse="80.0" projectilecount="1" alternatingfiringoffset="true" firingoffset="-40,-340" damagemultiplier="1.0" shotsperburst="4" delaybetweenbursts="10.0" canbeselected="false" characterusable="false" linkable="true" barrelpos="145, 85" rotationlimits="-50,0" powerconsumption="50000.0" showchargeindicator="true" showprojectileindicator="true" reload="2" recoiltime="2" recoildistance="50" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
+      <StatusEffect type="OnUse" target="This">
+        <sound file="%ModDir%/Items/Weapons/WEAPONS_laserGunShot1.ogg" range="10000" type="OnUse" />
+        <sound file="%ModDir%/Items/Weapons/WEAPONS_laserGunShot2.ogg" range="10000" type="OnUse" />
+        <sound file="%ModDir%/Items/Weapons/WEAPONS_laserGunShot3.ogg" range="10000" type="OnUse" />
+        <sound file="%ModDir%/Items/Weapons/WEAPONS_laserGunShot4.ogg" range="10000" type="OnUse" />
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="10.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+      <WeaponIndicator texture="%ModDir%/UI/WeaponUI2.png" sourcerect="362,803,90,40" origin="0.227, 0.5" />
+      <RailSprite texture="%ModDir%/Items/Weapons/Turrets/sublancetowerheavy.png" origin="0.5,0.5" sourcerect="256,256,10,10" depth="0.111" />
+      <BarrelSprite texture="%ModDir%/Items/Weapons/Turrets/sublancetowerheavy.png" origin="0.5,0.9" sourcerect="256,0,92,206" depth="0.109" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" alphablend="false" range="2048" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="10000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.25" mindeteriorationdelay="240" maxdeteriorationdelay="300" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="amaxe,wrench,chamaxe" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+  </Item>
+  <Item name="" identifier="lancetowerammobox" scale="0.5" tags="lanceequipment,lanceammo,ammobox,40kloadablebig,defenceexpertammo" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="ammoboxcontainer" />
+    <PreferredContainer primary="lancetowerloader" amount="1" mincondition="1" />
+    <Price baseprice="250" soldeverywhere="false">
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantcityseparatist" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="1" />
+      <Price storeidentifier="merchantresearchseparatist" multiplier="1.25" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantmilitaryseparatist" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantmonastary" multiplier="1.0" minavailable="2" />
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantarmory" multiplier="1.5" minavailable="6" />
+      <Price storeidentifier="smmerchantarmory" multiplier="1.5" minavailable="6" />
+      <Price storeidentifier="chmerchantarmory" multiplier="1.5" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="lithium" copycondition="true" />
+      <Item identifier="alienblood" copycondition="true" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="lithium" />
+      <RequiredItem identifier="ceramite" />
+      <RequiredItem identifier="lgmagazine" />
+      <RequiredItem identifier="lgmagazine" />
+      <RequiredItem identifier="lgmagazine" />
+      <RequiredItem identifier="lgmagazine" />
+      <RequiredItem identifier="lgmagazine" />
+      <RequiredItem identifier="lgmagazine" />
+      <RequiredItem identifier="aluminium" />
+    </Fabricate>
+    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
+    <Sprite texture="sublancetowerlight.png" depth="0.54" sourcerect="384,0,128,128" origin="0.5,0.5" />
+    <Body width="115" height="88" density="50" />
+    <Holdable canbecombined="true" removeoncombined="false" slots="RightHand,LeftHand" holdpos="0,-30" handle1="0,-30" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+    </Holdable>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" SpawnWithId="lancecharge" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="lancecharge" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-2.25" disabledeltatime="true">
+        <RequiredItem items="lancecharge" type="Contained" />
+      </StatusEffect>
+      <Containable items="lancecharge" />
+    </ItemContainer>
+    <Quality>
+      <QualityStat stattype="Condition" value="0.25" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="lancetowerloader" tags="lanceequipment,lancetowerammosource,turretammosource" category="Machine" linkable="true" allowedlinks="lascanon" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <SwappableItem canbebought="false" origin="82,358" spawnwithid="lancetowerammobox" />
+    <Sprite name="Pulse Laser Loader Front" texture="%ModDir%/Items/Weapons/Turrets/sublancetowerlight.png" depth="0.785" sourcerect="345,153,165,358" origin="0.5,0.5" />
+    <DecorativeSprite name="Pulse Laser Loader Frame Back" texture="Content/Items/Weapons/Loaders.png" depth="0.8" sourcerect="31,569,117,200" origin="0.5,0.5" offset="0,-68" />
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="10" mindeteriorationdelay="60" maxdeteriorationdelay="300" MinDeteriorationCondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <StatusEffect type="InWater" target="This" condition="-0.25" />
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="amaxe,amaxe" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="5" />
+      </StatusEffect>
+    </Repairable>
+    <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="83,-260" iteminterval="0,0" itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.75">
+      <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="lanceammo" />
+      <!-- when the laser is fired, it triggers this statuseffect, causing contained ammunition boxes to spawn new ammo -->
+      <StatusEffect type="OnUse" target="Contained">
+        <RequiredItem items="lanceammo" type="Contained" />
+        <Use />
+      </StatusEffect>
+    </ItemContainer>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="lancecharge" category="Misc" scale="0.5" sonarsize="5" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerpulselaser" particleamount="1" velocitymin="0" velocitymax="0" />
+      <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" />
+      <Attack structuredamage="2000" targetforce="15" itemdamage="2500" severlimbsprobability="1.0" levelwalldamage="200000" penetration="1.0">
+        <Affliction identifier="burn" strength="400" />
+        <Affliction identifier="explosiondamage" strength="500" />
+        <Affliction identifier="organdamage" strength="500" />
+        <Affliction identifier="stun" strength="2.0" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="muzzleflashpulselaser" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.8" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,225,180" />
+        <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="" identifier="chsublancetower" description="" damagedbyexplosions="false" damagedbyprojectiles="false" Tags="turret,lancetower" category="Machine" interactthroughwalls="true" Scale="1.0" interactdistance="10" focusonselected="true" offsetonselected="900" linkable="true" allowedlinks="lancetowerammosource">
+    <Sprite texture="%ModDir%/Items/Weapons/Turrets/chsublancetower.png" depth="0.1" sourcerect="0,0,150,110" canflipy="false" origin="0.5,0.5" />
+    <MinimapIcon name="Command_Weapons_sublance" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="896,896,128,128" />
+    <UpgradePreviewSprite scale="2" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="780,690,128,75" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret launchimpulse="80.0" canbeselected="false" characterusable="false" linkable="true" barrelpos="140,75" rotationlimits="-15,15" powerconsumption="50000.0" showchargeindicator="true" showprojectileindicator="true" reload="10.0" recoildistance="50" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
+      <StatusEffect type="OnUse" target="This">
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot1.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot2.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot3.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot4.ogg" range="10000" type="OnUse" />
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="10.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+      <WeaponIndicator texture="%ModDir%/UI/WeaponUI2.png" sourcerect="362,803,90,40" origin="0.227, 0.5" />
+      <RailSprite texture="%ModDir%/Items/Weapons/Turrets/chsublancetower.png" origin="0.5,0.5" sourcerect="256,256,10,10" depth="0.111" />
+      <BarrelSprite texture="%ModDir%/Items/Weapons/Turrets/chsublancetower.png" origin="0.5,1.0" sourcerect="261,0,66,171" depth="0.109" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" alphablend="false" range="2048" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="10000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.25" mindeteriorationdelay="240" maxdeteriorationdelay="300" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="amaxe,wrench,chamaxe" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+  </Item>
+  <Item name="" identifier="chsublancetowerheavy" description="" damagedbyexplosions="false" damagedbyprojectiles="false" Tags="turret,lancetower" category="Machine" interactthroughwalls="true" Scale="1.0" interactdistance="10" focusonselected="true" offsetonselected="900" linkable="true" allowedlinks="lancetowerammosource">
+    <Sprite texture="%ModDir%/Items/Weapons/Turrets/chsublancetower.png" depth="0.1" sourcerect="0,0,150,110" canflipy="false" origin="0.5,0.5" />
+    <MinimapIcon name="Command_Weapons_subheavylance" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="768,896,128,128" />
+    <UpgradePreviewSprite scale="2" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="650,690,128,75" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret launchimpulse="80.0" projectilecount="1" damagemultiplier="1.0" shotsperburst="4" delaybetweenbursts="10.0" canbeselected="false" characterusable="false" linkable="true" barrelpos="140,75" rotationlimits="-15,15" powerconsumption="50000.0" showchargeindicator="true" showprojectileindicator="true" reload="10.0" recoildistance="50" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
+      <StatusEffect type="OnUse" target="This">
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot1.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot2.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot3.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot4.ogg" range="10000" type="OnUse" />
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="10.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+      <WeaponIndicator texture="%ModDir%/UI/WeaponUI2.png" sourcerect="362,803,90,40" origin="0.227, 0.5" />
+      <RailSprite texture="%ModDir%/Items/Weapons/Turrets/chsublancetower.png" origin="0.5,0.5" sourcerect="256,256,10,10" depth="0.111" />
+      <BarrelSprite texture="%ModDir%/Items/Weapons/Turrets/chsublancetower.png" origin="0.5,1.0" sourcerect="261,0,66,171" depth="0.109" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" alphablend="false" range="2048" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="10000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.25" mindeteriorationdelay="240" maxdeteriorationdelay="300" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="amaxe,wrench,chamaxe" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+  </Item>
+</Items>

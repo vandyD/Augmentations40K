@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentpackage name="Augments40K" modversion="0.1" corepackage="False" gameversion="1.9.8.0">
+  <Item file="%ModDir%/Items/Weapons/weapons.xml" />
   <Item file="%ModDir%/Items/Augmentations/Augmentations.xml" />
   <Item file="%ModDir%/Items/Augmentations/lowqualityaugmentations.xml" />
   <Item file="%ModDir%/Items/Genetic/Genetic.xml" />

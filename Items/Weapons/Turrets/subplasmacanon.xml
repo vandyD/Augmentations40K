@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" description="" identifier="plasmacannon" damagedbyexplosions="false" damagedbyprojectiles="false" Tags="turret,subplasmacannon" category="Machine" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="1000" linkable="true" allowedlinks="plasmacannonequipment">
+    <Sprite texture="%ModDir%/Items/Weapons/Turrets/subplascanon.png" depth="0.01" sourcerect="0,0,256,200" canflipy="false" />
+    <BrokenSprite texture="%ModDir%/Items/Weapons/Turrets/subhellgun.png" depth="0.1" sourcerect="0,240,256,200" maxcondition="40" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/Items/Weapons/Turrets/subhellgun.png" depth="0.1" sourcerect="0,496,256,200" maxcondition="0" origin="0.5,0.5" />
+    <MinimapIcon name="Command_Weapons_plasmacannon" texture="Content/UI/CommandUIAtlas.png" sourcerect="384,768,128,128" />
+    <SwappableItem price="20000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
+      <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="768,0,256,389" />
+      <SwapConnectedItem tag="periscope" swapto="periscope" />
+      <SwapConnectedItem tag="turretammosource" swapto="plasmacannonloader" />
+    </SwappableItem>
+    <UpgradePreviewSprite scale="3.0" texture="Content/UI/WeaponUI.png" sourcerect="265,810,96,65" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <LightComponent LightColor="0.4,0.4,1.0,0.8" range="100" alphablend="false" IsOn="true" castshadows="false">
+      <LightTexture texture="Content/Lights/light.png" origin="0.5, 0.5" size="1.0,1.0" />
+    </LightComponent>
+    <Turret singlechargedshot="true" maxchargetime="5.0" canbeselected="false" characterusable="false" usefiringoffsetformuzzleflash="true" linkable="true" barrelpos="130,88" firingoffset="-10,-220" rotationlimits="180,360" powerconsumption="40000.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="50" reload="10.0" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
+      <sound file="%ModDir%/Items/Weapons/Turrets/plasmacannonshot.ogg" range="10000" type="OnUse" />
+      <sound file="%ModDir%/Items/Weapons/Turrets/plasmacannonshot2.ogg" range="10000" type="OnUse" />
+      <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="500,913,66,32" origin="0.227, 0.5" />
+      <RailSprite texture="Content/Items/Weapons/Turrets.png" depth="0.011" sourcerect="904,592,120,287" origin="0.5, 0.7" />
+      <BarrelSprite texture="Content/Items/Weapons/Turrets.png" depth="0.012" sourcerect="779,592,125,333" origin="0.55, 0.8" />
+      <ChargeSprite chargetarget="25, 15" texture="Content/Items/Weapons/Turrets.png" depth="0.01" sourcerect="556,687,80,155" origin="1.0, 1.6" />
+      <ChargeSprite chargetarget="-25, 15" texture="Content/Items/Weapons/Turrets.png" depth="0.01" sourcerect="636,687,80,155" origin="0.2, 1.6" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <ChargeSound file="%ModDir%/Items/Weapons/Turrets/plasmacannoncharge.ogg" range="10000" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2500" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <!--<ParticleEmitter particle="FlareBubbles" scalemin="0.5" scalemax="0.5" particleamount="20" distancemin="0" distancemax="500" velocitymin="0" velocitymax="5"/>-->
+      <ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      <ParticleEmitter particle="pulselasermist" particleamount="30" anglemin="-10" anglemax="10" scalemin="1" scalemax="1" distancemin="0" distancemax="250" velocitymin="0" velocitymax="100" />
+      <ParticleEmitter particle="GlowDot" scalemin="4.0" scalemax="4.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="255,0,0,255" />
+      <!--<ParticleEmitter particle="chargeplasmacannon" particleamount="30" scalemin="2.0" scalemax="2.0"/>-->
+      <ParticleEmitterCharge particle="chargepulselaser" particlespersecond="60" scalemin="1.0" scalemax="1.0" anglemin="0" anglemax="359" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="5000.0" structuredamage="0" force="0.0" camerashake="15.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="170,170,255,255" />
+      </StatusEffect>
+      <Upgrade gameversion="0.15.12.0" powerconsumption="1400.0" />
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="8000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.25" mindeteriorationdelay="240" maxdeteriorationdelay="300" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="amaxe,wrench,chamaxe" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+  </Item>
+  <Item name="" identifier="plasmacannonloader" tags="plasmacannonequipment,plasmacannonammosource,turretammosource" category="Machine" linkable="true" allowedlinks="plasmacannon" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <SwappableItem canbebought="false" origin="82,358" spawnwithid="plasmacannonammobox" />
+    <Sprite name="Pulse Laser Loader Front" texture="Content/Items/Weapons/Loaders.png" depth="0.785" sourcerect="529,5,165,358" origin="0.5,0.5" />
+    <DecorativeSprite name="Pulse Laser Loader Frame Back" texture="Content/Items/Weapons/Loaders.png" depth="0.8" sourcerect="31,569,117,200" origin="0.5,0.5" offset="0,-68" />
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.10" mindeteriorationdelay="60" maxdeteriorationdelay="300" MinDeteriorationCondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <StatusEffect type="InWater" target="This" condition="-0.25" />
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="amaxe,chamaxe" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="2000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="2000" />
+        <Explosion range="800" structuredamage="1000" force="5.0" camerashake="200" flashrange="1000" flashduration="5.0">
+          <Affliction identifier="burn" strength="200" />
+          <Affliction identifier="explosiondamage" strength="50" />
+          <Affliction identifier="plasmadamage" strength="150" />
+          <Affliction identifier="stun" strength="5" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="Contained" Condition="0.0" setvalue="true" />
+    </Repairable>
+    <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="83,-260" iteminterval="0,0" itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.75">
+      <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="plasmacannonammo" />
+      <!-- when the laser is fired, it triggers this statuseffect, causing contained ammunition boxes to spawn new ammo -->
+      <StatusEffect type="OnUse" target="Contained">
+        <RequiredItem items="plasmacannonammo" type="Contained" />
+        <Use />
+      </StatusEffect>
+    </ItemContainer>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="plasmacannonbolt" category="Weapon" scale="0.5" sonarsize="2" hideinmenus="true">
+    <Sprite texture="%ModDir%/Items/Weapons/plasma.png" sourcerect="0,0,140,140" depth="0.55" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" hitscan="true" launchimpulse="60.0" removeonhit="true">
+      <ParticleEmitter particle="FlareBubbles" characterusable="false" launchimpulse="80.0" maxtargetstohit="1" emitacrossrayinterval="50" />
+      <Attack structuredamage="500" targetforce="50" itemdamage="25" severlimbsprobability="1.0" levelwalldamage="20000">
+        <Affliction identifier="burn" strength="800" />
+        <Affliction identifier="plasmadamage" strength="800" />
+        <Affliction identifier="organdamage" strength="500" />
+        <Affliction identifier="explosiondamage" strength="500" />
+        <Affliction identifier="stun" strength="1.0" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="muzzleflashpulselaser" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.8" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,225,180" />
+        <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" Condition="-100.0" target="UseTarget">
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        <Explosion range="1000.0" structuredamage="500" itemdamage="500" force="10.0" flames="false" smoke="false" sparks="false" underwaterbubble="true" flashduration="2" flashrange="1500" flashcolor="170,170,255,255">
+          <Affliction identifier="burn" strength="800" />
+          <Affliction identifier="plasmadamage" strength="800" />
+          <Affliction identifier="organdamage" strength="500" />
+          <Affliction identifier="explosiondamage" strength="500" />
+          <Affliction identifier="stun" strength="1.0" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="" identifier="plasmacannonammobox" scale="0.5" tags="plasmacannonequipment,plasmacannonammo,ammobox,loadableplasma,defenceexpertammo" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer secondary="ammoboxcontainer" />
+    <PreferredContainer primary="plasmacannonloader" amount="1" mincondition="1" />
+    <Price baseprice="500" minavailable="1" displaynonempty="true" soldeverywhere="false">
+      <Price storeidentifier="merchantcity" multiplier="1.4" minavailable="2" />
+      <Price storeidentifier="merchantresearch" multiplier="1.3" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantcityseparatist" multiplier="1.4" minavailable="2" />
+      <Price storeidentifier="merchantresearchseparatist" multiplier="1.3" minavailable="2" />
+      <Price storeidentifier="merchantmilitaryseparatist" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantmonastary" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantforge" multiplier="1.0" minavailable="3" />
+      <Price storeidentifier="chmerchantarmory" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="smmerchantarmory" multiplier="0.9" minavailable="2" maxavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="incendium" copycondition="true" />
+      <Item identifier="ceramite" copycondition="true" />
+      <Item identifier="adamantium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" displayname="recycleitem" requiredtime="40">
+      <RequiredSkill identifier="weapons" level="55" />
+      <RequiredItem identifier="plasmacannonammobox" mincondition="0.0" maxcondition="0.0" usecondition="false" />
+      <RequiredItem identifier="incendium" />
+    </Fabricate>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="60">
+      <RequiredSkill identifier="weapons" level="55" />
+      <RequiredItem identifier="adamantium" />
+      <RequiredItem identifier="adamantium" />
+      <RequiredItem identifier="ceramite" />
+      <RequiredItem identifier="ceramite" />
+      <RequiredItem identifier="incendium" />
+    </Fabricate>
+    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
+    <Sprite texture="Content/Items/Containers/containers.png" depth="0.54" sourcerect="550,678,117,89" origin="0.5,0.5" />
+    <Body width="115" height="88" density="50" />
+    <Holdable canbecombined="true" removeoncombined="false" slots="RightHand,LeftHand" holdpos="0,-30" handle1="0,-30" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+      <StatusEffect type="OnContained" target="Character" SpeedMultiplier="0.8" setvalue="true" />
+      <StatusEffect type="OnContained" target="Character" interval="1">
+        <Affliction identifier="burn" strength="5" />
+      </StatusEffect>
+    </Holdable>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="plasmacannonbolt" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-4" disabledeltatime="true">
+        <RequiredItem items="plasmacannonbolt" type="Contained" />
+      </StatusEffect>
+      <Containable items="plasmacannonbolt" />
+    </ItemContainer>
+    <Quality>
+      <QualityStat stattype="Condition" value="0.5" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="plasmagenerator" tags="plasmarecharger" category="Electrical,Machine" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="4000" minavailable="1" displaynonempty="true" canbespecial="false" buyingpricemultiplier="2.0">
+      <Price storeidentifier="merchantforge" multiplier="1.0" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="70" requiresrecipe="true">
+      <RequiredSkill identifier="electrical" level="75" />
+      <RequiredSkill identifier="mechanical" level="75" />
+      <RequiredItem identifier="ceramite" amount="4" />
+      <RequiredItem identifier="incendium" amount="2" />
+      <RequiredItem identifier="batterycell" amount="4" />
+      <RequiredItem identifier="redwire" amount="5" />
+      <RequiredItem identifier="fpgacircuit" amount="5" />
+      <RequiredItem identifier="adamantium" amount="4" />
+    </Fabricate>
+    <Deconstruct time="30">
+      <Item identifier="ceramite" />
+      <Item identifier="ceramite" />
+      <Item identifier="adamantium" />
+      <Item identifier="adamantium" />
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <UpgradePreviewSprite texture="Content/UI/WeaponUI.png" sourcerect="64,961,32,22" origin="0.5,0.45" />
+    <Sprite name="Pulse Laser Loader Front" texture="Content/Items/Weapons/Loaders.png" depth="0.785" sourcerect="529,5,165,358" origin="0.5,0.5" />
+    <DecorativeSprite name="Pulse Laser Loader Frame Back" texture="Content/Items/Weapons/Loaders.png" depth="0.8" sourcerect="31,569,117,200" origin="0.5,0.5" offset="0,-68" />
+    <Body width="31" height="25" density="30" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="85,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent LightColor="0.4,0.4,1.0,0.8" range="100" alphablend="false" IsOn="true" castshadows="false">
+      <LightTexture texture="Content/Lights/light.png" origin="0.5, 0.5" size="1.0,1.0" />
+    </LightComponent>
+    <Powered powerconsumption="1000" currpowerconsumption="1000" isactive="true">
+      <GuiFrame relativesize="0.18,0.15" minsize="350,160" maxsize="420,192" anchor="Center" relativeoffset="0,-0.1" style="ItemUI" msg="ItemMsgInteractSelect" />
+      <StatusEffect type="OnActive" targettype="Contained" targets="loadableplasma" Condition="0.25" targetslot="0">
+        <RequiredItem items="incendium" type="Contained" msg="ItemMsgBatteryCellRequired" />
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetitemcomponent="Powered" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="Contained" targets="loadableplasma" Condition="0.25" targetslot="1">
+        <RequiredItem items="incendium" type="Contained" msg="ItemMsgBatteryCellRequired" />
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetitemcomponent="Powered" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="Contained" targets="loadableplasmasmall" Condition="0.5" targetslot="3">
+        <RequiredItem items="incendium" type="Contained" msg="ItemMsgBatteryCellRequired" />
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetitemcomponent="Powered" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="Contained" targets="loadableplasmasmall" Condition="0.5" targetslot="4">
+        <RequiredItem items="incendium" type="Contained" msg="ItemMsgBatteryCellRequired" />
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetitemcomponent="Powered" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="This,Contained" targetidentifiers="incendium" Condition="-0.1" targetslot="2" CheckConditionalAlways="true" comparison="And">
+        <RequiredItem items="loadableplasma" type="Contained" msg="ItemMsgBatteryCellRequired" />
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetitemcomponent="Powered" />
+        <Conditional IsOn="True" targetcontainer="true" targetitemcomponent="LightComponent" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="This,Contained" targetidentifiers="incendium" Condition="-0.1" targetslot="2" CheckConditionalAlways="true" comparison="And">
+        <RequiredItem items="loadableplasmasmall" type="Contained" />
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetitemcomponent="Powered" />
+        <Conditional IsOn="True" targetcontainer="true" targetitemcomponent="LightComponent" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This,Contained" comparison="And" TargetItemComponent="LightComponent" IsOn="false" targetslot="3">
+        <RequiredItem identifier="loadableplasmasmall" type="Contained" />
+        <Conditional Condition="eq 100" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This,Contained" comparison="And" TargetItemComponent="LightComponent" IsOn="false" targetslot="4">
+        <RequiredItem identifier="loadableplasmasmall" type="Contained" />
+        <Conditional Condition="eq 100" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This,Contained" comparison="And" TargetItemComponent="LightComponent" IsOn="false" targetslot="0">
+        <RequiredItem identifier="loadableplasma" type="Contained" />
+        <Conditional Condition="eq 100" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This,Contained" comparison="And" TargetItemComponent="LightComponent" IsOn="false" targetslot="1">
+        <RequiredItem identifier="loadableplasma" type="Contained" />
+        <Conditional Condition="eq 100" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This,Contained" comparison="And" TargetItemComponent="LightComponent" IsOn="true" targetslot="3">
+        <RequiredItem identifier="loadableplasmasmall" type="Contained" />
+        <Conditional Condition="lt 100" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This,Contained" comparison="And" TargetItemComponent="LightComponent" IsOn="true" targetslot="4">
+        <RequiredItem identifier="loadableplasmasmall" type="Contained" />
+        <Conditional Condition="lt 100" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This,Contained" comparison="And" TargetItemComponent="LightComponent" IsOn="true" targetslot="0">
+        <RequiredItem identifier="loadableplasma" type="Contained" />
+        <Conditional Condition="lt 100" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This,Contained" comparison="And" TargetItemComponent="LightComponent" IsOn="true" targetslot="1">
+        <RequiredItem identifier="loadableplasma" type="Contained" />
+        <Conditional Condition="lt 100" />
+      </StatusEffect>
+    </Powered>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredSkill identifier="electrical" level="55" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
+        <Explosion range="100.0" stun="0" force="5.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+        <Affliction identifier="stun" strength="4" />
+        <Affliction identifier="burn" strength="5" />
+      </StatusEffect>
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="MistSmoke" particlespersecond="60" anglemin="0" anglemax="360" distancemin="0" distancemax="10" velocitymin="0" velocitymax="20" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="spark" particleburstamount="5" particlespersecond="5" anglemin="0" anglemax="359" velocitymin="100" velocitymax="500" particleburstinterval="2" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="15.0" />
+      <ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="2" mincondition="0.0" maxcondition="50.0" />
+      <input name="power_in" displayname="connection.powerin" />
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+    <ItemContainer capacity="0" maxstacksize="0" hideitems="true" canbeselected="true" containedstateindicatorslot="0" slotsperrow="5">
+      <GuiFrame relativesize="0.2,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="none" />
+      <SlotIcon slotindex="0" texture="%ModDir%/UI/ContainerIndicators.png" sourcerect="0,352,100,93" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="%ModDir%/UI/ContainerIndicators.png" sourcerect="0,352,100,93" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="%ModDir%/UI/ContainerIndicators.png" sourcerect="126,358,45,55" origin="0.5,0.5" />
+      <SlotIcon slotindex="3" texture="%ModDir%/UI/ContainerIndicators.png" sourcerect="0,440,57,73" origin="0.5,0.5" />
+      <SlotIcon slotindex="4" texture="%ModDir%/UI/ContainerIndicators.png" sourcerect="0,440,57,73" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1" canbeselected="true">
+        <Containable items="loadableplasma" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1" canbeselected="true">
+        <Containable items="loadableplasma" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1" canbeselected="true">
+        <Containable items="incendium" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1" canbeselected="true">
+        <Containable items="loadableplasmasmall" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1" canbeselected="true">
+        <Containable items="loadableplasmasmall" />
+      </SubContainer>
+    </ItemContainer>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.10" mindeteriorationdelay="60" maxdeteriorationdelay="300" MinDeteriorationCondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <StatusEffect type="InWater" target="This" condition="-0.25" />
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="75" />
+      <RequiredSkill identifier="electrical" level="75" />
+      <RequiredItem items="amaxe,chamaxe" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="burn" strength="15" />
+        <Affliction identifier="stun" strength="5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="2000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="2000" />
+        <Explosion range="800" structuredamage="1000" force="5.0" camerashake="200" flashrange="1000" flashduration="5.0">
+          <Affliction identifier="burn" strength="200" />
+          <Affliction identifier="explosiondamage" strength="50" />
+          <Affliction identifier="plasmadamage" strength="150" />
+          <Affliction identifier="stun" strength="5" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="Contained" Condition="0.0" setvalue="true" />
+    </Repairable>
+  </Item>
+  <Item name="" description="" identifier="plasmacannontower" damagedbyexplosions="false" damagedbyprojectiles="false" Tags="turret,subplasmacannon" category="Machine" interactthroughwalls="true" Scale="1.0" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="1000" linkable="true" allowedlinks="plasmacannonequipment">
+    <Sprite texture="%ModDir%/Items/Weapons/Turrets/subplasmatower.png" depth="0.1" sourcerect="0,0,256,200" canflipy="false" origin="0.5,0.5" />
+    <MinimapIcon name="Command_Weapons_plasmatower" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="514,890,128,128" />
+    <SwappableItem price="20000" replacementonuninstall="towerhardpoint" origin="128,215" swapidentifier="towerturret">
+      <SchematicSprite texture="%ModDir%/UI/WeaponUI2.png" sourcerect="509,1,267,201" origin="0.5,0.5" />
+      <SwapConnectedItem tag="periscope" swapto="periscope" />
+      <SwapConnectedItem tag="turretammosource" swapto="plasmacannonloader" />
+    </SwappableItem>
+    <UpgradePreviewSprite scale="3.0" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="329,693,100,70" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <LightComponent LightColor="0.4,0.4,1.0,0.8" range="100" alphablend="false" IsOn="true" castshadows="false">
+      <LightTexture texture="Content/Lights/light.png" origin="0.5, 0.5" size="1.0,1.0" />
+    </LightComponent>
+    <Turret singlechargedshot="true" maxchargetime="5.0" canbeselected="false" characterusable="false" usefiringoffsetformuzzleflash="true" linkable="true" barrelpos="150,85" firingoffset="-10,-220" rotationlimits="-50,0" powerconsumption="40000.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="50" reload="10.0" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
+      <sound file="%ModDir%/Items/Weapons/Turrets/plasmacannonshot.ogg" range="10000" type="OnUse" />
+      <sound file="%ModDir%/Items/Weapons/Turrets/plasmacannonshot2.ogg" range="10000" type="OnUse" />
+      <WeaponIndicator texture="%ModDir%/UI/WeaponUI2.png" sourcerect="478,809,101,30" origin="0.227, 0.5" />
+      <RailSprite texture="%ModDir%/Items/Weapons/Turrets/subplasmatower.png" origin="0.5,0.5" sourcerect="256,256,10,10" depth="0.111" />
+      <BarrelSprite texture="%ModDir%/Items/Weapons/Turrets/subplasmatower.png" origin="0.5,0.9" sourcerect="256,0,65,147" depth="0.109" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <ChargeSound file="%ModDir%/Items/Weapons/Turrets/plasmacannoncharge.ogg" range="10000" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2500" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <!--<ParticleEmitter particle="FlareBubbles" scalemin="0.5" scalemax="0.5" particleamount="20" distancemin="0" distancemax="500" velocitymin="0" velocitymax="5"/>-->
+      <ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      <ParticleEmitter particle="pulselasermist" particleamount="30" anglemin="-10" anglemax="10" scalemin="1" scalemax="1" distancemin="0" distancemax="250" velocitymin="0" velocitymax="100" />
+      <ParticleEmitter particle="GlowDot" scalemin="4.0" scalemax="4.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="255,0,0,255" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="5000.0" structuredamage="0" force="0.0" camerashake="15.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="170,170,255,255" />
+      </StatusEffect>
+      <Upgrade gameversion="0.15.12.0" powerconsumption="1400.0" />
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="8000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.25" mindeteriorationdelay="240" maxdeteriorationdelay="300" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="amaxe,wrench,chamaxe" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+  </Item>
+</Items>

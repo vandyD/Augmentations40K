@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="submacrotower" description="" damagedbyexplosions="false" damagedbyprojectiles="false" Tags="turret,macrotower" category="Machine" interactthroughwalls="true" Scale="1.0" interactdistance="10" focusonselected="true" offsetonselected="900" linkable="true" allowedlinks="macrotowerammosource">
+    <Sprite texture="%ModDir%/Items/Weapons/Turrets/submacrotower.png" depth="0.1" sourcerect="0,0,256,200" canflipy="false" origin="0.5,0.5" />
+    <SwappableItem price="15000" replacementonuninstall="towerhardpoint" origin="128,215" swapidentifier="towerturret">
+      <SchematicSprite texture="%ModDir%/UI/WeaponUI2.png" sourcerect="508,218,272,188" origin="0.5,0.5" />
+      <SwapConnectedItem tag="periscope" swapto="periscope" />
+      <SwapConnectedItem tag="turretammosource" swapto="macrotowerloadersmall" />
+    </SwappableItem>
+    <MinimapIcon name="Command_Weapons_macrotower" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="386,890,128,128" />
+    <UpgradePreviewSprite scale="3.5" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="203,685,106,78" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret launchimpulse="80.0" canbeselected="false" characterusable="false" linkable="true" barrelpos="145, 85" rotationlimits="-50,0" powerconsumption="50000.0" showchargeindicator="true" showprojectileindicator="true" reload="3.5" recoildistance="50" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
+      <StatusEffect type="OnUse" target="This">
+        <sound file="%ModDir%/Items/Weapons/Turrets/macroshot1.ogg" range="10000" type="OnUse" volume="3" />
+        <sound file="%ModDir%/Items/Weapons/Turrets/macroshot2.ogg" range="10000" type="OnUse" volume="3" />
+        <sound file="%ModDir%/Items/Weapons/Turrets/macroshot3.ogg" range="10000" type="OnUse" volume="3" />
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="10.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+      <WeaponIndicator texture="%ModDir%/UI/WeaponUI2.png" sourcerect="362,803,90,40" origin="0.227, 0.5" />
+      <RailSprite texture="%ModDir%/Items/Weapons/Turrets/submacrotower.png" origin="0.5,0.5" sourcerect="256,256,10,10" depth="0.111" />
+      <BarrelSprite texture="%ModDir%/Items/Weapons/Turrets/submacrotower.png" origin="0.5,0.9" sourcerect="256,0,70,145" depth="0.109" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" alphablend="false" range="2048" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" />
+      <Upgrade gameversion="0.15.9.0" powerconsumption="16000.0" />
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="10000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.25" mindeteriorationdelay="240" maxdeteriorationdelay="300" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="amaxe,wrench,chamaxe" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+  </Item>
+  <Item name="" identifier="macrotowerloadersmall" tags="macrotowerequipment,macrotowerammosource,turretammosource,macrotowerammoloader" category="Machine" linkable="true" allowedlinks="submacrotower" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <SwappableItem canbebought="false" origin="110,353" spawnwithid="macrotowershell,macrotowershell,macrotowershell,macrotowershell,macrotowershell" />
+    <Sprite name="Railgun Loader Front" texture="Content/Items/Weapons/Loaders.png" depth="0.78" sourcerect="709,370,220,353" origin="0.5,0.5" />
+    <DecorativeSprite name="Railgun Loader Frame Front" texture="Content/Items/Weapons/Loaders.png" depth="0.8" sourcerect="31,569,117,200" origin="0.5,0.5" offset="0,-30" />
+    <ItemContainer hideitems="false" drawinventory="true" capacity="5" slotsperrow="6" itempos="70,-200" iteminterval="20,0" itemrotation="90" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
+      <GuiFrame relativesize="0.25,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="macrotowerammo" />
+    </ItemContainer>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="20" mindeteriorationdelay="5" maxdeteriorationdelay="15" MinDeteriorationCondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <StatusEffect type="InWater" target="This" condition="-0.25" />
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="wrench" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="macrotowershell" tags="macrotowerequipment,macrotowerammo,railgunammo,defenceexpertammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.35" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="macrotowerammoloader" amount="5" mincondition="1" />
+    <PreferredContainer primary="railgunammocontainer" />
+    <PreferredContainer secondary="wreckrailgunammocontainer" amount="1" spawnprobability="0.5" />
+    <Price baseprice="500" soldeverywhere="false" buyingpricemultiplier="2.0">
+      <Price storeidentifier="merchantmilitary" minavailable="5" />
+      <Price storeidentifier="merchantmilitaryseparatist" minavailable="5" />
+      <Price storeidentifier="merchantcity" minavailable="7" />
+      <Price storeidentifier="merchantcityseparatist" minavailable="7" />
+      <Price storeidentifier="merchantmonastary" minavailable="5" />
+      <Price storeidentifier="merchantsmfortress" minavailable="5" />
+      <Price storeidentifier="smmerchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="chmerchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="10" />
+      <Price storeidentifier="merchantmech" minavailable="5" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="45" />
+      <RequiredItem identifier="adamantium" amount="2" />
+      <RequiredItem identifier="uex" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/Weapons/Turrets/submacrotower.png" sourcerect="0,433,296,75" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Turrets/submacrotower.png" sourcerect="0,433,296,75" depth="0.55" origin="0.5,0.5" />
+    <Body width="215" height="30" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+    </Holdable>
+    <Projectile characterusable="false" launchimpulse="10" maxtargetstohit="1" damagedoors="true">
+      <Attack structuredamage="1000" itemdamage="200" severlimbsprobability="5" penetration="1.0" targetforce="1000">
+        <Affliction identifier="explosiondamage" strength="500" />
+        <Affliction identifier="lacerations" strength="500" />
+        <Addliction identifier="bleeding" strength="80" />
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+        <Explosion range="500.0" ballastfloradamage="100" structuredamage="150" itemdamage="200" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" penetration="0.5">
+          <Affliction identifier="explosiondamage" strength="500" />
+          <Affliction identifier="stun" strength="7" />
+        </Explosion>
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This" delay="0.2">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.15" />
+      <QualityStat stattype="ExplosionDamage" value="0.15" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="nuclearmacrotowershell" tags="macrotowerequipment,macrotowerammo,railgunammo,defenceexpertammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.35" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="macrotowerammoloader" />
+    <PreferredContainer primary="railgunammocontainer" />
+    <PreferredContainer secondary="wreckrailgunammocontainer" amount="1" spawnprobability="0.05" />
+    <Price baseprice="700" soldeverywhere="false" buyingpricemultiplier="2.0" minleveldifficulty="25">
+      <Price storeidentifier="merchantmilitary" minavailable="2" />
+      <Price storeidentifier="merchantmilitaryseparatist" minavailable="2" />
+      <Price storeidentifier="merchantcity" minavailable="2" />
+      <Price storeidentifier="merchantcityseparatist" minavailable="2" />
+      <Price storeidentifier="merchantmonastary" minavailable="2" />
+      <Price storeidentifier="merchantsmfortress" minavailable="2" />
+      <Price storeidentifier="smmerchantarmory" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="chmerchantarmory" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchantmech" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="45" />
+      <RequiredItem identifier="adamantium" amount="2" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem identifier="uranium" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/Weapons/Turrets/submacrotower.png" sourcerect="0,355,296,75" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Turrets/submacrotower.png" sourcerect="0,355,296,75" depth="0.55" origin="0.5,0.5" />
+    <Body width="215" height="30" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+    </Holdable>
+    <Projectile characterusable="false" launchimpulse="10" maxtargetstohit="1" damagedoors="true">
+      <Attack structuredamage="1000" itemdamage="200" severlimbsprobability="5" penetration="1.0" targetforce="1000">
+        <Affliction identifier="explosiondamage" strength="500" />
+        <Affliction identifier="lacerations" strength="500" />
+        <Addliction identifier="bleeding" strength="80" />
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
+        <Explosion range="1500.0" structuredamage="1000" itemdamage="1000" ballastfloradamage="1000" force="50.0" severlimbsprobability="2" decal="explosion" decalsize="1.0" camerashake="1000" camerashakerange="50000" flashrange="10000" flashduration="5.0" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="5.0" penetration="1.0">
+          <Affliction identifier="explosiondamage" strength="1500" />
+          <Affliction identifier="burn" strength="1500" />
+          <Affliction identifier="radiationsickness" strength="150" />
+          <Affliction identifier="bleeding" strength="40" probability="0.05" dividebylimbcount="false" />
+          <Affliction identifier="stun" strength="30" />
+        </Explosion>
+        <Explosion range="2000" force="0.0" smoke="false" sparks="false" empstrength="2.5" applyfireeffects="false" ignorecover="true">
+          <Affliction identifier="emp" strength="50" multiplybymaxvitality="true" />
+        </Explosion>
+        <ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="0" scalemin="15" scalemax="15" />
+        <SpawnItem identifier="nuclearaftereffectemitter" spawnposition="This" />
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This" delay="0.2">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.15" />
+      <QualityStat stattype="ExplosionDamage" value="0.15" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="macrotowershellpemp" tags="macrotowerequipment,macrotowerammo,railgunammo,defenceexpertammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.35" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="railgunammocontainer" />
+    <PreferredContainer secondary="wreckrailgunammocontainer" amount="1" spawnprobability="0.1" />
+    <Price baseprice="600" soldeverywhere="false" buyingpricemultiplier="2.0">
+      <Price storeidentifier="merchantmilitary" minavailable="5" />
+      <Price storeidentifier="merchantmilitaryseparatist" minavailable="5" />
+      <Price storeidentifier="merchantcity" minavailable="7" />
+      <Price storeidentifier="merchantcityseparatist" minavailable="7" />
+      <Price storeidentifier="merchantmonastary" minavailable="5" />
+      <Price storeidentifier="merchantsmfortress" minavailable="5" />
+      <Price storeidentifier="smmerchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="chmerchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="10" />
+      <Price storeidentifier="merchantmech" minavailable="5" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="adamantium" amount="2" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem identifier="fulgurium" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/Weapons/Turrets/submacrotower.png" sourcerect="305,278,296,75" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Turrets/submacrotower.png" sourcerect="305,278,296,75" depth="0.55" origin="0.5,0.5" />
+    <Body width="215" height="30" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+    </Holdable>
+    <Projectile characterusable="false" launchimpulse="10" maxtargetstohit="1" damagedoors="true">
+      <Attack structuredamage="1000" itemdamage="200" severlimbsprobability="5" penetration="1.0" targetforce="1000">
+        <Affliction identifier="explosiondamage" strength="500" />
+        <Affliction identifier="lacerations" strength="500" />
+        <Addliction identifier="bleeding" strength="80" />
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+        <ParticleEmitter particle="faradayfx" particleamount="3" velocitymin="0" velocitymax="0" scalemin="2.0" scalemax="2.0" />
+        <Explosion range="500.0" ballastfloradamage="100" structuredamage="150" itemdamage="200" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" penetration="0.5">
+          <Affliction identifier="explosiondamage" strength="500" />
+          <Affliction identifier="stun" strength="7" />
+          <Affliction identifier="emp" strength="100" multiplybymaxvitality="true" />
+        </Explosion>
+        <Explosion range="1000.0" ballastfloradamage="0" structuredamage="0" itemdamage="0" force="0.0" empstrength="1000" severlimbsprobability="0.0" decal="explosion" decalsize="0.0">
+          <Affliction identifier="emp" strength="1000" multiplybymaxvitality="true" />
+        </Explosion>
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This" delay="0.2">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.15" />
+      <QualityStat stattype="ExplosionDamage" value="0.15" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="macrotowershellphys" tags="macrotowerequipment,macrotowerammo,railgunammo,defenceexpertammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.35" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="railgunammocontainer" />
+    <PreferredContainer secondary="wreckrailgunammocontainer" amount="1" spawnprobability="0.1" />
+    <Price baseprice="500" soldeverywhere="false" buyingpricemultiplier="3.0">
+      <Price storeidentifier="merchantmilitary" minavailable="5" />
+      <Price storeidentifier="merchantmilitaryseparatist" minavailable="5" />
+      <Price storeidentifier="merchantcity" minavailable="7" />
+      <Price storeidentifier="merchantcityseparatist" minavailable="7" />
+      <Price storeidentifier="merchantmonastary" minavailable="5" />
+      <Price storeidentifier="merchantsmfortress" minavailable="5" />
+      <Price storeidentifier="smmerchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="chmerchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="10" />
+      <Price storeidentifier="merchantmech" minavailable="5" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="adamantium" amount="2" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem identifier="physicorium" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Items/Weapons/Turrets/submacrotower.png" sourcerect="0,277,296,75" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Turrets/submacrotower.png" sourcerect="0,277,296,75" depth="0.55" origin="0.5,0.5" />
+    <Body width="215" height="30" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+    </Holdable>
+    <Projectile characterusable="false" launchimpulse="10" maxtargetstohit="1" damagedoors="true">
+      <Attack structuredamage="1200" itemdamage="200" severlimbsprobability="5" penetration="1.0" targetforce="1000">
+        <Affliction identifier="explosiondamage" strength="700" />
+        <Affliction identifier="lacerations" strength="700" />
+        <Addliction identifier="bleeding" strength="100" />
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+        <Explosion range="700.0" ballastfloradamage="200" structuredamage="250" itemdamage="400" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" penetration="0.5">
+          <Affliction identifier="explosiondamage" strength="700" />
+          <Affliction identifier="stun" strength="7" />
+        </Explosion>
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This" delay="0.2">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.15" />
+      <QualityStat stattype="ExplosionDamage" value="0.15" />
+    </Quality>
+  </Item>
+</Items>
