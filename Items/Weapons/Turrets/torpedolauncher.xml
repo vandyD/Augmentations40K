@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="torpedolauncher" tags="torpedolauncher" category="Machine,Weapon" focusonselected="true" offsetonselected="800" linkable="true" allowedlinks="torpedoammosource" scale="0.5">
+    <Sprite texture="torpedolauncher.png" depth="0.01" sourcerect="0,0,256,128" origin="0.5,0.5" />
+    <Turret canbeselected="false" launchimpulse="1000.0" linkable="true" characterusable="false" barrelpos="256, 64" rotationlimits="0,0" powerconsumption="0.0" showprojectileindicator="true">
+      <StatusEffect type="OnUse" target="This">
+        <sound file="Content/Items/Weapons/Railgun1.ogg" range="10000" type="OnUse" volume="3" />
+        <sound file="Content/Items/Weapons/Railgun2.ogg" range="10000" type="OnUse" volume="3" />
+        <sound file="Content/Items/Weapons/Railgun3.ogg" range="10000" type="OnUse" volume="3" />
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="10.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+        <ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" />
+      </StatusEffect>
+    </Turret>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="torpedolaunchervertical" nameidentifier="torpedolauncher" tags="torpedolauncher" category="Machine,Weapon" focusonselected="true" offsetonselected="800" linkable="true" allowedlinks="torpedoammosource" scale="0.5">
+    <Sprite texture="%ModDir%/Items/Weapons/TurretsAndDepthCharges.png" depth="0.01" sourcerect="259,1,85,149" origin="0.5,0.5" />
+    <Turret canbeselected="false" launchimpulse="1000.0" linkable="true" characterusable="false" barrelpos="42, 149" rotationlimits="90,90" powerconsumption="0.0" showprojectileindicator="true">
+      <StatusEffect type="OnUse" target="This">
+        <sound file="Content/Items/Weapons/Railgun1.ogg" range="10000" type="OnUse" volume="3" />
+        <sound file="Content/Items/Weapons/Railgun2.ogg" range="10000" type="OnUse" volume="3" />
+        <sound file="Content/Items/Weapons/Railgun3.ogg" range="10000" type="OnUse" volume="3" />
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="10.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+        <ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" />
+      </StatusEffect>
+    </Turret>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="torpedo" tags="torpedoammo,defenceexpertammo" category="Weapon" sonarsize="5" scale="0.7" impactsoundtag="impact_metal_heavy" damagedbymonsters="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" indestructible="true" health="10" cargocontaineridentifier="">
+    <Price baseprice="750" soldeverywhere="false" buyingpricemultiplier="2.0">
+      <Price storeidentifier="merchantmilitary" minavailable="5" />
+      <Price storeidentifier="merchantmilitaryseparatist" minavailable="5" />
+      <Price storeidentifier="merchantcity" minavailable="7" />
+      <Price storeidentifier="merchantcityseparatist" minavailable="7" />
+      <Price storeidentifier="merchantmonastary" minavailable="5" />
+      <Price storeidentifier="merchantsmfortress" minavailable="5" />
+      <Price storeidentifier="smmerchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="chmerchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="10" />
+      <Price storeidentifier="merchantmech" minavailable="5" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+      <Item identifier="uex" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="adamantium" amount="4" />
+      <RequiredItem identifier="uex" amount="2" />
+      <RequiredItem identifier="fuelrod" />
+    </Fabricate>
+    <InventoryIcon texture="torpedolauncher.png" sourcerect="0,121,256,64" origin="0.5,0.5" />
+    <Sprite texture="torpedolauncher.png" sourcerect="0,121,256,64" depth="0.55" origin="0.5,0.5" />
+    <Body width="256" height="64" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,-15" handle2="0,-15" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="MovementSpeed" value="-0.3" />
+    </Holdable>
+    <Projectile characterusable="false" launchimpulse="5.0">
+      <!-- Make destructible when launched -->
+      <StatusEffect type="OnUse" target="This" Indestructible="false" />
+      <Attack structuredamage="1000" itemdamage="200" severlimbsprobability="5" penetration="1.0" targetforce="1000">
+        <Affliction identifier="explosiondamage" strength="500" />
+        <Affliction identifier="lacerations" strength="500" />
+        <Addliction identifier="bleeding" strength="80" />
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+        <Explosion range="750.0" ballastfloradamage="100" structuredamage="1000" itemdamage="200" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" penetration="0.5">
+          <Affliction identifier="explosiondamage" strength="750" />
+          <Affliction identifier="stun" strength="10" />
+        </Explosion>
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This" delay="0.2">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.1" />
+      <QualityStat stattype="ExplosionDamage" value="0.1" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="torpedoloadersinglevertical" tags="torpedoequipment,torpedoammosource,turretammosource" category="Machine" linkable="true" allowedlinks="torpedolauncher" scale="0.8" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <Sprite texture="Content/Items/Weapons/LegacyLoaders.png" depth="0.8" sourcerect="0,276,84,236" origin="0.5,0.5" />
+    <ItemContainer hideitems="false" drawinventory="true" capacity="1" slotsperrow="1" itempos="40,-120" iteminterval="0,0" itemrotation="270" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
+      <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="torpedoammo" />
+    </ItemContainer>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="20" mindeteriorationdelay="5" maxdeteriorationdelay="15" MinDeteriorationCondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <StatusEffect type="InWater" target="This" condition="-0.25" />
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="wrench" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+  </Item>
+  <Item name="" identifier="torpedoloadersinglehorizontal" tags="torpedoequipment,torpedoammosource,turretammosource" category="Machine" linkable="true" allowedlinks="torpedolauncher" scale="0.8" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <Sprite texture="Content/Items/Weapons/LegacyLoaders.png" depth="0.8" sourcerect="86,278,241,86" origin="0.5,0.5" />
+    <ItemContainer hideitems="false" drawinventory="true" capacity="1" slotsperrow="1" itempos="120,-45" iteminterval="0,0" itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
+      <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="torpedoammo" />
+    </ItemContainer>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="20" mindeteriorationdelay="5" maxdeteriorationdelay="15" MinDeteriorationCondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <StatusEffect type="InWater" target="This" condition="-0.25" />
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="wrench" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+  </Item>
+  <Item name="" identifier="physicoriumtorpedo" tags="torpedoammo,defenceexpertammo" category="Weapon" sonarsize="5" scale="0.7" impactsoundtag="impact_metal_heavy" damagedbymonsters="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" indestructible="true" health="10" cargocontaineridentifier="">
+    <Price baseprice="750" soldeverywhere="false" buyingpricemultiplier="2.0">
+      <Price storeidentifier="merchantmilitary" minavailable="5" />
+      <Price storeidentifier="merchantmilitaryseparatist" minavailable="5" />
+      <Price storeidentifier="merchantcity" minavailable="7" />
+      <Price storeidentifier="merchantcityseparatist" minavailable="7" />
+      <Price storeidentifier="merchantmonastary" minavailable="5" />
+      <Price storeidentifier="merchantsmfortress" minavailable="5" />
+      <Price storeidentifier="smmerchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="chmerchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="10" />
+      <Price storeidentifier="merchantmech" minavailable="5" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+      <Item identifier="uex" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="physicorium" amount="2" />
+      <RequiredItem identifier="uex" amount="2" />
+      <RequiredItem identifier="fuelrod" />
+    </Fabricate>
+    <InventoryIcon texture="torpedolauncher.png" sourcerect="0,121,256,64" origin="0.5,0.5" />
+    <Sprite texture="torpedolauncher.png" sourcerect="0,121,256,64" depth="0.55" origin="0.5,0.5" />
+    <Body width="256" height="64" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,-15" handle2="0,-15" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="MovementSpeed" value="-0.3" />
+    </Holdable>
+    <Projectile characterusable="false" launchimpulse="5.0">
+      <!-- Make destructible when launched -->
+      <StatusEffect type="OnUse" target="This" Indestructible="false" />
+      <Attack structuredamage="1250" itemdamage="200" severlimbsprobability="5" penetration="1.0" targetforce="1000">
+        <Affliction identifier="explosiondamage" strength="500" />
+        <Affliction identifier="lacerations" strength="500" />
+        <Addliction identifier="bleeding" strength="80" />
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+        <Explosion range="750.0" ballastfloradamage="100" structuredamage="1000" itemdamage="200" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" penetration="0.5">
+          <Affliction identifier="explosiondamage" strength="1000" />
+          <Affliction identifier="stun" strength="10" />
+        </Explosion>
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This" delay="0.2">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.1" />
+      <QualityStat stattype="ExplosionDamage" value="0.1" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="plasmatorpedo" tags="torpedoammo,defenceexpertammo" category="Weapon" sonarsize="5" scale="0.7" impactsoundtag="impact_metal_heavy" damagedbymonsters="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" indestructible="true" health="100" cargocontaineridentifier="">
+    <Price baseprice="750" soldeverywhere="false" buyingpricemultiplier="3.0" minleveldifficulty="25">
+      <Price storeidentifier="merchantmilitary" minavailable="2" />
+      <Price storeidentifier="merchantmilitaryseparatist" minavailable="2" />
+      <Price storeidentifier="merchantcity" minavailable="4" />
+      <Price storeidentifier="merchantcityseparatist" minavailable="4" />
+      <Price storeidentifier="merchantmonastary" minavailable="2" />
+      <Price storeidentifier="merchantsmfortress" minavailable="2" />
+      <Price storeidentifier="smmerchantarmory" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="chmerchantarmory" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="6" />
+      <Price storeidentifier="merchantmech" minavailable="2" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+      <Item identifier="uex" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="75" />
+      <RequiredItem identifier="adamantium" amount="8" />
+      <RequiredItem identifier="uex" amount="2" />
+      <RequiredItem identifier="pltank" amount="4" />
+      <RequiredItem identifier="fuelrod" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="torpedolauncher.png" sourcerect="0,121,256,64" origin="0.5,0.5" />
+    <Sprite texture="torpedolauncher.png" sourcerect="0,121,256,64" depth="0.55" origin="0.5,0.5" />
+    <Body width="256" height="64" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,-15" handle2="0,-15" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="MovementSpeed" value="-0.3" />
+    </Holdable>
+    <Projectile characterusable="false" launchimpulse="25.0">
+      <!-- Make destructible when launched -->
+      <StatusEffect type="OnUse" target="This" Indestructible="false" />
+      <Attack structuredamage="1500" itemdamage="200" severlimbsprobability="5" penetration="1.0" targetforce="1000">
+        <Affliction identifier="plasmadamage" strength="750" />
+        <Affliction identifier="explosiondamage" strength="500" />
+        <Affliction identifier="lacerations" strength="500" />
+        <Addliction identifier="bleeding" strength="80" />
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+        <Explosion range="1000.0" ballastfloradamage="100" structuredamage="1500" itemdamage="200" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" penetration="0.75">
+          <Affliction identifier="plasmadamage" strength="750" />
+          <Affliction identifier="explosiondamage" strength="750" />
+          <Affliction identifier="stun" strength="10" />
+        </Explosion>
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This" delay="0.2">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.1" />
+      <QualityStat stattype="ExplosionDamage" value="0.1" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="emptorpedo" tags="torpedoammo,defenceexpertammo" category="Weapon" sonarsize="5" scale="0.7" impactsoundtag="impact_metal_heavy" damagedbymonsters="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" indestructible="true" health="10" cargocontaineridentifier="">
+    <Price baseprice="750" soldeverywhere="false" buyingpricemultiplier="2.0">
+      <Price storeidentifier="merchantmilitary" minavailable="5" />
+      <Price storeidentifier="merchantmilitaryseparatist" minavailable="5" />
+      <Price storeidentifier="merchantcity" minavailable="7" />
+      <Price storeidentifier="merchantcityseparatist" minavailable="7" />
+      <Price storeidentifier="merchantmonastary" minavailable="5" />
+      <Price storeidentifier="merchantsmfortress" minavailable="5" />
+      <Price storeidentifier="smmerchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="chmerchantarmory" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="10" />
+      <Price storeidentifier="merchantmech" minavailable="5" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+      <Item identifier="uex" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="adamantium" amount="4" />
+      <RequiredItem identifier="uex" amount="2" />
+      <RequiredItem identifier="fuelrod" />
+      <RequiredItem identifier="fulgurium" />
+    </Fabricate>
+    <InventoryIcon texture="torpedolauncher.png" sourcerect="0,121,256,64" origin="0.5,0.5" />
+    <Sprite texture="torpedolauncher.png" sourcerect="0,121,256,64" depth="0.55" origin="0.5,0.5" />
+    <Body width="256" height="64" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,-15" handle2="0,-15" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="MovementSpeed" value="-0.3" />
+    </Holdable>
+    <Projectile characterusable="false" launchimpulse="5.0">
+      <!-- Make destructible when launched -->
+      <StatusEffect type="OnUse" target="This" Indestructible="false" />
+      <Attack structuredamage="250" itemdamage="20" severlimbsprobability="5" penetration="1.0" targetforce="1000">
+        <Affliction identifier="explosiondamage" strength="50" />
+        <Affliction identifier="lacerations" strength="50" />
+        <Addliction identifier="bleeding" strength="80" />
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+        <Explosion range="750.0" ballastfloradamage="100" structuredamage="200" itemdamage="20" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" penetration="0.5">
+          <Affliction identifier="explosiondamage" strength="75" />
+          <Affliction identifier="stun" strength="10" />
+        </Explosion>
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This" delay="0.2">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.1" />
+      <QualityStat stattype="ExplosionDamage" value="0.1" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="meltatorpedo" tags="torpedoammo" category="Weapon" sonarsize="5" scale="0.7" impactsoundtag="impact_metal_heavy" damagedbymonsters="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" indestructible="true" health="100" cargocontaineridentifier="">
+    <Price baseprice="1000" soldeverywhere="false" buyingpricemultiplier="4.0" minleveldifficulty="40">
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmilitaryseparatist" minavailable="1" />
+      <Price storeidentifier="merchantcity" minavailable="2" />
+      <Price storeidentifier="merchantcityseparatist" minavailable="2" />
+      <Price storeidentifier="merchantmonastary" minavailable="1" />
+      <Price storeidentifier="merchantsmfortress" minavailable="1" />
+      <Price storeidentifier="smmerchantarmory" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="chmerchantarmory" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+      <Item identifier="uex" />
+    </Deconstruct>
+    <InventoryIcon texture="torpedolauncher.png" sourcerect="0,121,256,64" origin="0.5,0.5" />
+    <Sprite texture="torpedolauncher.png" sourcerect="0,121,256,64" depth="0.55" origin="0.5,0.5" />
+    <Body width="256" height="64" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,-15" handle2="0,-15" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="MovementSpeed" value="-0.3" />
+    </Holdable>
+    <Projectile characterusable="false" launchimpulse="25.0" removeonhit="false" maxtargetstohit="5" sticktocharacters="true" sticktoitems="false" sticktodoors="false" sticktostructures="true" friendlyfire="true" damagedoors="true">
+      <!-- Make destructible when launched -->
+      <StatusEffect type="OnUse" target="This" Indestructible="false" />
+      <Attack structuredamage="2000" itemdamage="200" severlimbsprobability="5" penetration="1.0" targetforce="1000">
+        <Affliction identifier="meltadamage" strength="750" />
+        <Affliction identifier="explosiondamage" strength="500" />
+        <Affliction identifier="lacerations" strength="500" />
+        <Addliction identifier="bleeding" strength="80" />
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" delay="2.0" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+        <Explosion range="1750.0" ballastfloradamage="100" structuredamage="2000" itemdamage="200" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" penetration="0.75">
+          <Affliction identifier="meltadamage" strength="750" />
+          <Affliction identifier="explosiondamage" strength="750" />
+          <Affliction identifier="stun" strength="10" />
+        </Explosion>
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This" delay="0.2">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="" identifier="viraltorpedo" tags="torpedoammo" category="Weapon" sonarsize="5" scale="0.7" impactsoundtag="impact_metal_heavy" damagedbymonsters="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" indestructible="true" health="100" cargocontaineridentifier="">
+    <Price baseprice="10000" soldeverywhere="false" buyingpricemultiplier="4.0" minleveldifficulty="50">
+      <Price storeidentifier="merchantsmfortress" minavailable="0" maxavailable="1">
+        <Reputation faction="coalition" min="100" />
+      </Price>
+      <Price storeidentifier="smmerchantarmory" multiplier="0.9" minavailable="0" maxavailable="1">
+        <Reputation faction="coalition" min="100" />
+      </Price>
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+      <Item identifier="uex" />
+    </Deconstruct>
+    <InventoryIcon texture="torpedolauncher.png" sourcerect="0,121,256,64" origin="0.5,0.5" />
+    <Sprite texture="torpedolauncher.png" sourcerect="0,121,256,64" depth="0.55" origin="0.5,0.5" />
+    <Body width="256" height="64" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,-15" handle2="0,-15" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="MovementSpeed" value="-0.3" />
+    </Holdable>
+    <Projectile characterusable="false" launchimpulse="25.0" removeonhit="false" maxtargetstohit="5" sticktocharacters="true" sticktoitems="false" sticktodoors="false" sticktostructures="true" friendlyfire="true" damagedoors="true">
+      <!-- Make destructible when launched -->
+      <StatusEffect type="OnUse" target="This" Indestructible="false" />
+      <Attack structuredamage="2000" itemdamage="200" severlimbsprobability="5" penetration="1.0" targetforce="1000">
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" delay="2.0" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <sound file="Content/Sounds/Damage/GlassBreak1.ogg" range="1000" loop="false" oneshot="true" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+        <ParticleEmitter particle="toxinmist" copyentityangle="true" particlespersecond="20" position="0,40" anglemin="0" anglemax="360" scalemin="1.0" scalemax="1.0" distancemin="0" distancemax="0" velocitymin="300" velocitymax="800" />
+        <ParticleEmitter particle="toxinmistlargefade" copyentityangle="true" particlespersecond="2" position="0,0" anglemin="0" anglemax="360" scalemin="1.0" scalemax="1.5" distancemin="0" distancemax="0" velocitymin="50" velocitymax="550" />
+        <Explosion range="2000.0" ballastfloradamage="0" structuredamage="0" itemdamage="0" force="0.0" severlimbsprobability="0.0" flames="false" sparks="false" underwaterbubble="false" camerashake="0">
+          <Affliction identifier="lifeeater" strength="750" />
+        </Explosion>
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This" delay="0.2">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+</Items>

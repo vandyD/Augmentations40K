@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="novacannon" DamagedByExplosions="false" DamagedByProjectiles="false" suppresswarnings="true" description="" Tags="turret,novacannon" category="Machine" interactthroughwalls="true" Scale="0.5" interactdistance="10" focusonselected="true" offsetonselected="2500" linkable="true" allowedlinks="novaammosource">
+    <Sprite texture="novacannon.png" depth="0.01" sourcerect="0,315,256,200" canflipy="false" />
+    <BrokenSprite texture="%ModDir%/Items/Weapons/Turrets/subhellgun.png" depth="0.1" sourcerect="0,240,256,200" maxcondition="40" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/Items/Weapons/Turrets/subhellgun.png" depth="0.1" sourcerect="0,496,256,200" maxcondition="0" origin="0.5,0.5" />
+    <MinimapIcon name="Command_Weapons_nova" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="258,890,128,128" />
+    <UpgradePreviewSprite scale="3.0" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="490,700,140,64" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret launchimpulse="150.0" vulnerabletoemp="false" singlechargedshot="true" maxchargetime="11.0" canbeselected="false" characterusable="false" linkable="true" barrelpos="127,67" rotationlimits="15,-15" powerconsumption="160000.0" firingoffset="0,-150" showchargeindicator="true" showprojectileindicator="true" recoildistance="100" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
+      <StatusEffect type="OnUse" target="This">
+        <sound file="%ModDir%/Items/Weapons/Turrets/novashot.ogg" range="10000" volume="200" type="OnUse" />
+        <Explosion range="1500.0" structuredamage="0" empstrength="50.0" force="0.01" camerashake="10.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+      <WeaponIndicator texture="%ModDir%/UI/WeaponUI2.png" sourcerect="203,806,150,36" origin="0.227, 0.5" scale="2.0" />
+      <RailSprite texture="%ModDir%/Items/Weapons/Turrets/novacannon.png" origin="0.5, 0.5" sourcerect="290,420,105,95" depth="0.011" />
+      <BarrelSprite texture="%ModDir%/Items/Weapons/Turrets/novacannon.png" origin="0.8, 0.65" sourcerect="786,0,240,1024" depth="0.012" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <ChargeSound file="%ModDir%/Items/Weapons/Turrets/novacharge.ogg" volume="200" range="10000" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" alphablend="false" range="2048" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" />
+      <Upgrade gameversion="0.15.9.0" powerconsumption="16000.0" />
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="10000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.25" mindeteriorationdelay="240" maxdeteriorationdelay="300" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="amaxe,wrench,chamaxe" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+    <Upgrade gameversion="0.10.0.0" barrelpos="127,67" vulnerabletoemp="false" DamagedByExplosions="false" DamagedByProjectiles="false" />
+  </Item>
+  <Item name="" identifier="novaloadersmall" nameidentifier="novaloader" tags="novaequipment,novaammosource,turretammosource,novaammoloader" category="Machine" linkable="true" allowedlinks="novacannon" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <SwappableItem canbebought="false" origin="110,353" spawnwithid="novashell,novashell,novashell" />
+    <Sprite name="Railgun Loader Front" texture="Content/Items/Weapons/Loaders.png" depth="0.78" sourcerect="709,370,220,353" origin="0.5,0.5" />
+    <DecorativeSprite name="Railgun Loader Frame Front" texture="Content/Items/Weapons/Loaders.png" depth="0.8" sourcerect="31,569,117,200" origin="0.5,0.5" offset="0,-30" />
+    <ItemContainer hideitems="false" drawinventory="true" capacity="5" slotsperrow="6" itempos="70,-200" iteminterval="20,0" itemrotation="90" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
+      <GuiFrame relativesize="0.25,0.2" anchor="Center" style="ItemUI" />
+      <Containable items="novaammo" />
+    </ItemContainer>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="20" mindeteriorationdelay="5" maxdeteriorationdelay="15" MinDeteriorationCondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <StatusEffect type="InWater" target="This" condition="-0.25" />
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="wrench" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="novashell" tags="novaequipment,novaammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="novaammoloader" amount="5" mincondition="1" />
+    <PreferredContainer primary="railgunammocontainer" />
+    <Price baseprice="3500" buyingpricemultiplier="2.0">
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchantmech" multiplier="1.0" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="60">
+      <RequiredSkill identifier="weapons" level="75" />
+      <RequiredItem identifier="adamantium" amount="8" />
+      <RequiredItem identifier="c4block" amount="2" />
+      <RequiredItem identifier="uranium" amount="4" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,128,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="2,91,215,33" depth="0.55" origin="0.5,0.5" />
+    <Body width="215" height="30" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="0" maxtargetstohit="1" damagedoors="true">
+      <Attack structuredamage="100" itemdamage="100" severlimbsprobability="5" penetration="1.0" targetforce="1000">
+        <Affliction identifier="explosiondamage" strength="250" />
+        <Affliction identifier="bleeding" strength="50" />
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" allowwhenbroken="true" Condition="-100.0" setvalue="true">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+        <Explosion range="10000.0" ballastfloradamage="20000" structuredamage="20000" itemdamage="10000" force="500.0" severlimbsprobability="2" decal="explosion" penetration="1.0">
+          <Affliction identifier="explosiondamage" strength="5000" />
+          <Affliction identifier="novaamage" strength="5000" />
+          <Affliction identifier="stun" strength="5" />
+        </Explosion>
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="" identifier="novashellslow" tags="novaequipment,novaammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="railgunammocontainer" />
+    <Price baseprice="1750" buyingpricemultiplier="2.0">
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchantmech" multiplier="1.0" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="60">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="adamantium" amount="8" />
+      <RequiredItem identifier="c4block" amount="1" />
+      <RequiredItem identifier="uranium" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,128,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="2,91,215,33" depth="0.55" origin="0.5,0.5" />
+    <Body width="215" height="30" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="0" maxtargetstohit="1" damagedoors="true">
+      <Attack structuredamage="0" itemdamage="0" severlimbsprobability="5" penetration="0.5" targetforce="1000">
+        <Affliction identifier="stun" strength="1" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" allowwhenbroken="true" Condition="-100.0" setvalue="true">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+        <Explosion range="25000.0" structuredamage="0" itemdamage="0" force="100.0" severlimbsprobability="2" decal="explosion">
+          <Affliction identifier="explosiondamage" strength="5" />
+          <Affliction identifier="eyeoftheomnissiah" strength="1200" />
+          <Affliction identifier="stun" strength="5" />
+        </Explosion>
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+</Items>
