@@ -184,6 +184,320 @@
       <sprite name="Electoo Wearable Left Leg" texture="%ModDir%/Items/Augmentations/electoowearable.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
     </Wearable>
   </Item>
+  <Item name="" identifier="t2electoo" scale="0.4" category="Equipment" subcategory="augmentation" hideinmenus="true" tags="smallitem,electoo" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <Deconstruct time="10">
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="adrenaline" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Electoo.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
+    <Sprite name="Carapase" texture="%ModDir%/Items/Genetic/Genetic.png" sourcerect="405,0,90,105" origin="0.5,0.5" />
+    <Body radius="15" width="45" density="30" />
+    <!--<ItemContainer capacity="8" maxstacksize="1" autoinject="true" autoinjectthreshold="Infinity" allowswappingcontaineditems="false">
+      <Containable items="augmentation,amaugmentation" />
+    </ItemContainer>-->
+    <ItemContainer capacity="0" maxstacksize="0" slotsperrow="4" hideitems="true" autoinject="true" autoinjectthreshold="Infinity" allowswappingcontaineditems="false" containedstateindicatorslot="0">
+      <Containable items="none" />
+      <SlotIcon slotindex="1" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="64,0,32,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="96,0,32,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="4" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="5" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="64,64,32,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="6" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="96,64,32,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="7" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="128,64,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="8" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="0,128,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="9" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="64,128,32,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="10" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="96,128,32,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="11" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="128,128,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="13" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="64,192,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="14" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="0,192,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="17" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="0,256,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="18" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="64,256,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="augmentation,amaugmentation" excludeditems="nanoservitorsarcheotech,secondchancearcheotech" />
+      </SubContainer>
+      <SubContainer capacity="2" maxstacksize="1">
+        <Containable items="headimplant,amheadimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="augmentation,amaugmentation" excludeditems="nanoservitorsarcheotech,secondchancearcheotech" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="rhandimplant,amrhandimplant" />
+      </SubContainer>
+      <SubContainer capacity="2" maxstacksize="1">
+        <Containable items="bodyimplant,ambodyimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="lhandimplant,amlhandimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="rarmimplant" />
+      </SubContainer>
+      <SubContainer capacity="2" maxstacksize="1">
+        <Containable items="bodyimplant,ambodyimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="rarmimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="augmentation,amaugmentation" excludeditems="nanoservitorsarcheotech,secondchancearcheotech" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="rlegimplant,amrlegimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="llegimplant,amllegimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="augmentation,amaugmentation" excludeditems="nanoservitorsarcheotech,secondchancearcheotech" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="augmentation,amaugmentation" excludeditems="nanoservitorsarcheotech,secondchancearcheotech" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="rfootimplant,amrfootimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="lfootimplant,amlfootimplant" />
+      </SubContainer>
+      <SubContainer capacity="3" maxstacksize="1">
+        <Containable items="augmentation,amaugmentation" excludeditems="nanoservitorsarcheotech,secondchancearcheotech" />
+      </SubContainer>
+    </ItemContainer>
+    <Wearable limbtype="Torso" slots="HealthInterface" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="Black carapase Wearable" texture="%ModDir%/Items/Genetic/B_Carap_body.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="1.0" hideotherwearables="false" sourcerect="188,39,55,80" origin="0.5,0.67" />
+      <StatusEffect tags="admech" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
+      <StatusEffect type="OnContained" target="This" comparison="And">
+        <Conditional isdead="True" targetcontainer="true" />
+        <dropcontaineditems />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" comparison="And">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" comparison="And">
+        <Conditional hastag="eq despawncontainer" targetcontainer="true" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" comparison="And">
+        <Conditional isdead="True" targetcontainer="true" />
+        <Remove />
+      </StatusEffect>
+    </Wearable>
+  </Item>
+  <Item name="" identifier="augmentationprocessor" scale="0.4" category="Equipment" subcategory="augmentation" tags="smallitem" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <Price baseprice="400" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="15">
+      <Price storeidentifier="merchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantmedicalseparatist" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="ammerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="smmerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantforge" minavailable="1" maxavailable="3" />
+      <Price storeidentifier="merchantaugmentations" minavailable="1" maxavailable="2" />
+    </Price>
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="copper" />
+      <dItem identifier="rubber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
+      <RequiredSkill identifier="medical" level="60" />
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredSkill identifier="electrical" level="60" />
+      <RequiredItem identifier="fpgacircuit" amount="4" />
+      <RequiredItem identifier="copper" amount="2" />
+      <RequiredItem identifier="rubber" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="225,33,36,36" origin="0.5,0.5" />
+    <Body radius="15" width="45" density="30" />
+    <Wearable limbtype="Torso" slots="Any,HealthInterface" msg="ItemMsgPickUpSelect" displaycontainedstatus="true"></Wearable>
+    <!--<ItemContainer capacity="2" maxstacksize="1" autoinject="true" autoinjectthreshold="Infinity" allowswappingcontaineditems="false">
+      <Containable items="augmentation" />
+    </ItemContainer>-->
+    <ItemContainer capacity="0" maxstacksize="0" slotsperrow="3" hideitems="true" autoinject="true" autoinjectthreshold="Infinity" allowswappingcontaineditems="false" containedstateindicatorslot="0">
+      <Containable items="none" />
+      <SlotIcon slotindex="1" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="128,320,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="3" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="0,64,64,128" origin="0.5,0.5" />
+      <SlotIcon slotindex="4" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="64,64,64,128" origin="0.5,0.5" />
+      <SlotIcon slotindex="5" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="128,64,64,128" origin="0.5,0.5" />
+      <SlotIcon slotindex="6" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="64,192,64,128" origin="0.5,0.5" />
+      <SlotIcon slotindex="7" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="128,320,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="8" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="0,192,64,128" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="augmentation" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="headimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="" excludeditems="augmentation,amaugmentation" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="rhandimplant,rarmimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="bodyimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="lhandimplant,larmimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="rfootimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="" excludeditems="augmentation,amaugmentation" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="lfootimplant" />
+      </SubContainer>
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="t2augmentationprocessor" scale="0.4" category="Equipment" subcategory="augmentation" tags="smallitem" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <Price baseprice="1200" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="30">
+      <Price storeidentifier="merchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantmedicalseparatist" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="ammerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="smmerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantforge" minavailable="1" maxavailable="3" />
+      <Price storeidentifier="merchantaugmentations" minavailable="1" maxavailable="2" />
+    </Price>
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="copper" />
+      <dItem identifier="copper" />
+      <dItem identifier="rubber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
+      <RequiredSkill identifier="medical" level="70" />
+      <RequiredSkill identifier="mechanical" level="70" />
+      <RequiredSkill identifier="electrical" level="70" />
+      <RequiredItem identifier="fpgacircuit" amount="8" />
+      <RequiredItem identifier="copper" amount="2" />
+      <RequiredItem identifier="augmentationprocessor" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="225,33,36,36" origin="0.5,0.5" />
+    <Body radius="15" width="45" density="30" />
+    <Wearable limbtype="Torso" slots="Any,HealthInterface" msg="ItemMsgPickUpSelect" displaycontainedstatus="true"></Wearable>
+    <!--<ItemContainer capacity="3" maxstacksize="1" autoinject="true" autoinjectthreshold="Infinity" allowswappingcontaineditems="false">
+      <Containable items="augmentation" />
+    </ItemContainer>-->
+    <ItemContainer capacity="0" maxstacksize="0" slotsperrow="3" hideitems="true" autoinject="true" autoinjectthreshold="Infinity" allowswappingcontaineditems="false" containedstateindicatorslot="0">
+      <Containable items="none" />
+      <SlotIcon slotindex="1" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="3" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="0,64,64,128" origin="0.5,0.5" />
+      <SlotIcon slotindex="4" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="64,64,64,128" origin="0.5,0.5" />
+      <SlotIcon slotindex="5" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="128,64,64,128" origin="0.5,0.5" />
+      <SlotIcon slotindex="6" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="64,192,64,128" origin="0.5,0.5" />
+      <SlotIcon slotindex="7" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="128,320,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="8" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="0,192,64,128" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="augmentation" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="headimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="augmentation" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="rhandimplant,rarmimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="bodyimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="lhandimplant,larmimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="rfootimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="" excludeditems="augmentation,amaugmentation" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="lfootimplant" />
+      </SubContainer>
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="t3augmentationprocessor" scale="0.4" category="Equipment" subcategory="augmentation" tags="smallitem" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <Price baseprice="1600" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="50">
+      <Price storeidentifier="merchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantmedicalseparatist" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="ammerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="smmerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantforge" minavailable="1" maxavailable="3" />
+      <Price storeidentifier="merchantaugmentations" minavailable="1" maxavailable="2" />
+    </Price>
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="copper" />
+      <dItem identifier="copper" />
+      <dItem identifier="rubber" />
+      <dItem identifier="titanium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
+      <RequiredSkill identifier="medical" level="80" />
+      <RequiredSkill identifier="mechanical" level="80" />
+      <RequiredSkill identifier="electrical" level="80" />
+      <RequiredItem identifier="fpgacircuit" amount="8" />
+      <RequiredItem identifier="titanium" amount="2" />
+      <RequiredItem identifier="t2augmentationprocessor" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="225,33,36,36" origin="0.5,0.5" />
+    <Body radius="15" width="45" density="30" />
+    <Wearable limbtype="Torso" slots="Any,HealthInterface" msg="ItemMsgPickUpSelect" displaycontainedstatus="true"></Wearable>
+    <!--<ItemContainer capacity="4" maxstacksize="1" autoinject="true" autoinjectthreshold="Infinity" allowswappingcontaineditems="false">
+      <Containable items="augmentation" />
+    </ItemContainer>-->
+    <ItemContainer capacity="0" maxstacksize="0" slotsperrow="3" hideitems="true" autoinject="true" autoinjectthreshold="Infinity" allowswappingcontaineditems="false" containedstateindicatorslot="0">
+      <Containable items="none" />
+      <SlotIcon slotindex="1" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="3" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="0,64,64,128" origin="0.5,0.5" />
+      <SlotIcon slotindex="4" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="64,64,64,128" origin="0.5,0.5" />
+      <SlotIcon slotindex="5" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="128,64,64,128" origin="0.5,0.5" />
+      <SlotIcon slotindex="6" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="64,192,64,128" origin="0.5,0.5" />
+      <SlotIcon slotindex="8" texture="%ModDir%/UI/Health_Inventory_UI.png" sourcerect="0,192,64,128" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="augmentation" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="headimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="augmentation" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="rhandimplant,rarmimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="bodyimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="lhandimplant,larmimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="rfootimplant" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="augmentation" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="lfootimplant" />
+      </SubContainer>
+    </ItemContainer>
+  </Item>
+  <!--Augments itself-->
   <Item name="" identifier="adamantiumlegleft_sm" category="Medical" maxstacksize="1" tags="smallitem,smlfootimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <Price baseprice="1000" soldeverywhere="false" buyingpricemultiplier="2.5" minleveldifficulty="20">
       <Price storeidentifier="merchantmedical" minavailable="0" maxavailable="1" />
@@ -292,7 +606,6 @@
       <RequiredSkill identifier="medical" level="50" />
       <RequiredSkill identifier="mechanical" level="30" />
       <RequiredSkill identifier="electrical" level="40" />
-      <RequiredItem identifier="stackoffpgacircuit" />
       <RequiredItem identifier="copper" amount="2" />
       <RequiredItem identifier="silicon" amount="4" />
     </Fabricate>
@@ -343,7 +656,6 @@
       <RequiredSkill identifier="medical" level="50" />
       <RequiredSkill identifier="mechanical" level="30" />
       <RequiredSkill identifier="electrical" level="40" />
-      <RequiredItem identifier="stackoffpgacircuit" />
       <RequiredItem identifier="copper" amount="2" />
       <RequiredItem identifier="silicon" amount="2" />
       <RequiredItem identifier="rubber" amount="2" />
@@ -472,7 +784,7 @@
     <Body width="23" height="31" density="20" />
     <Holdable handle1="0,0" slots="Any"></Holdable>
   </Item>
-<Item name="" identifier="electricaldendrite" category="Medical,Equipment" maxstacksize="1" tags="smallitem,amaugmentation,mechanodendrite" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+  <Item name="" identifier="electricaldendrite" category="Medical,Equipment" maxstacksize="1" tags="smallitem,amaugmentation,mechanodendrite" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <Price baseprice="1000" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="30">
       <Price storeidentifier="merchantaugmentations" minavailable="0" maxavailable="1" />
     </Price>
@@ -778,5 +1090,1373 @@
     <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" depth="0.6" origin="0.5,0.5" sourcerect="64,0,64,128" />
     <Body width="23" height="31" density="20" />
     <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <Item name="" identifier="turretrepairdendrite" category="Medical,Equipment" maxstacksize="1" tags="smallitem,amaugmentation,mechanodendrite" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="1000" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="50">
+      <Price storeidentifier="merchantaugmentations" minavailable="0" maxavailable="1" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="copper" />
+      <dItem identifier="copper" />
+      <dItem identifier="copper" />
+      <dItem identifier="copper" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="60" />
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredSkill identifier="electrical" level="60" />
+      <RequiredItem identifier="fpgacircuit" amount="4" />
+      <RequiredItem identifier="titanium" amount="6" />
+      <RequiredItem identifier="copper" amount="5" />
+      <RequiredItem identifier="rubber" amount="5" />
+    </Fabricate>
+    <GeneticMaterial effect="robo_arm_4" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="robo_arm_4" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="1,0" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="128,0,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="1,0" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="128,0,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <!--Arms-->
+  <Item name="" identifier="adamantiumhandright" aliases="adamantiumhands,armoredhands" category="Medical" maxstacksize="1" tags="smallitem,rarmimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="600" soldeverywhere="false" buyingpricemultiplier="5.0">
+      <Price storeidentifier="merchantaugmentations" minavailable="0" maxavailable="1" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="40" />
+      <RequiredSkill identifier="mechanical" level="35" />
+      <RequiredSkill identifier="electrical" level="35" />
+      <RequiredItem identifier="fpgacircuit" amount="3" />
+      <RequiredItem identifier="titanium" amount="6" />
+    </Fabricate>
+    <GeneticMaterial effect="adamantiumhandright" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="adamantiumhandright" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" origin="0.5,0.5" sourcerect="256,256,64,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" depth="0.6" origin="0.5,0.5" sourcerect="256,256,64,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <Item name="" identifier="adamantiumhandright_sm" category="Medical" maxstacksize="1" tags="smallitem,smrarmimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="1000" soldeverywhere="false" buyingpricemultiplier="2.5" minleveldifficulty="20">
+      <Price storeidentifier="merchantaugmentations" minavailable="0" maxavailable="1" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="60" />
+      <RequiredSkill identifier="mechanical" level="45" />
+      <RequiredSkill identifier="electrical" level="45" />
+      <RequiredItem identifier="fpgacircuit" amount="3" />
+      <RequiredItem identifier="titanium" amount="2" />
+    </Fabricate>
+    <GeneticMaterial effect="adamantiumhandright_sm" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="adamantiumhandright_sm" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" origin="0.5,0.5" sourcerect="768,256,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" depth="0.6" origin="0.5,0.5" sourcerect="768,256,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <Item name="" identifier="adamantiumhandleft" category="Medical" maxstacksize="1" tags="smallitem,larmimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="600" soldeverywhere="false" buyingpricemultiplier="5.0">
+      <Price storeidentifier="merchantaugmentations" minavailable="0" maxavailable="1" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="40" />
+      <RequiredSkill identifier="mechanical" level="35" />
+      <RequiredSkill identifier="electrical" level="35" />
+      <RequiredItem identifier="fpgacircuit" amount="3" />
+      <RequiredItem identifier="titanium" amount="6" />
+    </Fabricate>
+    <GeneticMaterial effect="adamantiumhandleft" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="adamantiumhandleft" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" origin="0.5,0.5" sourcerect="320,256,64,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" depth="0.6" origin="0.5,0.5" sourcerect="320,256,64,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <Item name="" identifier="adamantiumhandleft_sm" category="Medical" maxstacksize="1" tags="smallitem,smlarmimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="1000" soldeverywhere="false" buyingpricemultiplier="2.5" minleveldifficulty="20">
+      <Price storeidentifier="merchantaugmentations" minavailable="0" maxavailable="1" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="60" />
+      <RequiredSkill identifier="mechanical" level="45" />
+      <RequiredSkill identifier="electrical" level="45" />
+      <RequiredItem identifier="fpgacircuit" amount="3" />
+      <RequiredItem identifier="titanium" amount="2" />
+    </Fabricate>
+    <GeneticMaterial effect="adamantiumhandleft_sm" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="adamantiumhandleft_sm" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" origin="0.5,0.5" sourcerect="768,256,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" depth="0.6" origin="0.5,0.5" sourcerect="768,256,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <!--other implants-->
+  <!--Breath of Mars-->
+  <Item name="" identifier="breathofmars" category="Medical" maxstacksize="1" tags="smallitem,ambodyimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="organicfiber" />
+      <dItem identifier="organicfiber" />
+      <dItem identifier="organicfiber" />
+      <dItem identifier="organicfiber" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="80" />
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredSkill identifier="electrical" level="60" />
+      <RequiredItem identifier="fpgacircuit" amount="2" />
+      <RequiredItem identifier="carbon" amount="4" />
+      <RequiredItem identifier="rubber" amount="4" />
+    </Fabricate>
+    <GeneticMaterial effect="breathofmars" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="breathofmars" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="4,3" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="512,384,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="4,3" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="512,384,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <Item name="" identifier="t2breathofmars" category="Medical" maxstacksize="1" tags="smallitem,ambodyimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="organicfiber" />
+      <dItem identifier="organicfiber" />
+      <dItem identifier="organicfiber" />
+      <dItem identifier="organicfiber" />
+      <dItem identifier="ballisticfiber" />
+      <dItem identifier="ballisticfiber" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="steel" />
+      <dItem identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="80" />
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredSkill identifier="electrical" level="60" />
+      <RequiredItem identifier="fpgacircuit" amount="2" />
+      <RequiredItem identifier="ballisticfiber" amount="4" />
+      <RequiredItem identifier="desinfectant" amount="4" />
+      <RequiredItem identifier="steel" amount="4" />
+      <RequiredItem identifier="breathofmars" />
+    </Fabricate>
+    <GeneticMaterial effect="t2breathofmars" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="t2breathofmars" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="4,3" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="512,384,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="4,3" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="512,384,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <Item name="" identifier="t3breathofmars" category="Medical" maxstacksize="1" tags="smallitem,ambodyimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="organicfiber" />
+      <dItem identifier="organicfiber" />
+      <dItem identifier="organicfiber" />
+      <dItem identifier="organicfiber" />
+      <dItem identifier="ballisticfiber" />
+      <dItem identifier="ballisticfiber" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="steel" />
+      <dItem identifier="steel" />
+      <dItem identifier="liquidoxygenite" />
+      <dItem identifier="liquidoxygenite" />
+      <dItem identifier="antibiotics" />
+      <dItem identifier="antibiotics" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="80" />
+      <RequiredSkill identifier="mechanical" level="70" />
+      <RequiredSkill identifier="electrical" level="70" />
+      <RequiredItem identifier="fpgacircuit" amount="4" />
+      <RequiredItem identifier="liquidoxygenite" amount="4" />
+      <RequiredItem identifier="desinfectant" amount="4" />
+      <RequiredItem identifier="antibiotics" amount="4" />
+      <RequiredItem identifier="t2breathofmars" />
+    </Fabricate>
+    <GeneticMaterial effect="t3breathofmars" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="t3breathofmars" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="5,3" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="640,384,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="5,3" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="640,384,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <Item name="" identifier="autosanguinator" category="Medical" maxstacksize="1" tags="smallitem,bodyimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="600" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="20">
+      <Price storeidentifier="merchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantmedicalseparatist" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="ammerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="smmerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantforge" minavailable="0" maxavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="copper" />
+      <dItem identifier="copper" />
+      <dItem identifier="antibloodloss1" />
+      <dItem identifier="antibloodloss1" />
+      <dItem identifier="antibloodloss2" />
+      <dItem identifier="titanium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="80" />
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredSkill identifier="electrical" level="60" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="titanium" amount="2" />
+      <RequiredItem identifier="carbon" />
+      <RequiredItem identifier="copper" amount="4" />
+      <RequiredItem identifier="rubber" amount="4" />
+      <RequiredItem identifier="antibloodloss1" amount="4" />
+      <RequiredItem identifier="antibloodloss2" amount="2" />
+    </Fabricate>
+    <GeneticMaterial effect="autosanguination" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="autosanguination" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="3,2" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="384,256,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="3,2" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="384,256,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any" />
+  </Item>
+  <Item name="" identifier="injector" category="Medical" maxstacksize="1" tags="smallitem,rhandimplant,lhandimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="700" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="30">
+      <Price storeidentifier="merchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantmedicalseparatist" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="ammerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="smmerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantforge" minavailable="0" maxavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="emptysyringe" />
+      <dItem identifier="emptysyringe" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="80" />
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredSkill identifier="electrical" level="60" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="carbon" />
+      <RequiredItem identifier="rubber" amount="4" />
+      <RequiredItem identifier="emptysyringe" amount="4" />
+    </Fabricate>
+    <GeneticMaterial effect="injector" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="injector" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="4,2" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="512,256,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="4,2" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="512,256,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any" />
+  </Item>
+  <Item name="" identifier="skullcircuit" category="Medical" maxstacksize="1" tags="smallitem,amheadimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="600" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="30">
+      <Price storeidentifier="merchantaugmentations" minavailable="0" maxavailable="1" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="100" />
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredSkill identifier="electrical" level="80" />
+      <RequiredItem identifier="fpgacircuit" amount="2" />
+      <RequiredItem identifier="carbon" />
+      <RequiredItem identifier="rubber" />
+    </Fabricate>
+    <GeneticMaterial effect="skullcircuit" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="skullcircuit" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <ItemContainer capacity="4" maxstacksize="1" autoinject="true" autoinjectthreshold="Infinity" allowswappingcontaineditems="false">
+      <Containable items="augmentation,amaugmentation" excludeditems="skullcircuit" />
+    </ItemContainer>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="5,1" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="640,128,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="6,1" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="768,128,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any" />
+  </Item>
+  <Item name="" identifier="corticalenhancer" category="Medical" maxstacksize="1" tags="smallitem,amheadimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="600" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="30">
+      <Price storeidentifier="merchantaugmentations" minavailable="0" maxavailable="1" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="graymatter" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="100" />
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredSkill identifier="electrical" level="80" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="graymatter" amount="2" />
+      <RequiredItem identifier="carbon" />
+      <RequiredItem identifier="rubber" />
+    </Fabricate>
+    <GeneticMaterial effect="corticalenhancer" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="corticalenhancer" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="5,1" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="640,128,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="6,1" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="768,128,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any" />
+  </Item>
+  <Item name="" identifier="radfurnace" category="Medical" maxstacksize="1" tags="smallitem,amaugmentation" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="600" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="30">
+      <Price storeidentifier="merchantaugmentations" minavailable="0" maxavailable="1" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="graymatter" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="antirad" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="80" />
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredSkill identifier="electrical" level="80" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="antirad" amount="3" />
+      <RequiredItem identifier="carbon" amount="4" />
+      <RequiredItem identifier="titanium" amount="4" />
+      <RequiredItem identifier="rubber" />
+    </Fabricate>
+    <GeneticMaterial effect="radfurnace" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="radfurnace" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="5,1" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="0,128,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="6,1" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="0,128,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any" />
+  </Item>
+  <Item name="" identifier="blessedautosimulacra" category="Medical" maxstacksize="1" tags="smallitem,amaugmentation" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="800" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="30">
+      <Price storeidentifier="merchantaugmentations" minavailable="0" maxavailable="1" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="organicfiber" />
+      <dItem identifier="organicfiber" />
+      <dItem identifier="antibloodloss2" />
+      <dItem identifier="antibloodloss2" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="90" />
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredSkill identifier="electrical" level="80" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="organicfiber" amount="4" />
+      <RequiredItem identifier="antibloodloss2" amount="4" />
+      <RequiredItem identifier="carbon" />
+      <RequiredItem identifier="rubber" />
+    </Fabricate>
+    <GeneticMaterial effect="blessedautosimulacra" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="blessedautosimulacra" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="5,1" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="0,128,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="6,1" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="0,128,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any" />
+  </Item>
+  <Item name="" identifier="gunarm" category="Medical,Weapon" maxstacksize="1" tags="smallitem,amaugmentation" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="600" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="50">
+      <Price storeidentifier="merchantaugmentations" minavailable="0" maxavailable="1" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="copper" />
+      <dItem identifier="copper" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="lead" />
+      <dItem identifier="ceramite" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="60" />
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredSkill identifier="electrical" level="60" />
+      <RequiredItem identifier="fpgacircuit" amount="4" />
+      <RequiredItem identifier="stackofadamantium" />
+      <RequiredItem identifier="copper" amount="5" />
+      <RequiredItem identifier="rubber" amount="4" />
+      <RequiredItem identifier="phosphorus" />
+      <RequiredItem identifier="lead" amount="2" />
+      <RequiredItem identifier="ceramite" />
+      <RequiredItem identifier="batterycell" />
+    </Fabricate>
+    <GeneticMaterial effect="gunarm" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="gunarm" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="1,1" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="128,128,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="1,1" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="128,128,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <Item name="" identifier="gunarm2" category="Medical,Weapon" maxstacksize="1" tags="smallitem,amaugmentation" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="1100" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="50">
+      <Price storeidentifier="merchantaugmentations" minavailable="0" maxavailable="1" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="copper" />
+      <dItem identifier="copper" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="lead" />
+      <dItem identifier="lead" />
+      <dItem identifier="lead" />
+      <dItem identifier="lead" />
+      <dItem identifier="ceramite" />
+      <dItem identifier="ceramite" />
+      <dItem identifier="phosphorus" />
+      <dItem identifier="phosphorus" />
+      <dItem identifier="phosphorus" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="60" />
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredSkill identifier="electrical" level="60" />
+      <RequiredItem identifier="fpgacircuit" amount="4" />
+      <RequiredItem identifier="stackofadamantium" />
+      <RequiredItem identifier="copper" amount="5" />
+      <RequiredItem identifier="rubber" amount="4" />
+      <RequiredItem identifier="phosphorus" amount="6" />
+      <RequiredItem identifier="stackoflead" />
+      <RequiredItem identifier="ceramite" amount="4" />
+    </Fabricate>
+    <GeneticMaterial effect="gunarm2" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="gunarm2" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="2,1" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="256,128,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="2,1" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="256,128,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <Item name="" identifier="armoredmusculature" category="Medical" maxstacksize="1" tags="smallitem,bodyimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="440" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="30">
+      <Price storeidentifier="merchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantmedicalseparatist" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="ammerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="smmerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantforge" minavailable="0" maxavailable="1" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="stackofcarbon" />
+      <dItem identifier="stackofrubber" />
+      <dItem identifier="stackofadamantium" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="adamantium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="60" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem identifier="stackofcarbon" amount="2" />
+      <RequiredItem identifier="stackofrubber" amount="2" />
+      <RequiredItem identifier="stackofadamantium" amount="3" />
+    </Fabricate>
+    <GeneticMaterial effect="armoredmusculature" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="armoredmusculature" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="3,1" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="384,128,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="3,1" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="384,128,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <Item name="" identifier="gunarm3" category="Medical,Weapon" maxstacksize="1" tags="smallitem,amaugmentation" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="1600" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="50">
+      <Price storeidentifier="merchantaugmentations" sold="false" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="copper" />
+      <dItem identifier="copper" />
+      <dItem identifier="copper" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="incendium" />
+      <dItem identifier="gold" />
+      <dItem identifier="gold" />
+      <dItem identifier="ceramite" />
+      <dItem identifier="ceramite" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="65" />
+      <RequiredSkill identifier="mechanical" level="65" />
+      <RequiredSkill identifier="electrical" level="65" />
+      <RequiredItem identifier="fpgacircuit" amount="6" />
+      <RequiredItem identifier="stackofadamantium" />
+      <RequiredItem identifier="copper" amount="5" />
+      <RequiredItem identifier="rubber" amount="4" />
+      <RequiredItem identifier="incendium" amount="3" />
+      <RequiredItem identifier="gold" amount="3" />
+      <RequiredItem identifier="ceramite" amount="4" />
+      <RequiredItem identifier="ampltank" />
+    </Fabricate>
+    <GeneticMaterial effect="gunarm3" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="gunarm3" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="1,2" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="128,256,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="1,2" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="128,256,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <Item name="" identifier="gunarm4" category="Medical,Weapon" maxstacksize="1" tags="smallitem,amaugmentation" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="2000" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="50">
+      <Price storeidentifier="merchantaugmentations" sold="false" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="copper" />
+      <dItem identifier="copper" />
+      <dItem identifier="copper" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="stackofadamantium" />
+      <dItem identifier="incendium" />
+      <dItem identifier="incendium" />
+      <dItem identifier="incendium" />
+      <dItem identifier="gold" />
+      <dItem identifier="gold" />
+      <dItem identifier="gold" />
+      <dItem identifier="ceramite" />
+      <dItem identifier="ceramite" />
+      <dItem identifier="ceramite" />
+      <dItem identifier="eradicationbeammagazine" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="70" />
+      <RequiredSkill identifier="mechanical" level="70" />
+      <RequiredSkill identifier="electrical" level="70" />
+      <RequiredItem identifier="fpgacircuit" amount="6" />
+      <RequiredItem identifier="stackofadamantium" amount="2" />
+      <RequiredItem identifier="copper" amount="5" />
+      <RequiredItem identifier="rubber" amount="4" />
+      <RequiredItem identifier="incendium" amount="6" />
+      <RequiredItem identifier="gold" amount="6" />
+      <RequiredItem identifier="ceramite" amount="6" />
+      <RequiredItem identifier="eradicationbeammagazine" amount="2" />
+    </Fabricate>
+    <GeneticMaterial effect="gunarm4" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="gunarm4" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="0,2" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="0,256,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="0,2" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="0,256,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <Item name="" identifier="flippersimplant" category="Medical" maxstacksize="1" tags="smallitem,amllegimplant,amrlegimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="600" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="30">
+      <Price storeidentifier="merchantaugmentations" sold="false" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="stackofaluminium" />
+      <dItem identifier="aluminium" />
+      <dItem identifier="aluminium" />
+      <dItem identifier="aluminium" />
+      <dItem identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="50" />
+      <RequiredSkill identifier="mechanical" level="45" />
+      <RequiredSkill identifier="electrical" level="45" />
+      <RequiredItem identifier="stackoffpgacircuit" />
+      <RequiredItem identifier="adamantium" amount="4" />
+      <RequiredItem identifier="stackofaluminium" amount="3" />
+    </Fabricate>
+    <GeneticMaterial effect="flippersimplant" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="flippersimplant" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" origin="0.5,0.5" sourcerect="512,128,128,64" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" depth="0.6" origin="0.5,0.5" sourcerect="512,128,128,64" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <Item name="" identifier="t2flippersimplant" category="Medical" maxstacksize="1" tags="smallitem,amllegimplant,amrlegimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="600" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="30">
+      <Price storeidentifier="merchantaugmentations" sold="false" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="stackoffpgacircuit" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="adamantium" />
+      <dItem identifier="stackofaluminium" />
+      <dItem identifier="aluminium" />
+      <dItem identifier="aluminium" />
+      <dItem identifier="aluminium" />
+      <dItem identifier="aluminium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="55" />
+      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredSkill identifier="electrical" level="50" />
+      <RequiredItem identifier="stackoffpgacircuit" />
+      <RequiredItem identifier="titanium" amount="4" />
+      <RequiredItem identifier="flippersimplant" />
+    </Fabricate>
+    <GeneticMaterial effect="t2flippersimplant" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="t2flippersimplant" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" origin="0.5,0.5" sourcerect="512,128,128,64" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" depth="0.6" origin="0.5,0.5" sourcerect="512,128,128,64" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+  </Item>
+  <Item name="" identifier="corticalimplant" category="Medical" maxstacksize="1" tags="smallitem,headimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="600" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="30">
+      <Price storeidentifier="merchantaugmentations" sold="false" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="stackoffpgacircuit" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="hyperzine" />
+      <dItem identifier="furin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="100" />
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredSkill identifier="electrical" level="80" />
+      <RequiredItem identifier="stackoffpgacircuit" amount="2" />
+      <RequiredItem identifier="stackofcarbon" />
+      <RequiredItem identifier="stackofrubber" />
+      <RequiredItem identifier="hyperzine" amount="2" />
+      <RequiredItem identifier="furin" amount="2" />
+    </Fabricate>
+    <GeneticMaterial effect="corticalimplant" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="corticalimplant" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="1,3" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="128,384,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="1,3" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="128,384,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any" />
+  </Item>
+  <Item name="" identifier="directconnectionimplant" category="Medical" maxstacksize="1" tags="smallitem,amaugmentation" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="600" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="30">
+      <Price storeidentifier="merchantaugmentations" sold="false" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="stackoffpgacircuit" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="dementonite" />
+      <dItem identifier="fulgurium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="100" />
+      <RequiredSkill identifier="mechanical" level="60" />
+      <RequiredSkill identifier="electrical" level="80" />
+      <RequiredItem identifier="stackoffpgacircuit" amount="2" />
+      <RequiredItem identifier="stackofcarbon" />
+      <RequiredItem identifier="stackofrubber" />
+      <RequiredItem identifier="dementonite" amount="2" />
+      <RequiredItem identifier="fulgurium" amount="2" />
+    </Fabricate>
+    <GeneticMaterial effect="directconnectionimplant" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="directconnectionimplant" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="0,1" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="0,128,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="0,1" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="0,128,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any" />
+  </Item>
+  <Item name="" identifier="armoredmusculaturet2" category="Medical" maxstacksize="1" tags="smallitem,ambodyimplant" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="1000" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="30">
+      <Price storeidentifier="merchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantmedicalseparatist" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="ammerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="smmerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantforge" minavailable="0" maxavailable="1" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="stackofcarbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="physicorium" />
+      <dItem identifier="physicorium" />
+      <dItem identifier="physicorium" />
+      <dItem identifier="stackofrubber" />
+      <dItem identifier="stackofadamantium" />
+      <dItem identifier="stackofadamantium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="70" />
+      <RequiredSkill identifier="mechanical" level="65" />
+      <RequiredItem identifier="armoredmusculature" />
+      <RequiredItem identifier="carbon" amount="6" />
+      <RequiredItem identifier="physicorium" amount="6" />
+      <RequiredItem identifier="stackofadamantium" />
+    </Fabricate>
+    <GeneticMaterial effect="armoredmusculaturet2" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="armoredmusculaturet2" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="0,1" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="0,128,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="0,1" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="0,128,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any" />
+  </Item>
+  <Item name="" identifier="logisanalyzer" category="Medical" maxstacksize="1" tags="smallitem,amaugmentation" subcategory="augmentation" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
+    <Price baseprice="8000" soldeverywhere="false" buyingpricemultiplier="5.0" minleveldifficulty="30">
+      <Price storeidentifier="merchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantmedicalseparatist" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="ammerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="smmerchantmedical" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantforge" minavailable="0" maxavailable="1" />
+    </Price>
+    <PreferredContainer primary="medfabcab" />
+    <Deconstruct time="10">
+      <dItem identifier="carbon" />
+      <dItem identifier="carbon" />
+      <dItem identifier="rubber" />
+      <dItem identifier="rubber" />
+      <dItem identifier="dementonite" />
+      <dItem identifier="dementonite" />
+      <dItem identifier="dementonite" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+      <dItem identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+      <RequiredSkill identifier="medical" level="70" />
+      <RequiredSkill identifier="mechanical" level="65" />
+      <RequiredItem identifier="graymatter" />
+      <RequiredItem identifier="carbon" amount="4" />
+      <RequiredItem identifier="rubber" amount="4" />
+      <RequiredItem identifier="dementonite" amount="6" />
+      <RequiredItem identifier="stackoffpgacircuit" />
+    </Fabricate>
+    <GeneticMaterial effect="logisanalyzer" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
+      <RequiredSkill identifier="medical" level="80" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Conditional implantdisabler="eq 0" />
+        <Affliction identifier="organdamage" amount="30" />
+        <Affliction identifier="stun" amount="0.5" />
+        <ReduceAffliction identifier="logisanalyzer" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="0,1" sheetelementsize="128,128" origin="0.5,0.5" sourcerect="0,128,128,128" />
+    <Sprite texture="%ModDir%/Items/Augmentations/Admechaugments.png" sheetindex="0,1" sheetelementsize="128,128" depth="0.6" origin="0.5,0.5" sourcerect="0,128,128,128" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any" />
   </Item>
 </Items>
