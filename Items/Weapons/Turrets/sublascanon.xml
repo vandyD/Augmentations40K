@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="lascanon" aliases="pulselaser" description="" damagedbyexplosions="false" damagedbyprojectiles="false" Tags="turret,sublascannon" category="Machine" interactthroughwalls="true" Scale="0.5" interactdistance="10" focusonselected="true" offsetonselected="1000" linkable="true" allowedlinks="lascanonammosource">
+    <Sprite texture="%ModDir%/Items/Weapons/Turrets/sublascanon.png" depth="0.1" sourcerect="0,0,256,200" canflipy="false" />
+    <MinimapIcon name="Command_Weapons_lascanon" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="130,890,128,128" />
+    <SwappableItem price="7000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
+      <SchematicSprite texture="%ModDir%/UI/WeaponUI2.png" sourcerect="255,0,212,411" origin="0.5,0.5" />
+      <SwapConnectedItem tag="periscope" swapto="periscope" />
+      <SwapConnectedItem tag="turretammosource" swapto="lascanonloader" />
+    </SwappableItem>
+    <UpgradePreviewSprite scale="3.5" texture="%ModDir%/UI/WeaponUI2.png" sourcerect="105,700,86,65" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret canbeselected="false" characterusable="false" linkable="true" barrelpos="127, 67" rotationlimits="180,360" powerconsumption="20000.0" showchargeindicator="true" showprojectileindicator="true" reload="5.0" recoildistance="0" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
+      <StatusEffect type="OnUse" target="This">
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot1.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot2.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot3.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot4.ogg" range="10000" type="OnUse" />
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="10.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+      <WeaponIndicator texture="%ModDir%/UI/WeaponUI2.png" sourcerect="103,800,90,40" origin="0.24, 0.472" />
+      <RailSprite texture="%ModDir%/Items/Weapons/Turrets/sublascanon.png" origin="0.5, 0.5" sourcerect="415,228,96,100" depth="0.011" />
+      <BarrelSprite texture="%ModDir%/Items/Weapons/Turrets/sublascanon.png" origin="0.5, 0.85" sourcerect="415,0,96,328" depth="0.09" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="Content/Items/Weapons/railgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/railgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/railgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" alphablend="false" range="2048" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <Upgrade gameversion="0.15.9.0" powerconsumption="10000.0" />
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="10000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.25" mindeteriorationdelay="240" maxdeteriorationdelay="300" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="amaxe,wrench,chamaxe" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+    <Upgrade gameversion="0.10.0.0" scale="*0.5" barrelpos="127, 67" />
+  </Item>
+  <Item name="" identifier="lascanonwrecked" description="" damagedbyexplosions="false" damagedbyprojectiles="false" Tags="turret,sublascannon" category="Wrecked" interactthroughwalls="true" Scale="0.5" interactdistance="10" focusonselected="true" offsetonselected="1000" linkable="true" allowedlinks="lascanonammosource">
+    <Sprite texture="%ModDir%/Items/Weapons/Turrets/sublascanonwrecked.png" depth="0.1" sourcerect="0,0,256,200" canflipy="false" />
+    <StaticBody width="80" radius="80" />
+    <Turret canbeselected="false" characterusable="false" linkable="true" barrelpos="127, 67" rotationlimits="180,360" powerconsumption="20000.0" showchargeindicator="true" showprojectileindicator="true" reload="5.0" recoildistance="0" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
+      <StatusEffect type="OnUse" target="This">
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot1.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot2.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot3.ogg" range="10000" type="OnUse" />
+        <sound file="Content/Items/Weapons/WEAPONS_laserGunShot4.ogg" range="10000" type="OnUse" />
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="10.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+      <WeaponIndicator texture="%ModDir%/UI/WeaponUI2.png" sourcerect="103,800,90,40" origin="0.24, 0.472" />
+      <RailSprite texture="%ModDir%/Items/Weapons/Turrets/sublascanonwrecked.png" origin="0.5, 0.5" sourcerect="415,228,96,100" depth="0.011" />
+      <BarrelSprite texture="%ModDir%/Items/Weapons/Turrets/sublascanonwrecked.png" origin="0.5, 0.85" sourcerect="415,0,96,328" depth="0.09" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="Content/Items/Weapons/railgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/railgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/railgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" alphablend="false" range="2048" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <Upgrade gameversion="0.15.9.0" powerconsumption="10000.0" />
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="10000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.25" mindeteriorationdelay="240" maxdeteriorationdelay="300" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="amaxe,wrench,chamaxe" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+    <Upgrade gameversion="0.10.0.0" scale="*0.5" barrelpos="127, 67" />
+  </Item>
+  <Item name="" identifier="lascanonammobox" aliases="pulselaserammobox,pulselaserammoboxtrilaser" scale="0.5" tags="lascanonequipment,lascanonammo,ammobox,40kloadablebig,defenceexpertammo" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="ammoboxcontainer" minamount="1" maxamount="3" notcampaign="true" />
+    <PreferredContainer primary="lascanonloader" amount="1" mincondition="1" />
+    <Price baseprice="250" soldeverywhere="false">
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantcityseparatist" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="1" />
+      <Price storeidentifier="merchantresearchseparatist" multiplier="1.25" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantmilitaryseparatist" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantmonastary" multiplier="1.0" minavailable="2" />
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantarmory" multiplier="1.5" minavailable="6" />
+      <Price storeidentifier="smmerchantarmory" multiplier="1.5" minavailable="6" />
+      <Price storeidentifier="chmerchantarmory" multiplier="1.5" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="lithium" copycondition="true" />
+      <Item identifier="alienblood" copycondition="true" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="lithium" />
+      <RequiredItem identifier="ceramite" />
+      <RequiredItem identifier="lgmagazine" />
+      <RequiredItem identifier="lgmagazine" />
+      <RequiredItem identifier="lgmagazine" />
+      <RequiredItem identifier="lgmagazine" />
+      <RequiredItem identifier="lgmagazine" />
+      <RequiredItem identifier="lgmagazine" />
+      <RequiredItem identifier="aluminium" />
+    </Fabricate>
+    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
+    <Sprite texture="ammoboxes1.png" depth="0.54" sourcerect="0,0,128,128" origin="0.5,0.5" />
+    <Body width="115" height="88" density="50" />
+    <Holdable canbecombined="true" removeoncombined="false" slots="RightHand,LeftHand" holdpos="0,-30" handle1="0,-30" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+    </Holdable>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" SpawnWithId="lascanonbolt" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="lascanonbolt" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-4" disabledeltatime="true">
+        <RequiredItem items="lascanonbolt" type="Contained" />
+      </StatusEffect>
+      <Containable items="lascanonbolt" />
+    </ItemContainer>
+    <Quality>
+      <QualityStat stattype="Condition" value="0.5" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="lascanonloader" aliases="pulselaserloader" tags="lascanonequipment,lascanonammosource,turretammosource" category="Machine" linkable="true" allowedlinks="lascanon" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <SwappableItem canbebought="false" origin="82,358" spawnwithid="lascanonammobox" />
+    <Sprite name="Lascannon Loader Front" texture="%ModDir%/Items/Weapons/Turrets/LascannonLoader.png" depth="0.785" sourcerect="46,21,166,363" origin="0.5,0.5" />
+    <DecorativeSprite name="Lascannon Loader Frame Back" texture="Content/Items/Weapons/Loaders.png" depth="0.8" sourcerect="31,569,117,200" origin="0.5,0.5" offset="0,-68" />
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="10" mindeteriorationdelay="60" maxdeteriorationdelay="300" MinDeteriorationCondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <StatusEffect type="InWater" target="This" condition="-0.25" />
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="amaxe,amaxe" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="5" />
+      </StatusEffect>
+    </Repairable>
+    <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="82,-270" iteminterval="0,0" itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.75">
+      <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="lascanonammo" />
+      <!-- when the laser is fired, it triggers this statuseffect, causing contained ammunition boxes to spawn new ammo -->
+      <StatusEffect type="OnUse" target="Contained">
+        <RequiredItem items="lascanonammo" type="Contained" />
+        <Use />
+      </StatusEffect>
+    </ItemContainer>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="lascanonbolt" Tags="lasammo" category="Misc" scale="0.5" sonarsize="2" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerpulselaser" particleamount="1" velocitymin="0" velocitymax="0" />
+      <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" />
+      <Attack structuredamage="200" targetforce="15" itemdamage="250" severlimbsprobability="1.0" levelwalldamage="20000" penetration="0.25">
+        <Affliction identifier="burn" strength="120" />
+        <Affliction identifier="explosiondamage" strength="380" />
+        <Affliction identifier="stun" strength="2.0" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="muzzleflashpulselaser" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.8" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,225,180" />
+        <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="" identifier="chlascanonammobox" scale="0.5" tags="lascanonequipment,lascanonammo,ammobox,40kloadablebig,defenceexpertammo" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="ammocontainer" />
+    <Price baseprice="250" soldeverywhere="false">
+      <Price storeidentifier="chmerchantoutpost" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="chmerchantarmory" multiplier="1.5" minavailable="3" />
+      <Price storeidentifier="chmerchant" multiplier="1.0" minavailable="0" maxavailable="2" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="lithium" copycondition="true" />
+      <Item identifier="alienblood" copycondition="true" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="whfabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="lithium" />
+      <RequiredItem identifier="ceramite" />
+      <RequiredItem identifier="alienblood" />
+      <RequiredItem identifier="aluminium" />
+    </Fabricate>
+    <Fabricate suitablefabricators="chfabricator" displayname="corruptitem" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="lascanonammobox" />
+    </Fabricate>
+    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
+    <Sprite texture="ammoboxes1.png" depth="0.54" sourcerect="128,0,128,128" origin="0.5,0.5" />
+    <Body width="115" height="88" density="50" />
+    <Holdable canbecombined="true" removeoncombined="false" slots="RightHand,LeftHand" holdpos="0,-30" handle1="0,-30" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+    </Holdable>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" SpawnWithId="chlascanonbolt" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="chlascanonbolt" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
+        <RequiredItem items="chlascanonbolt" type="Contained" />
+      </StatusEffect>
+      <Containable items="chlascanonbolt" />
+    </ItemContainer>
+    <Quality>
+      <QualityStat stattype="Condition" value="0.5" />
+    </Quality>
+  </Item>
+  <Item name="ch lc bolt" identifier="chlascanonbolt" Tags="lasammo" category="Misc" scale="0.5" sonarsize="2" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerchaospulselaser" particleamount="1" velocitymin="0" velocitymax="0" />
+      <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" />
+      <Attack structuredamage="200" targetforce="15" itemdamage="350" severlimbsprobability="1.0" levelwalldamage="20000" penetration="0.25">
+        <Affliction identifier="burn" strength="150" />
+        <Affliction identifier="explosiondamage" strength="400" />
+        <Affliction identifier="warpcorrupt" strength="10" />
+        <Affliction identifier="stun" strength="3.0" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="muzzleflashpulselaser" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.8" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,225,180" />
+        <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+</Items>

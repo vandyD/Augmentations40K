@@ -218,6 +218,9 @@
     <Effect minstrength="0" maxstrength="3" strengthchange="0" resistancefor="rightlegfracture" minresistance="1.0" maxresistance="1.0">
       <StatusEffect target="Character" type="Always" disabledeltatime="true">
         <Conditional amputated_rightleg="lt 5" />
+        <TriggerAnimation Type="Walk" path="%ModDir%/Items/Augmentations/HumanPriestWalk.xml" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Walk" path="%ModDir%/Items/Augmentations/HumanPriestRun.xml" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Walk" path="%ModDir%/Items/Augmentations/HumanPriestCrouch.xml" priority="1" ExpectedSpecies="Human" />
         <Affliction identifier="amputated_rightleg" strength="100.0" />
       </StatusEffect>
       <StatusEffect target="Character" disabledeltatime="true" interval="1.0">
@@ -236,6 +239,9 @@
     <Effect minstrength="0" maxstrength="3" strengthchange="0" resistancefor="leftlegfracture" minresistance="1.0" maxresistance="1.0">
       <StatusEffect target="Character" type="Always" disabledeltatime="true">
         <Conditional amputated_lefleg="lt 5" />
+        <TriggerAnimation Type="Walk" path="%ModDir%/Items/Augmentations/HumanPriestWalk.xml" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Walk" path="%ModDir%/Items/Augmentations/HumanPriestRun.xml" priority="1" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Walk" path="%ModDir%/Items/Augmentations/HumanPriestCrouch.xml" priority="1" ExpectedSpecies="Human" />
         <Affliction identifier="amputated_lefleg" strength="100.0" />
       </StatusEffect>
       <StatusEffect target="Character" disabledeltatime="true" interval="1.0">
