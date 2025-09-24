@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+    <Item name="plasma" identifier="volkiteround" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+        <InventoryIcon texture="plasma.png" sourcerect="0,0,140,140" origin="0.5,0.5" />
+        <Sprite texture="plasma.png" sourcerect="0,0,140,140" depth="0.55" origin="0.5,0.5" />
+        <Body width="40" height="14" density="40" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" hitscan="true" launchimpulse="60.0" removeonhit="true">
+        <ParticleEmitter particle="tracermeltacharge" particleamount="1" velocitymin="0" velocitymax="0" />
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="50" penetration="0.5" targetforce="5" itemdamage="50" severlimbsprobability="0.5">
+            <Affliction identifier="stun" strength="0.2" />
+            <Affliction identifier="plasmadamage" strength="100" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+            <ParticleEmitter particle="smoke" particleamount="1" velocitymin="0" velocitymax="0" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+            <Conditional entitytype="eq Structure" />
+            <Conditional hastag="eq door" />
+            <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,doorwbuttons,windoweddoorwbuttons,hatchwbuttons" Stuck="-100.0" Condition="-100.0" />
+        <LightComponent LightColor="0.5,0.5,1.0,0.8" range="50" IsOn="true">
+            <LightTexture texture="Content/Lights/light.png" origin="0.5, 0.5" size="1.0,1.0" />
+        </LightComponent>
+        <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true">
+            <!--<Explosion range="100.0" structuredamage="50" itemdamage="1000" force="10.0" flames="true" smoke="true" sparks="false" underwaterbubble="true" flashduration="2" flashrange="100" flashcolor="170,170,255,255" >
+            </Explosion>-->
+        </StatusEffect>
+        <StatusEffect type="OnActive" target="This">
+            <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+        </StatusEffect>
+        <!-- Remove the item after exploding -->
+        <StatusEffect type="OnBroken" target="This">
+            <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+            <Remove />
+        </StatusEffect>
+        </Projectile>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="plasma" identifier="eradicationround" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+        <InventoryIcon texture="plasma.png" sourcerect="0,0,140,140" origin="0.5,0.5" />
+        <Sprite texture="plasma.png" sourcerect="0,0,140,140" depth="0.55" origin="0.5,0.5" />
+        <Body width="40" height="14" density="40" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" hitscan="true" launchimpulse="60.0" removeonhit="true">
+        <ParticleEmitter particle="tracermeltacharge" particleamount="1" velocitymin="0" velocitymax="0" />
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="75" penetration="0.75" targetforce="5" itemdamage="75" severlimbsprobability="0.75">
+            <Affliction identifier="stun" strength="0.5" />
+            <Affliction identifier="plasmadamage" strength="100" />
+            <Affliction identifier="explosiondamage" strength="100" />
+            <Affliction identifier="radiationsickness" strength="100" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+            <ParticleEmitter particle="smoke" particleamount="1" velocitymin="0" velocitymax="0" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+            <Conditional entitytype="eq Structure" />
+            <Conditional hastag="eq door" />
+            <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,doorwbuttons,windoweddoorwbuttons,hatchwbuttons" Stuck="-100.0" Condition="-100.0" />
+        <LightComponent LightColor="0.5,0.5,1.0,0.8" range="50" IsOn="true">
+            <LightTexture texture="Content/Lights/light.png" origin="0.5, 0.5" size="1.0,1.0" />
+        </LightComponent>
+        <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true">
+            <!--<Explosion range="100.0" structuredamage="50" itemdamage="1000" force="10.0" flames="true" smoke="true" sparks="false" underwaterbubble="true" flashduration="2" flashrange="100" flashcolor="170,170,255,255" >
+            </Explosion>-->
+        </StatusEffect>
+        <StatusEffect type="OnActive" target="This">
+            <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+        </StatusEffect>
+        <!-- Remove the item after exploding -->
+        <StatusEffect type="OnBroken" target="This">
+            <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+            <Remove />
+        </StatusEffect>
+        </Projectile>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+</Items>
