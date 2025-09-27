@@ -8,7 +8,7 @@
       <dItem identifier="carbon" />
       <dItem identifier="adrenaline" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="40" requiresrecipe="True">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="90" />
       <RequiredSkill identifier="mechanical" level="90" />
       <RequiredSkill identifier="electrical" level="90" />
@@ -507,7 +507,7 @@
       <dItem identifier="fpgacircuit" />
       <dItem identifier="fpgacircuit" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="60" />
       <RequiredSkill identifier="mechanical" level="40" />
       <RequiredSksill identifier="electrical" level="40" />
@@ -555,7 +555,7 @@
       <dItem identifier="fpgacircuit" />
       <dItem identifier="titaniumaluminiumalloy" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="60" />
       <RequiredSkill identifier="mechanical" level="40" />
       <RequiredSkill identifier="electrical" level="40" />
@@ -602,7 +602,7 @@
       <dItem identifier="silicon" />  
       <dItem identifier="silicon" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="50" />
       <RequiredSkill identifier="mechanical" level="30" />
       <RequiredSkill identifier="electrical" level="40" />
@@ -652,7 +652,7 @@
       <dItem identifier="silicon" />
       <dItem identifier="rubber" />
     </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="50" />
       <RequiredSkill identifier="mechanical" level="30" />
       <RequiredSkill identifier="electrical" level="40" />
@@ -717,7 +717,7 @@
       <dItem identifier="rubber" />
       <dItem identifier="rubber" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="75" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="50" />
@@ -750,7 +750,7 @@
       <dItem identifier="rubber" />
       <dItem identifier="rubber" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="60" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="60" />
@@ -797,7 +797,7 @@
       <dItem identifier="rubber" />
       <dItem identifier="rubber" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="60" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="60" />
@@ -848,7 +848,7 @@
       <dItem identifier="rubber" />
       <dItem identifier="rubber" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="60" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="60" />
@@ -899,7 +899,7 @@
       <dItem identifier="titaniumaluminiumalloy" />
       <dItem identifier="titaniumaluminiumalloy" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="40" />
       <RequiredSkill identifier="mechanical" level="30" />
       <RequiredSkill identifier="electrical" level="30" />
@@ -952,7 +952,7 @@
       <dItem identifier="titanium" />
       <dItem identifier="titanium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="50" />
       <RequiredSkill identifier="mechanical" level="40" />
       <RequiredSkill identifier="electrical" level="40" />
@@ -1004,7 +1004,7 @@
       <dItem identifier="titaniumaluminiumalloy" />
       <dItem identifier="titaniumaluminiumalloy" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="40" />
       <RequiredSkill identifier="mechanical" level="30" />
       <RequiredSkill identifier="electrical" level="30" />
@@ -1057,7 +1057,7 @@
       <dItem identifier="titanium" />
       <dItem identifier="titanium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="50" />
       <RequiredSkill identifier="mechanical" level="40" />
       <RequiredSkill identifier="electrical" level="40" />
@@ -1111,7 +1111,7 @@
       <dItem identifier="titanium" />
       <dItem identifier="titanium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="60" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="60" />
@@ -1158,7 +1158,7 @@
       <dItem identifier="titanium" />
       <dItem identifier="titanium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="40" />
       <RequiredSkill identifier="mechanical" level="35" />
       <RequiredSkill identifier="electrical" level="35" />
@@ -1204,7 +1204,7 @@
       <dItem identifier="titanium" />
       <dItem identifier="titanium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="60" />
       <RequiredSkill identifier="mechanical" level="45" />
       <RequiredSkill identifier="electrical" level="45" />
@@ -1248,7 +1248,7 @@
       <dItem identifier="titanium" />
       <dItem identifier="titanium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="40" />
       <RequiredSkill identifier="mechanical" level="35" />
       <RequiredSkill identifier="electrical" level="35" />
@@ -1294,7 +1294,7 @@
       <dItem identifier="titanium" />
       <dItem identifier="titanium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="60" />
       <RequiredSkill identifier="mechanical" level="45" />
       <RequiredSkill identifier="electrical" level="45" />
@@ -1342,7 +1342,7 @@
       <dItem identifier="rubber" />
       <dItem identifier="rubber" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="80" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="60" />
@@ -1394,7 +1394,7 @@
       <dItem identifier="steel" />
       <dItem identifier="steel" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="80" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="60" />
@@ -1454,7 +1454,7 @@
       <dItem identifier="antibiotics" />
       <dItem identifier="antibiotics" />
     </Deconstruct>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="80" />
       <RequiredSkill identifier="mechanical" level="70" />
       <RequiredSkill identifier="electrical" level="70" />
@@ -1516,7 +1516,7 @@
       <dItem identifier="antibloodloss2" />
       <dItem identifier="titanium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="80" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="60" />
@@ -1576,7 +1576,7 @@
       <dItem identifier="emptysyringe" />
       <dItem identifier="emptysyringe" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="80" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="60" />
@@ -1627,7 +1627,7 @@
       <dItem identifier="rubber" />
       <dItem identifier="rubber" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="80" />
@@ -1684,7 +1684,7 @@
       <dItem identifier="rubber" />
       <dItem identifier="rubber" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="80" />
@@ -1740,7 +1740,7 @@
       <dItem identifier="rubber" />
       <dItem identifier="rubber" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="80" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="80" />
@@ -1799,7 +1799,7 @@
       <dItem identifier="rubber" />
       <dItem identifier="rubber" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="90" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="80" />
@@ -1854,12 +1854,12 @@
       <dItem identifier="lead" />
       <dItem identifier="ceramite" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="60" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="60" />
       <RequiredItem identifier="fpgacircuit" amount="4" />
-      <RequiredItem identifier="stackofadamantium" />
+      <RequiredItem identifier="titanium" />
       <RequiredItem identifier="copper" amount="5" />
       <RequiredItem identifier="rubber" amount="4" />
       <RequiredItem identifier="phosphorus" />
@@ -1919,16 +1919,16 @@
       <dItem identifier="phosphorus" />
       <dItem identifier="phosphorus" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="60" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="60" />
       <RequiredItem identifier="fpgacircuit" amount="4" />
-      <RequiredItem identifier="stackofadamantium" />
+      <RequiredItem identifier="titanium" />
       <RequiredItem identifier="copper" amount="5" />
       <RequiredItem identifier="rubber" amount="4" />
       <RequiredItem identifier="phosphorus" amount="6" />
-      <RequiredItem identifier="stackoflead" />
+      <RequiredItem identifier="lead" />
       <RequiredItem identifier="ceramite" amount="4" />
     </Fabricate>
     <GeneticMaterial effect="gunarm2" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
@@ -1967,20 +1967,20 @@
     </Price>
     <PreferredContainer primary="medfabcab" />
     <Deconstruct time="10">
-      <dItem identifier="stackofcarbon" />
-      <dItem identifier="stackofrubber" />
-      <dItem identifier="stackofadamantium" />
+      <dItem identifier="carbon" />
+      <dItem identifier="rubber" />
+      <dItem identifier="titanium" />
       <dItem identifier="titanuim" />
       <dItem identifier="titanuim" />
       <dItem identifier="titanuim" />
       <dItem identifier="titanuim" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="60" />
       <RequiredSkill identifier="mechanical" level="55" />
-      <RequiredItem identifier="stackofcarbon" amount="2" />
-      <RequiredItem identifier="stackofrubber" amount="2" />
-      <RequiredItem identifier="stackofadamantium" amount="3" />
+      <RequiredItem identifier="carbon" amount="2" />
+      <RequiredItem identifier="rubber" amount="2" />
+      <RequiredItem identifier="titanium" amount="3" />
     </Fabricate>
     <GeneticMaterial effect="armoredmusculature" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
       <RequiredSkill identifier="medical" level="80" />
@@ -2027,21 +2027,21 @@
       <dItem identifier="titanuim" />
       <dItem identifier="titanuim" />
       <dItem identifier="incendium" />
-      <dItem identifier="gold" />
-      <dItem identifier="gold" />
+
+
       <dItem identifier="ceramite" />
       <dItem identifier="ceramite" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="65" />
       <RequiredSkill identifier="mechanical" level="65" />
       <RequiredSkill identifier="electrical" level="65" />
       <RequiredItem identifier="fpgacircuit" amount="6" />
-      <RequiredItem identifier="stackofadamantium" />
+      <RequiredItem identifier="titanium" />
       <RequiredItem identifier="copper" amount="5" />
       <RequiredItem identifier="rubber" amount="4" />
       <RequiredItem identifier="incendium" amount="3" />
-      <RequiredItem identifier="gold" amount="3" />
+      <Require amount="3" />
       <RequiredItem identifier="ceramite" amount="4" />
       <RequiredItem identifier="ampltank" />
     </Fabricate>
@@ -2085,28 +2085,25 @@
       <dItem identifier="copper" />
       <dItem identifier="rubber" />
       <dItem identifier="rubber" />
-      <dItem identifier="stackofadamantium" />
+      <dItem identifier="titanium" />
       <dItem identifier="incendium" />
       <dItem identifier="incendium" />
       <dItem identifier="incendium" />
-      <dItem identifier="gold" />
-      <dItem identifier="gold" />
-      <dItem identifier="gold" />
       <dItem identifier="ceramite" />
       <dItem identifier="ceramite" />
       <dItem identifier="ceramite" />
       <dItem identifier="eradicationbeammagazine" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="70" />
       <RequiredSkill identifier="mechanical" level="70" />
       <RequiredSkill identifier="electrical" level="70" />
       <RequiredItem identifier="fpgacircuit" amount="6" />
-      <RequiredItem identifier="stackofadamantium" amount="2" />
+      <RequiredItem identifier="titanium" amount="2" />
       <RequiredItem identifier="copper" amount="5" />
       <RequiredItem identifier="rubber" amount="4" />
       <RequiredItem identifier="incendium" amount="6" />
-      <RequiredItem identifier="gold" amount="6" />
+      <Require amount="6" />
       <RequiredItem identifier="ceramite" amount="6" />
       <RequiredItem identifier="eradicationbeammagazine" amount="2" />
     </Fabricate>
@@ -2148,19 +2145,19 @@
       <dItem identifier="fpgacircuit" />
       <dItem identifier="titanuim" />
       <dItem identifier="titanuim" />
-      <dItem identifier="stackofaluminium" />
+      <dItem identifier="aluminium" />
       <dItem identifier="aluminium" />
       <dItem identifier="aluminium" />
       <dItem identifier="aluminium" />
       <dItem identifier="aluminium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="50" />
       <RequiredSkill identifier="mechanical" level="45" />
       <RequiredSkill identifier="electrical" level="45" />
-      <RequiredItem identifier="stackoffpgacircuit" />
+      <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="titanuim" amount="4" />
-      <RequiredItem identifier="stackofaluminium" amount="3" />
+      <RequiredItem identifier="aluminium" amount="3" />
     </Fabricate>
     <GeneticMaterial effect="flippersimplant" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
       <RequiredSkill identifier="medical" level="80" />
@@ -2194,10 +2191,10 @@
     </Price>
     <PreferredContainer primary="medfabcab" />
     <Deconstruct time="10">
-      <dItem identifier="stackoffpgacircuit" />
+      <dItem identifier="fpgacircuit" />
       <dItem identifier="titanuim" />
       <dItem identifier="titanuim" />
-      <dItem identifier="stackofaluminium" />
+      <dItem identifier="aluminium" />
       <dItem identifier="aluminium" />
       <dItem identifier="aluminium" />
       <dItem identifier="aluminium" />
@@ -2205,11 +2202,11 @@
       <dItem identifier="titanium" />
       <dItem identifier="titanium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="55" />
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="electrical" level="50" />
-      <RequiredItem identifier="stackoffpgacircuit" />
+      <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="titanium" amount="4" />
       <RequiredItem identifier="flippersimplant" />
     </Fabricate>
@@ -2245,7 +2242,7 @@
     </Price>
     <PreferredContainer primary="medfabcab" />
     <Deconstruct time="10">
-      <dItem identifier="stackoffpgacircuit" />
+      <dItem identifier="fpgacircuit" />
       <dItem identifier="carbon" />
       <dItem identifier="carbon" />
       <dItem identifier="carbon" />
@@ -2257,13 +2254,13 @@
       <dItem identifier="hyperzine" />
       <dItem identifier="furin" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="80" />
-      <RequiredItem identifier="stackoffpgacircuit" amount="2" />
-      <RequiredItem identifier="stackofcarbon" />
-      <RequiredItem identifier="stackofrubber" />
+      <RequiredItem identifier="fpgacircuit" amount="2" />
+      <RequiredItem identifier="carbon" />
+      <RequiredItem identifier="rubber" />
       <RequiredItem identifier="hyperzine" amount="2" />
       <RequiredItem identifier="furin" amount="2" />
     </Fabricate>
@@ -2299,7 +2296,7 @@
     </Price>
     <PreferredContainer primary="medfabcab" />
     <Deconstruct time="10">
-      <dItem identifier="stackoffpgacircuit" />
+      <dItem identifier="fpgacircuit" />
       <dItem identifier="carbon" />
       <dItem identifier="carbon" />
       <dItem identifier="carbon" />
@@ -2311,13 +2308,13 @@
       <dItem identifier="dementonite" />
       <dItem identifier="fulgurium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="electrical" level="80" />
-      <RequiredItem identifier="stackoffpgacircuit" amount="2" />
-      <RequiredItem identifier="stackofcarbon" />
-      <RequiredItem identifier="stackofrubber" />
+      <RequiredItem identifier="fpgacircuit" amount="2" />
+      <RequiredItem identifier="carbon" />
+      <RequiredItem identifier="rubber" />
       <RequiredItem identifier="dementonite" amount="2" />
       <RequiredItem identifier="fulgurium" amount="2" />
     </Fabricate>
@@ -2357,24 +2354,23 @@
     </Price>
     <PreferredContainer primary="medfabcab" />
     <Deconstruct time="10">
-      <dItem identifier="stackofcarbon" />
+      <dItem identifier="carbon" />
       <dItem identifier="carbon" />
       <dItem identifier="carbon" />
       <dItem identifier="carbon" />
       <dItem identifier="physicorium" />
       <dItem identifier="physicorium" />
       <dItem identifier="physicorium" />
-      <dItem identifier="stackofrubber" />
-      <dItem identifier="stackofadamantium" />
-      <dItem identifier="stackofadamantium" />
+      <dItem identifier="rubber" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="70" />
       <RequiredSkill identifier="mechanical" level="65" />
       <RequiredItem identifier="armoredmusculature" />
       <RequiredItem identifier="carbon" amount="6" />
       <RequiredItem identifier="physicorium" amount="6" />
-      <RequiredItem identifier="stackofadamantium" />
     </Fabricate>
     <GeneticMaterial effect="armoredmusculaturet2" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
       <RequiredSkill identifier="medical" level="80" />
@@ -2424,14 +2420,13 @@
       <dItem identifier="fpgacircuit" />
       <dItem identifier="fpgacircuit" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="70" />
       <RequiredSkill identifier="mechanical" level="65" />
-      <RequiredItem identifier="graymatter" />
       <RequiredItem identifier="carbon" amount="4" />
       <RequiredItem identifier="rubber" amount="4" />
       <RequiredItem identifier="dementonite" amount="6" />
-      <RequiredItem identifier="stackoffpgacircuit" />
+      <RequiredItem identifier="fpgacircuit" />
     </Fabricate>
     <GeneticMaterial effect="logisanalyzer" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
       <RequiredSkill identifier="medical" level="80" />

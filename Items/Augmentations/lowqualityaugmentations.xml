@@ -664,7 +664,7 @@
     <Deconstruct time="10">
       <dItem identifier="silicon" />
       <dItem identifier="rubber" />
-      <dItem identifier="biogel" />
+      <dItem identifier="titanium" />
       <dItem identifier="fpgacircuit" />
     </Deconstruct>
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="45" requiresrecipe="true">
@@ -673,7 +673,7 @@
       <RequiredItem identifier="silicon" amount="2" />
       <RequiredItem identifier="rubber" amount="2" />
       <RequiredItem identifier="fpgacircuit" amount="2" />
-      <RequiredItem identifier="biogel" />
+      <RequiredItem identifier="titanium" />
     </Fabricate>
     <GeneticMaterial effect="bioniceye" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
       <RequiredSkill identifier="medical" level="80" />
