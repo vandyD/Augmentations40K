@@ -949,7 +949,7 @@
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="75" />
       <RequiredItem tag="geneticmaterial" mincondition="0.0" maxcondition="100.0" />
-      <RequiredItem identifier="geneticmaterial_unresearched" amount="2" />
+      <RequiredItem identifier="geneticmaterial_unresearched" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="carbon" />
@@ -1028,7 +1028,7 @@
     </Price>-->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="2" />
+      <RequiredItem identifier="biomaterial" amount="1" />
       <RequiredItem identifier="adrenaline" />
     </Fabricate>
     <Deconstruct time="5">
@@ -1055,7 +1055,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="3" />
+      <RequiredItem identifier="biomaterial" amount="1" />
       <RequiredItem identifier="hormones" amount="2" />
       <RequiredItem identifier="meth" />
     </Fabricate>
@@ -1083,7 +1083,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="2" />
+      <RequiredItem identifier="biomaterial" amount="1" />
       <RequiredItem identifier="adrenaline" amount="2" />
       <RequiredItem identifier="hormones" amount="3" />
     </Fabricate>
@@ -1111,7 +1111,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="3" />
+      <RequiredItem identifier="biomaterial" amount="1" />
       <RequiredItem identifier="adrenaline" amount="2" />
       <RequiredItem identifier="liquidoxygenite" />
       <RequiredItem identifier="antibloodloss2" amount="2" />
@@ -1140,7 +1140,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="4" />
+      <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="adrenaline" amount="2" />
       <RequiredItem identifier="antibloodloss2" amount="2" />
     </Fabricate>
@@ -1168,7 +1168,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="4" />
+      <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="adrenaline" />
       <RequiredItem identifier="graymatter" amount="3" />
     </Fabricate>
@@ -1196,7 +1196,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="4" />
+      <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="morbusineantidote" />
       <RequiredItem identifier="cyanideantidote" />
       <RequiredItem identifier="sufforinantidote" />
@@ -1227,7 +1227,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="5" />
+      <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="adrenaline" amount="2" />
       <RequiredItem identifier="graymatter" amount="3" />
     </Fabricate>
@@ -1255,7 +1255,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="3" />
+      <RequiredItem identifier="biomaterial" amount="1" />
       <RequiredItem identifier="adrenaline" amount="2" />
     </Fabricate>
     <Deconstruct time="5">
@@ -1282,7 +1282,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="4" />
+      <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="hormones" amount="2" />
     </Fabricate>
     <Deconstruct time="5">
@@ -1309,7 +1309,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="6" />
+      <RequiredItem identifier="biomaterial" amount="3" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="carbon" />
@@ -1335,7 +1335,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="5" />
+      <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="antinarc" amount="2" />
       <RequiredItem identifier="graymatter" amount="6" />
     </Fabricate>
@@ -1363,7 +1363,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="5" />
+      <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="antirad" amount="2" />
     </Fabricate>
     <Deconstruct time="5">
@@ -1390,7 +1390,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="5" />
+      <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="morbusineantidote" />
       <RequiredItem identifier="cyanideantidote" />
       <RequiredItem identifier="sufforinantidote" />
@@ -1423,7 +1423,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="5" />
+      <RequiredItem identifier="biomaterial" amount="2" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="carbon" />
@@ -1449,7 +1449,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="2" />
+      <RequiredItem identifier="biomaterial" amount="1" />
       <RequiredItem identifier="adrenaline" amount="4" />
       <RequiredItem identifier="hormones" amount="2" />
     </Fabricate>
@@ -1477,7 +1477,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="5" />
+      <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="adrenaline" amount="4" />
       <RequiredItem identifier="morbusine" />
       <RequiredItem identifier="cyanide" />
@@ -1508,7 +1508,7 @@
     </Price> -->
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="5" />
+      <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="adrenaline" amount="4" />
       <RequiredItem identifier="hormones" amount="4" />
     </Fabricate>
@@ -1535,7 +1535,7 @@
     </Deconstruct>
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="8" />
+      <RequiredItem identifier="biomaterial" amount="4" />
       <RequiredItem identifier="adrenaline" amount="8" />
       <RequiredItem identifier="stackofadamantium" />
       <RequiredItem identifier="hormones" amount="6" />
@@ -1621,7 +1621,7 @@
     </Deconstruct>
     <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="medical" level="100" />
-      <RequiredItem identifier="biomaterial" amount="8" />
+      <RequiredItem identifier="biomaterial" amount="4" />
       <RequiredItem identifier="adrenaline" amount="8" />
       <RequiredItem identifier="stackofadamantium" />
       <RequiredItem identifier="stackofrubber" amount="2" />
