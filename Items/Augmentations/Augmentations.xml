@@ -1400,7 +1400,7 @@
       <RequiredSkill identifier="electrical" level="60" />
       <RequiredItem identifier="fpgacircuit" amount="2" />
       <RequiredItem identifier="ballisticfiber" amount="4" />
-      <RequiredItem identifier="desinfectant" amount="4" />
+      <RequiredItem identifier="ethanol" amount="4" />
       <RequiredItem identifier="steel" amount="4" />
       <RequiredItem identifier="breathofmars" />
     </Fabricate>
@@ -1460,7 +1460,7 @@
       <RequiredSkill identifier="electrical" level="70" />
       <RequiredItem identifier="fpgacircuit" amount="4" />
       <RequiredItem identifier="liquidoxygenite" amount="4" />
-      <RequiredItem identifier="desinfectant" amount="4" />
+      <RequiredItem identifier="ethanol" amount="4" />
       <RequiredItem identifier="antibiotics" amount="4" />
       <RequiredItem identifier="t2breathofmars" />
     </Fabricate>
@@ -1525,8 +1525,6 @@
       <RequiredItem identifier="carbon" />
       <RequiredItem identifier="copper" amount="4" />
       <RequiredItem identifier="rubber" amount="4" />
-      <RequiredItem identifier="antibloodloss1" amount="4" />
-      <RequiredItem identifier="antibloodloss2" amount="2" />
     </Fabricate>
     <GeneticMaterial effect="autosanguination" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
       <RequiredSkill identifier="medical" level="80" />
@@ -1573,8 +1571,8 @@
       <dItem identifier="carbon" />
       <dItem identifier="rubber" />
       <dItem identifier="rubber" />
-      <dItem identifier="emptysyringe" />
-      <dItem identifier="emptysyringe" />
+      <dItem identifier="ethanol" />
+      <dItem identifier="ethanol" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="80" />
@@ -1583,7 +1581,7 @@
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="carbon" />
       <RequiredItem identifier="rubber" amount="4" />
-      <RequiredItem identifier="emptysyringe" amount="4" />
+      <RequiredItem identifier="ethanol" amount="4" />
     </Fabricate>
     <GeneticMaterial effect="injector" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
       <RequiredSkill identifier="medical" level="80" />
@@ -1843,16 +1841,16 @@
     <Deconstruct time="10">
       <dItem identifier="fpgacircuit" />
       <dItem identifier="fpgacircuit" />
-      <dItem identifier="titanuim" />
-      <dItem identifier="titanuim" />
-      <dItem identifier="titanuim" />
-      <dItem identifier="titanuim" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
       <dItem identifier="copper" />
       <dItem identifier="copper" />
       <dItem identifier="rubber" />
       <dItem identifier="rubber" />
       <dItem identifier="lead" />
-      <dItem identifier="ceramite" />
+      <dItem identifier="uranium" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="60" />
@@ -1861,11 +1859,8 @@
       <RequiredItem identifier="fpgacircuit" amount="4" />
       <RequiredItem identifier="titanium" />
       <RequiredItem identifier="copper" amount="5" />
-      <RequiredItem identifier="rubber" amount="4" />
       <RequiredItem identifier="phosphorus" />
-      <RequiredItem identifier="lead" amount="2" />
-      <RequiredItem identifier="ceramite" />
-      <RequiredItem identifier="batterycell" />
+      <RequiredItem identifier="uranium" amount="5" />
     </Fabricate>
     <GeneticMaterial effect="gunarm" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
       <RequiredSkill identifier="medical" level="80" />
@@ -1901,10 +1896,10 @@
     <Deconstruct time="10">
       <dItem identifier="fpgacircuit" />
       <dItem identifier="fpgacircuit" />
-      <dItem identifier="titanuim" />
-      <dItem identifier="titanuim" />
-      <dItem identifier="titanuim" />
-      <dItem identifier="titanuim" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
       <dItem identifier="copper" />
       <dItem identifier="copper" />
       <dItem identifier="rubber" />
@@ -1913,8 +1908,8 @@
       <dItem identifier="lead" />
       <dItem identifier="lead" />
       <dItem identifier="lead" />
-      <dItem identifier="ceramite" />
-      <dItem identifier="ceramite" />
+      <dItem identifier="uranium" />
+      <dItem identifier="uranium" />
       <dItem identifier="phosphorus" />
       <dItem identifier="phosphorus" />
       <dItem identifier="phosphorus" />
@@ -1926,10 +1921,8 @@
       <RequiredItem identifier="fpgacircuit" amount="4" />
       <RequiredItem identifier="titanium" />
       <RequiredItem identifier="copper" amount="5" />
-      <RequiredItem identifier="rubber" amount="4" />
       <RequiredItem identifier="phosphorus" amount="6" />
-      <RequiredItem identifier="lead" />
-      <RequiredItem identifier="ceramite" amount="4" />
+      <RequiredItem identifier="uranium" amount="4" />
     </Fabricate>
     <GeneticMaterial effect="gunarm2" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
       <RequiredSkill identifier="medical" level="80" />
@@ -1970,10 +1963,10 @@
       <dItem identifier="carbon" />
       <dItem identifier="rubber" />
       <dItem identifier="titanium" />
-      <dItem identifier="titanuim" />
-      <dItem identifier="titanuim" />
-      <dItem identifier="titanuim" />
-      <dItem identifier="titanuim" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="60" />
@@ -2022,15 +2015,13 @@
       <dItem identifier="copper" />
       <dItem identifier="rubber" />
       <dItem identifier="rubber" />
-      <dItem identifier="titanuim" />
-      <dItem identifier="titanuim" />
-      <dItem identifier="titanuim" />
-      <dItem identifier="titanuim" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
       <dItem identifier="incendium" />
-
-
-      <dItem identifier="ceramite" />
-      <dItem identifier="ceramite" />
+      <dItem identifier="uranium" />
+      <dItem identifier="uranium" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="65" />
@@ -2039,11 +2030,8 @@
       <RequiredItem identifier="fpgacircuit" amount="6" />
       <RequiredItem identifier="titanium" />
       <RequiredItem identifier="copper" amount="5" />
-      <RequiredItem identifier="rubber" amount="4" />
       <RequiredItem identifier="incendium" amount="3" />
-      <Require amount="3" />
-      <RequiredItem identifier="ceramite" amount="4" />
-      <RequiredItem identifier="ampltank" />
+      <RequiredItem identifier="uranium" amount="4" />
     </Fabricate>
     <GeneticMaterial effect="gunarm3" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
       <RequiredSkill identifier="medical" level="80" />
@@ -2089,9 +2077,9 @@
       <dItem identifier="incendium" />
       <dItem identifier="incendium" />
       <dItem identifier="incendium" />
-      <dItem identifier="ceramite" />
-      <dItem identifier="ceramite" />
-      <dItem identifier="ceramite" />
+      <dItem identifier="uranium" />
+      <dItem identifier="uranium" />
+      <dItem identifier="uranium" />
       <dItem identifier="eradicationbeammagazine" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
@@ -2101,11 +2089,8 @@
       <RequiredItem identifier="fpgacircuit" amount="6" />
       <RequiredItem identifier="titanium" amount="2" />
       <RequiredItem identifier="copper" amount="5" />
-      <RequiredItem identifier="rubber" amount="4" />
       <RequiredItem identifier="incendium" amount="6" />
-      <Require amount="6" />
-      <RequiredItem identifier="ceramite" amount="6" />
-      <RequiredItem identifier="eradicationbeammagazine" amount="2" />
+      <RequiredItem identifier="uranium" amount="6" />
     </Fabricate>
     <GeneticMaterial effect="gunarm4" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
       <RequiredSkill identifier="medical" level="80" />
@@ -2143,8 +2128,8 @@
       <dItem identifier="fpgacircuit" />
       <dItem identifier="fpgacircuit" />
       <dItem identifier="fpgacircuit" />
-      <dItem identifier="titanuim" />
-      <dItem identifier="titanuim" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
       <dItem identifier="aluminium" />
       <dItem identifier="aluminium" />
       <dItem identifier="aluminium" />
@@ -2156,7 +2141,7 @@
       <RequiredSkill identifier="mechanical" level="45" />
       <RequiredSkill identifier="electrical" level="45" />
       <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="titanuim" amount="4" />
+      <RequiredItem identifier="titanium" amount="4" />
       <RequiredItem identifier="aluminium" amount="3" />
     </Fabricate>
     <GeneticMaterial effect="flippersimplant" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
@@ -2192,8 +2177,8 @@
     <PreferredContainer primary="medfabcab" />
     <Deconstruct time="10">
       <dItem identifier="fpgacircuit" />
-      <dItem identifier="titanuim" />
-      <dItem identifier="titanuim" />
+      <dItem identifier="titanium" />
+      <dItem identifier="titanium" />
       <dItem identifier="aluminium" />
       <dItem identifier="aluminium" />
       <dItem identifier="aluminium" />
@@ -2252,7 +2237,7 @@
       <dItem identifier="rubber" />
       <dItem identifier="rubber" />
       <dItem identifier="hyperzine" />
-      <dItem identifier="furin" />
+      <dItem identifier="dementonite" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
@@ -2262,7 +2247,7 @@
       <RequiredItem identifier="carbon" />
       <RequiredItem identifier="rubber" />
       <RequiredItem identifier="hyperzine" amount="2" />
-      <RequiredItem identifier="furin" amount="2" />
+      <RequiredItem identifier="dementonite" amount="2" />
     </Fabricate>
     <GeneticMaterial effect="corticalimplant" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="50" tooltipvaluemax="100">
       <RequiredSkill identifier="medical" level="80" />

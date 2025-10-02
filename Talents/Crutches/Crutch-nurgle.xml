@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+  <Talent identifier="nurglehusk">
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="4,3" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveResistance resistanceid="poison" multiplier="0.0" />
+        <CharacterAbilityGiveResistance resistanceid="alieninfection" multiplier="0.0" />
+        <CharacterAbilityGiveResistance resistanceid="nurrglesickness" multiplier="0.0" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval>
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="warpcorinfluence" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects nearbycharactersappliestoself="false" nearbycharactersappliestoallies="false">
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="NearbyCharacters" range="800" disabledeltatime="true">
+              <Affliction identifier="huskinfection" strength="2.0" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+  <Talent identifier="nurglehonkchosis">
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="4,3" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveResistance resistanceid="poison" multiplier="0.0" />
+        <CharacterAbilityGiveResistance resistanceid="psychosis" multiplier="0.0" />
+        <CharacterAbilityGiveResistance resistanceid="nurrglesickness" multiplier="0.0" />
+        <CharacterAbilityGiveResistance resistanceid="honkchosis" multiplier="0.0" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval>
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="warpcorinfluence" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects nearbycharactersappliestoself="false" nearbycharactersappliestoallies="false">
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="NearbyCharacters" range="800" disabledeltatime="true">
+              <Affliction identifier="honkchosis" strength="2.0" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+  <Talent identifier="nurglegiftsdebuff">
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="4,3" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveResistance resistanceid="poison" multiplier="0.0" />
+        <CharacterAbilityGiveResistance resistanceid="nurglegiftdebuff" multiplier="0.0" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval>
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="warpcorinfluence" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects nearbycharactersappliestoself="false" nearbycharactersappliestoallies="false">
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="NearbyCharacters" range="800" disabledeltatime="true">
+              <Affliction identifier="nurglegiftdebuffsyringe" strength="2.0" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+  <Talent identifier="nurglegiftsbuff">
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="4,3" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveResistance resistanceid="poison" multiplier="0.0" />
+        <CharacterAbilityGiveResistance resistanceid="nurrglesickness" multiplier="0.0" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval>
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="warpcorinfluence" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffectsToAllies maxdistance="400" allowself="false">
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character">
+              <Affliction identifier="nurglecap" strength="5.0" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffectsToAllies>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+  <Talent identifier="nurglemorbummetallum">
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="4,3" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveResistance resistanceid="morbummetallum" multiplier="0.0" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval>
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="warpcorinfluence" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects nearbycharactersappliestoself="false" nearbycharactersappliestoallies="false">
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="NearbyCharacters" range="400" disabledeltatime="true">
+              <Conditional HasStatusTag="equals admech" />
+              <Affliction identifier="morbummetallum" strength="2.0" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+  <Talent identifier="nurgleimmunophage">
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="4,3" sheetelementsize="128,128" />
+    <AbilityGroupInterval>
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="warpcorinfluence" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects nearbycharactersappliestoself="false" nearbycharactersappliestoallies="false">
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="NearbyCharacters" range="800" disabledeltatime="true">
+              <Affliction identifier="immunophage" strength="2.0" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+  <Talent identifier="nurgleparalysis">
+    <Icon texture="%ModDir%/UI/talenticon1.png" sheetindex="4,3" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveResistance resistanceid="nurgleparalysis" multiplier="0.0" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupInterval>
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="warpcorinfluence" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects nearbycharactersappliestoself="false" nearbycharactersappliestoallies="false">
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="NearbyCharacters" range="800" disabledeltatime="true">
+              <Affliction identifier="nurgleparalysis" strength="2.0" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+</Talents>

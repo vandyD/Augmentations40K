@@ -99,7 +99,7 @@
       <dItem identifier="organicfiber" />
       <dItem identifier="fpgacircuit" />
     </Deconstruct>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="45" requiresrecipe="true">
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="45" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="50" />
       <RequiredSkill identifier="mechanical" level="30" />
       <RequiredSkill identifier="electrical" level="30" />
@@ -154,7 +154,7 @@
     <Deconstruct time="10">
       <dItem identifier="fpgacircuit" />
     </Deconstruct>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="45" requiresrecipe="true">
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="45" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="50" />
       <RequiredSkill identifier="electrical" level="30" />
       <RequiredItem identifier="rubber" amount="2" />
@@ -381,7 +381,7 @@
       <dItem identifier="fpgacircuit" />
       <dItem identifier="fpgacircuit" />
     </Deconstruct>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="45" requiresrecipe="true">
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="45" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="50" />
       <RequiredSkill identifier="mechanical" level="30" />
       <RequiredSkill identifier="electrical" level="30" />
@@ -667,7 +667,7 @@
       <dItem identifier="titanium" />
       <dItem identifier="fpgacircuit" />
     </Deconstruct>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="45" requiresrecipe="true">
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="45" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="50" />
       <RequiredSkill identifier="electrical" level="30" />
       <RequiredItem identifier="silicon" amount="2" />

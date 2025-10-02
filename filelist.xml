@@ -3,9 +3,13 @@
   <Item file="%ModDir%/Items/Augmentations/Augmentations.xml" />
   <Item file="%ModDir%/Items/Augmentations/lowqualityaugmentations.xml" />
   <Item file="%ModDir%/Items/Genetic/Genetic.xml" />
+  <Item file="%ModDir%/Items/Medicine/Crutches.xml" />
   <Afflictions file="%ModDir%/Afflictions.xml" />
   <Afflictions file="%ModDir%/Items/Genetic/AfflictionsGenetic.xml" />
   <Afflictions file="%ModDir%/Items/Augmentations/Augmentationseffects.xml" />
+  <Afflictions file="%ModDir%/Talents/Crutches/Crutch-nurgleaffliction.xml" />
+  <Talents file="%ModDir%/Talents/Crutches/Crutch-recipes.xml" />
+  <Talents file="%ModDir%/Talents/Crutches/Crutch-nurgle.xml" />
   <Text file="%ModDir%/Texts/Russian.xml" />
   <Character file="%ModDir%/Characters/HumanPriest/HumanPriest.xml" />
 </contentpackage>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+  <Talent identifier="recipeset1">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,1" sheetelementsize="128,128" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.llg,entityname.hslg,entityname.powerbackpack" color="gui.orange" />
+    </Description>
+    <AddedRecipe itemidentifier="llg" />
+    <AddedRecipe itemidentifier="hslg" />
+    <AddedRecipe itemidentifier="powerbackpack" />
+  </Talent>
+  <Talent identifier="recipeset2">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,1" sheetelementsize="128,128" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.bgmag,entityname.abgmag,entityname.bpistol,entityname.bg" color="gui.orange" />
+    </Description>
+    <AddedRecipe itemidentifier="bgmag" />
+    <AddedRecipe itemidentifier="abgmag" />
+    <AddedRecipe itemidentifier="bpistol" />
+    <AddedRecipe itemidentifier="bg" />
+  </Talent>
+  <Talent identifier="recipeset3">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,1" sheetelementsize="128,128" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.pltank,entityname.ampltank,entityname.smpltank,entityname.plaspistol,entityname.pg" color="gui.orange" />
+    </Description>
+    <AddedRecipe itemidentifier="pltank" />
+    <AddedRecipe itemidentifier="ampltank" />
+    <AddedRecipe itemidentifier="smpltank" />
+    <AddedRecipe itemidentifier="plaspistol" />
+    <AddedRecipe itemidentifier="pg" />
+  </Talent>
+  <Talent identifier="recipeset4">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,1" sheetelementsize="128,128" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.autoclave,entityname.fermentationvat,entityname.circuitbox,entityname.ammocharger" color="gui.orange" />
+    </Description>
+    <AddedRecipe itemidentifier="autoclave" />
+    <AddedRecipe itemidentifier="fermentationvat" />
+    <AddedRecipe itemidentifier="circuitbox" />
+    <AddedRecipe itemidentifier="ammocharger" />
+  </Talent>
+  <Talent identifier="recipesetmagosonstart">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,1" sheetelementsize="128,128" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.llg,entityname.hslg,entityname.hotshotpistol,entityname.powerbackpack,entityname.pg,entityname.plaspistol,entityname.pltank,entityname.bgmag,entityname.bpistol,entityname.bg,entityname.psword" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.censer,entityname.amincense,amaxe.amincense,entityname.macrostub" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.mechuniform1,entityname.mechuniform3,entityname.mechuniform4,entityname.mechuniform5,entityname.mechuniform6" color="gui.orange" />
+    </Description>
+    <AddedRecipe itemidentifier="llg" />
+    <AddedRecipe itemidentifier="hslg" />
+    <AddedRecipe itemidentifier="powerbackpack" />
+    <AddedRecipe itemidentifier="pg" />
+    <AddedRecipe itemidentifier="pltank" />
+    <AddedRecipe itemidentifier="bgmag" />
+    <AddedRecipe itemidentifier="bpistol" />
+    <AddedRecipe itemidentifier="censer" />
+    <AddedRecipe itemidentifier="amincense" />
+    <AddedRecipe itemidentifier="hotshotpistol" />
+    <AddedRecipe itemidentifier="plaspistol" />
+    <AddedRecipe itemidentifier="bg" />
+    <AddedRecipe itemidentifier="psword" />
+    <AddedRecipe itemidentifier="amaxe" />
+    <AddedRecipe itemidentifier="macrostub" />
+    <AddedRecipe itemidentifier="mechuniform1" />
+    <AddedRecipe itemidentifier="mechuniform3" />
+    <AddedRecipe itemidentifier="mechuniform4" />
+    <AddedRecipe itemidentifier="mechuniform5" />
+    <AddedRecipe itemidentifier="mechuniform6" />
+  </Talent>
+  <Talent identifier="recipesettechpriestonstart">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,1" sheetelementsize="128,128" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.censer,entityname.amincense,entityname.amaxe" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.mechuniform1,entityname.mechuniform3,entityname.mechuniform4,entityname.mechuniform5,entityname.mechuniform6" color="gui.orange" />
+    </Description>
+    <AddedRecipe itemidentifier="censer" />
+    <AddedRecipe itemidentifier="amincense" />
+    <AddedRecipe itemidentifier="amaxe" />
+    <AddedRecipe itemidentifier="mechuniform1" />
+    <AddedRecipe itemidentifier="mechuniform3" />
+    <AddedRecipe itemidentifier="mechuniform4" />
+    <AddedRecipe itemidentifier="mechuniform5" />
+    <AddedRecipe itemidentifier="mechuniform6" />
+  </Talent>
+</Talents>
