@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Augments40K" modversion="0.5" corepackage="False" steamworkshopid="3578946646" gameversion="1.10.7.0">
+<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Augments40K" modversion="0.6" corepackage="False" steamworkshopid="3578946646" gameversion="1.10.7.0">
   <Item file="%ModDir%/Items/Augmentations/Augmentations.xml" />
   <Item file="%ModDir%/Items/Augmentations/lowqualityaugmentations.xml" />
   <Item file="%ModDir%/Items/Genetic/Genetic.xml" />
