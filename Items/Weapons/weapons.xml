@@ -50,7 +50,7 @@
       <Price storeidentifier="merchantmonastary" multiplier="1.0" minavailable="5" maxavailable="10" />
       <Price storeidentifier="smuggler" multiplier="0.7" minavailable="5" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="25" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="batterycell" />
@@ -102,7 +102,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="25" />
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="steel" amount="2" />
@@ -170,7 +170,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="25" />
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="steel" amount="2" />
@@ -254,7 +254,7 @@
       <Price storeidentifier="merchantmonastary" multiplier="1.0" minavailable="5" maxavailable="10" />
       <Price storeidentifier="smuggler" multiplier="0.7" minavailable="5" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="25" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="batterycell" amount="2" />
@@ -335,7 +335,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem identifier="lgccircuit" />
       <RequiredItem identifier="steel" amount="3" />
@@ -413,7 +413,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem identifier="lgccircuit" />
       <RequiredItem identifier="steel" amount="3" />
@@ -488,7 +488,7 @@
       <Item identifier="phosphorus" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="90" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="90" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="lgccircuit" />
       <RequiredItem identifier="lasgun" />
@@ -564,7 +564,7 @@
       <Item identifier="lgccircuit" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="150" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="150" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="lgccircuit" />
       <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
@@ -649,7 +649,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="150" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="150" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="lgccircuit" />
       <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
@@ -716,7 +716,7 @@
     <Deconstruct time="10">
       <Item identifier="ceramite" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="steel" amount="2" />
@@ -767,7 +767,7 @@
         <Reputation faction="mechanicus" min="15" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="adamantium" amount="4" />
       <RequiredItem identifier="gold" amount="3" />
@@ -868,12 +868,12 @@
       <Item identifier="plastic" copycondition="false" />
       <Item identifier="steel" copycondition="false" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" displayname="recycleitem" requiredtime="20">
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="20">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="agmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="steel" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="lead" />
       <RequiredItem identifier="plastic" />
@@ -921,7 +921,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="steel" amount="2" />
       <RequiredItem identifier="plastic" amount="2" />
@@ -1032,12 +1032,12 @@
     <Deconstruct time="10">
       <Item identifier="titaniumaluminiumalloy" copycondition="false" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" displayname="recycleitem" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="pltank" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="incendium" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="incendium" />
@@ -1081,7 +1081,7 @@
       <Item identifier="ceramite" />
       <Item identifier="incendium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="70" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="70" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="95" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="ceramite" />
@@ -1153,7 +1153,7 @@
       <Item identifier="incendium" />
       <Item identifier="incendium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="70" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="70" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="95" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="ceramite" />
@@ -1225,7 +1225,7 @@
     <InventoryIcon texture="igweapons.png" sourcerect="315,0,221,76" origin="0.5,0.5" />
     <Sprite texture="igweapons.png" sourcerect="315,0,221,76" depth="0.55" origin="0.5,0.5" />
     <!-- the item takes 10 seconds to break down in a deconstructor and turns into steel and plastic -->
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="weldingfueltank" />
@@ -1384,13 +1384,13 @@
       <Price storeidentifier="merchantmonastary" multiplier="1.0" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="sodium" />
       <RequiredItem identifier="lead" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="25" />
       <RequiredItem identifier="bgmag" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="lead" amount="2" />
@@ -1433,7 +1433,7 @@
       </Price>
       <Price storeidentifier="merchantarmory" multiplier="1.0" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="45" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="45" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="65" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="adamantium" />
@@ -1495,7 +1495,7 @@
       </Price>
       <Price storeidentifier="merchantarmory" multiplier="1.0" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="85" />
       <RequiredItem identifier="ceramite" amount="2" />
       <RequiredItem identifier="adamantium" amount="4" />
@@ -1580,7 +1580,7 @@
       <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="5" maxavailable="10" />
       <Price storeidentifier="merchantmonastary" multiplier="1.0" minavailable="5" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem identifier="adamantium" amount="3" />
       <RequiredItem identifier="plastic" />
@@ -1672,7 +1672,7 @@
       <Item identifier="iron" />
       <Item identifier="uex" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
       <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="iron" amount="2" />
       <RequiredItem identifier="uex" />
@@ -1723,7 +1723,7 @@
       <Item identifier="iron" />
       <Item identifier="c4block" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
       <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="iron" amount="2" />
       <RequiredItem identifier="c4block" />
@@ -1766,7 +1766,7 @@
       <Price storeidentifier="merchantarmory" multiplier="1.5" minavailable="10" maxavailable="20" />
       <Price storeidentifier="merchantmonastary" multiplier="1.0" minavailable="10" maxavailable="20" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" amount="6">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" amount="6">
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="magnesium" />
       <RequiredItem identifier="lead" />
@@ -1811,7 +1811,7 @@
       <Price storeidentifier="merchantarmory" multiplier="1.5" minavailable="5" maxavailable="10" />
       <Price storeidentifier="merchantmonastary" multiplier="1.0" minavailable="5" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" amount="6">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" amount="6">
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="magnesium" />
       <RequiredItem identifier="lead" />
@@ -1862,7 +1862,7 @@
       <Item identifier="fpgacircuit" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="fpgacircuit" amount="2" />
       <RequiredItem identifier="adamantium" amount="3" />
@@ -1922,7 +1922,7 @@
       <Item identifier="titanium" />
       <Item identifier="titanium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="fpgacircuit" amount="2" />
       <RequiredItem identifier="adamantium" amount="5" />
@@ -2078,7 +2078,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem identifier="steel" amount="4" />
       <RequiredItem identifier="plastic" amount="2" />
@@ -2130,7 +2130,7 @@
       <Price storeidentifier="merchantmonastary" multiplier="1.0" minavailable="5" maxavailable="10" />
       <Price storeidentifier="smuggler" multiplier="0.7" minavailable="5" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="25" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="batterycell" amount="2" />
@@ -2208,7 +2208,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem identifier="lgccircuit" />
       <RequiredItem identifier="steel" amount="3" />
@@ -2280,7 +2280,7 @@
       <Item identifier="steel" />
       <Item identifier="aluminium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem identifier="lgccircuit" />
       <RequiredItem identifier="steel" amount="3" />
@@ -2371,12 +2371,12 @@
       <Price storeidentifier="ammerchantarmory" multiplier="0.9" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="phsmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="phosphorus" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" requiresrecipe="true" />
       <RequiredItem identifier="lead" />
       <RequiredItem identifier="lead" />
@@ -2419,7 +2419,7 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="2" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="ceramite" />
@@ -2508,7 +2508,7 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="2" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="lithium" />
@@ -2549,7 +2549,7 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="2" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="fulgurium" />
@@ -2647,12 +2647,12 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="2" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="radmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="uranium" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiresrecipe="true" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiresrecipe="true" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="lead" />
@@ -2693,7 +2693,7 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="2" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="40" />
       <RequiredSkill identifier="electrical" level="40" />
       <RequiredSkill identifier="weapons" level="40" />
@@ -2770,7 +2770,7 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="2" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="40" />
       <RequiredSkill identifier="electrical" level="40" />
       <RequiredSkill identifier="weapons" level="40" />
@@ -2849,7 +2849,7 @@
         <Reputation faction="mechanicus" min="10" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="40" />
       <RequiredSkill identifier="electrical" level="40" />
       <RequiredItem identifier="magnesium" amount="2" />
@@ -2894,7 +2894,7 @@
         <Reputation faction="mechanicus" min="15" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="55" />
       <RequiredSkill identifier="electrical" level="55" />
       <RequiredSkill identifier="weapons" level="55" />
@@ -2944,7 +2944,7 @@
         <Reputation faction="mechanicus" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="55" />
       <RequiredSkill identifier="electrical" level="55" />
       <RequiredSkill identifier="weapons" level="55" />
@@ -3006,7 +3006,7 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="phosphorus" />
       <RequiredItem identifier="lead" />
@@ -3097,12 +3097,12 @@
       <Price storeidentifier="ammerchantarmory" multiplier="0.9" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="mcstmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="lead" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="adamantium" />
@@ -3174,12 +3174,12 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="2" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="radjezmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="uranium" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiresrecipe="true" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiresrecipe="true" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="steel" amount="2" />
       <RequiredItem identifier="lead" amount="2" />
@@ -3218,7 +3218,7 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="2" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="40" />
       <RequiredSkill identifier="electrical" level="40" />
       <RequiredSkill identifier="weapons" level="50" />
@@ -3296,7 +3296,7 @@
       <Price storeidentifier="merchantarmory" multiplier="1.5" minavailable="5" maxavailable="10" />
       <Price storeidentifier="smuggler" multiplier="1.0" minavailable="5" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="adamantium" />
@@ -3363,7 +3363,7 @@
       <Price storeidentifier="merchantresearchseparatist" multiplier="1.1" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="1.0" minavailable="5" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="25">
+    <Fabricate suitablefabricators="fabricator" requiredtime="25">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="iron" />
       <RequiredItem identifier="flashpowder" />
@@ -3421,7 +3421,7 @@
       <Item identifier="incendium" />
       <Item identifier="incendium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="70" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="70" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="95" />
       <RequiredItem identifier="ceramite" amount="4" />
       <RequiredItem identifier="incendium" />
@@ -3533,12 +3533,12 @@
     <Deconstruct time="10">
       <Item identifier="titaniumaluminiumalloy" copycondition="false" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" displayname="recycleitem" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="ampltank" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="incendium" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="incendium" />
@@ -3571,7 +3571,7 @@
       <Item identifier="ceramite" />
       <Item identifier="batterycell" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="lithium" />
@@ -3674,7 +3674,7 @@
       <Item identifier="adamantium" />
       <Item identifier="batterycell" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="lithium" />
@@ -3777,7 +3777,7 @@
       <Price storeidentifier="ammerchantarmory" multiplier="0.9" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="2" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="adamantium" amount="2" />
       <RequiredItem identifier="lithium" />
@@ -3825,7 +3825,7 @@
       <Price storeidentifier="ammerchantarmory" multiplier="0.9" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="2" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="lithium" />
@@ -3906,14 +3906,14 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="magnesium" />
       <RequiredItem identifier="magnesium" />
       <RequiredItem identifier="lead" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="abgmag" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="lead" />
@@ -3950,7 +3950,7 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="45" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="45" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="75" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="ceramite" />
@@ -4017,7 +4017,7 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="85" />
       <RequiredItem identifier="ceramite" amount="2" />
       <RequiredItem identifier="adamantium" amount="6" />
@@ -4083,7 +4083,7 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="85" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="ceramite" />
@@ -4208,12 +4208,12 @@
       <Item identifier="adamantium" copycondition="false" />
       <Item identifier="ceramite" copycondition="false" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" displayname="recycleitem" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="smpltank" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="incendium" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="ceramite" />
@@ -4248,7 +4248,7 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="85" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="ceramite" />
@@ -4326,7 +4326,7 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="70" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="70" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="95" />
       <RequiredItem identifier="ceramite" amount="4" />
       <RequiredItem identifier="incendium" amount="2" />
@@ -4437,12 +4437,12 @@
     <Deconstruct time="10">
       <Item identifier="titaniumaluminiumalloy" copycondition="false" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" displayname="recycleitem" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="smmltank" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="incendium" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="incendium" />
@@ -4474,7 +4474,7 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="70" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="70" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="95" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="ceramite" />
@@ -4545,7 +4545,7 @@
     <Deconstruct time="10">
       <Item identifier="adamantium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="adamantium" />
@@ -4759,7 +4759,7 @@
       <Item identifier="fulgurium" />
       <Item identifier="copper" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="fulgurium" />
@@ -4851,14 +4851,14 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="2" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="lithium" />
       <RequiredItem identifier="batterycell" />
       <RequiredItem identifier="copper" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="glrmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="lithium" />
@@ -4899,7 +4899,7 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="2" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="arcmagazine" />
@@ -5000,7 +5000,7 @@
       <Price storeidentifier="merchantamoutpost" multiplier="1.0" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="0.7" minavailable="5" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="25" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="lead" />
@@ -5048,7 +5048,7 @@
     <Deconstruct time="10">
       <Item identifier="steel" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="steel" />
@@ -5165,7 +5165,7 @@
       <Item identifier="fpgacircuit" />
       <Item identifier="pltank" mincondition="0.0" maxcondition="10.0" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="fpgacircuit" amount="3" />
       <RequiredItem identifier="pltank" />
@@ -5213,7 +5213,7 @@
       <Price storeidentifier="merchantarmory" multiplier="1.5" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="45" requiresrecipe="true" amount="2">
+    <Fabricate suitablefabricators="fabricator" requiredtime="45" requiresrecipe="true" amount="2">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="steel" amount="2" />
       <RequiredItem identifier="flashpowder" />
@@ -5264,7 +5264,7 @@
       <Price storeidentifier="merchantarmory" multiplier="1.5" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="25" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="iron" />
       <RequiredItem identifier="flashpowder" />
@@ -5310,7 +5310,7 @@
       <Price storeidentifier="merchantarmory" multiplier="1.5" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="25" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="fpgacircuit" amount="2" />
@@ -5391,14 +5391,14 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="magnesium" />
       <RequiredItem identifier="magnesium" />
       <RequiredItem identifier="lead" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="ahbgmag" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="lead" />
@@ -5435,7 +5435,7 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="90" />
       <RequiredItem identifier="stackofceramite" />
       <RequiredItem identifier="stackofadamantium" amount="2" />
@@ -6041,13 +6041,13 @@
     <Deconstruct time="10">
       <Item identifier="plastic" copycondition="false" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="heavystubmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="lead" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="lead" amount="3" />
       <RequiredItem identifier="plastic" amount="2" />
@@ -6096,7 +6096,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem identifier="steel" amount="4" />
       <RequiredItem identifier="plastic" amount="2" />
@@ -6182,12 +6182,12 @@
       <Price storeidentifier="ammerchantarmory" multiplier="0.9" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="phsblastmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="phosphorus" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiresrecipe="true" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiresrecipe="true" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="lead" />
       <RequiredItem identifier="lead" />
@@ -6226,7 +6226,7 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="ceramite" />
@@ -6291,7 +6291,7 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="ceramite" />
@@ -6388,12 +6388,12 @@
     <Deconstruct time="10">
       <Item identifier="plastic" copycondition="false" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="stubcarbinemagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="lead" amount="4" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem identifier="lead" amount="4" />
       <RequiredItem identifier="titanium" />
@@ -6426,7 +6426,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="steel" amount="2" />
       <RequiredItem identifier="fpgacircuit" amount="2" />
@@ -6484,7 +6484,7 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="90" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="90" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="adamantium" amount="6" />
       <RequiredItem identifier="flashpowder" amount="2" />
@@ -6543,7 +6543,7 @@
       <Price storeidentifier="merchantsmfortress" multiplier="0.9" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="25" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="iron" />
       <RequiredItem identifier="flashpowder" />
@@ -6606,7 +6606,7 @@
       <Price storeidentifier="merchantsmfortress" multiplier="0.9" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="25" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="iron" />
       <RequiredItem identifier="flashpowder" />
@@ -6669,7 +6669,7 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="90" />
       <RequiredItem identifier="stackofceramite" amount="2" />
       <RequiredItem identifier="stackofadamantium" amount="2" />
@@ -6770,12 +6770,12 @@
     <Deconstruct time="10">
       <Item identifier="plastic" copycondition="false" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" displayname="recycleitem" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="mltank" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="incendium" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="incendium" />
@@ -6811,7 +6811,7 @@
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
       <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="50" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="50" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="75" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="ceramite" />
@@ -6918,7 +6918,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="35">
+    <Fabricate suitablefabricators="fabricator" requiredtime="35">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="steel" amount="2" />
       <RequiredItem identifier="plastic" />
@@ -6967,12 +6967,12 @@
     <Deconstruct time="10">
       <Item identifier="plastic" copycondition="false" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="orlockagmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="steel" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="lead" amount="2" />
       <RequiredItem identifier="plastic" amount="2" />
@@ -7010,7 +7010,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="steel" amount="4" />
       <RequiredItem identifier="fpgacircuit" amount="2" />
@@ -7077,7 +7077,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="steel" />
@@ -7137,7 +7137,7 @@
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="steel" amount="4" />
       <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
@@ -7226,13 +7226,13 @@
     <Deconstruct time="10">
       <Item identifier="plastic" copycondition="false" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="combatshotgunmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="copper" amount="2" />
       <RequiredItem identifier="magnesium" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="lead" amount="2" />
       <RequiredItem identifier="plastic" amount="2" />
@@ -7267,7 +7267,7 @@
     <Deconstruct time="10">
       <Item identifier="titaniumaluminiumalloy" copycondition="false" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" displayname="recycleitem" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="orlockpltank" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="incendium" />
@@ -7404,13 +7404,13 @@
       <Price storeidentifier="merchantarmoryseparatist" multiplier="0.9" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="ceramite" amount="2" />
       <RequiredItem identifier="lead" amount="3" />
       <RequiredItem identifier="flashpowder" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="orlockbgmag" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="lead" amount="2" />
@@ -7600,7 +7600,7 @@
     <InventoryIcon texture="orlockstuff.png" sourcerect="0,480,224,84" origin="0.5,0.5" />
     <Sprite texture="orlockstuff.png" sourcerect="0,480,224,84" depth="0.55" origin="0.5,0.5" />
     <!-- the item takes 10 seconds to break down in a deconstructor and turns into steel and plastic -->
-    <Fabricate suitablefabricators="whfabricator" requiredtime="90">
+    <Fabricate suitablefabricators="fabricator" requiredtime="90">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="adamantium" />
@@ -7703,7 +7703,7 @@
     <InventoryIcon texture="orlockstuff.png" sourcerect="280,10,156,73" origin="0.5,0.5" />
     <Sprite texture="orlockstuff.png" sourcerect="280,10,156,73" depth="0.55" origin="0.5,0.5" />
     <!-- the item takes 10 seconds to break down in a deconstructor and turns into steel and plastic -->
-    <Fabricate suitablefabricators="whfabricator" requiredtime="90">
+    <Fabricate suitablefabricators="fabricator" requiredtime="90">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="ceramite" />
@@ -7878,7 +7878,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem identifier="plaspistol" />
       <RequiredItem identifier="goliathstubrevolver" />
@@ -7973,13 +7973,13 @@
       <Price storeidentifier="merchantarmoryseparatist" multiplier="0.9" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="lead" amount="2" />
       <RequiredItem identifier="flashpowder" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="goliathbgmag" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="lead" />
@@ -8115,7 +8115,7 @@
     <InventoryIcon texture="goliathstuff.png" sourcerect="0,500,208,146" origin="0.5,0.5" />
     <Sprite texture="goliathstuff.png" sourcerect="0,500,208,146" depth="0.55" origin="0.5,0.5" />
     <!-- the item takes 10 seconds to break down in a deconstructor and turns into steel and plastic -->
-    <Fabricate suitablefabricators="whfabricator" requiredtime="90">
+    <Fabricate suitablefabricators="fabricator" requiredtime="90">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="ceramite" />
@@ -8389,7 +8389,7 @@
       <Price storeidentifier="merchantmineseparatist" multiplier="1.25" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="0.7" minavailable="5" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem identifier="stackofadamantium" />
       <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
@@ -8489,13 +8489,13 @@
     <Deconstruct time="10">
       <Item identifier="plastic" copycondition="false" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="goliathheavystubmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="lead" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="lead" amount="4" />
       <RequiredItem identifier="plastic" amount="3" />
@@ -8534,7 +8534,7 @@
       <Item identifier="adamantium" />
       <Item identifier="tin" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem identifier="stackofadamantium" />
       <RequiredItem identifier="tin" amount="4" />
@@ -8583,7 +8583,7 @@
       <Price storeidentifier="merchantmineseparatist" multiplier="1.25" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="0.7" minavailable="5" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="fpgacircuit" amount="2" />
       <RequiredItem identifier="adamantium" amount="3" />
@@ -8634,7 +8634,7 @@
       <Price storeidentifier="merchantmineseparatist" multiplier="1.25" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="0.7" minavailable="5" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" amount="12">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" amount="12">
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="flashpowder" amount="2" />
       <RequiredItem identifier="lead" amount="2" />
@@ -8774,7 +8774,7 @@
       <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="35">
+    <Fabricate suitablefabricators="fabricator" requiredtime="35">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="steel" amount="4" />
       <RequiredItem identifier="plastic" amount="2" />
@@ -8820,7 +8820,7 @@
       <Price storeidentifier="merchantarmoryseparatist" multiplier="0.9" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="fpgacircuit" amount="4" />
       <RequiredItem identifier="ceramite" amount="2" />
@@ -8878,7 +8878,7 @@
       <Price storeidentifier="merchantmineseparatist" multiplier="1.25" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="0.7" minavailable="5" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="adamantium" amount="2" />
       <RequiredItem identifier="cschain" />
@@ -8925,7 +8925,7 @@
       <Price storeidentifier="merchantmineseparatist" multiplier="1.25" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="0.7" minavailable="5" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="steel" amount="4" />
     </Fabricate>
@@ -9004,7 +9004,7 @@
       <Price storeidentifier="merchantmineseparatist" multiplier="1.25" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="0.7" minavailable="5" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="stackofsteel" />
     </Fabricate>
@@ -9040,7 +9040,7 @@
       <Price storeidentifier="merchantmineseparatist" multiplier="1.25" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="0.7" minavailable="5" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="adamantium" amount="4" />
       <RequiredItem identifier="cschain" amount="2" />
@@ -9080,7 +9080,7 @@
     </Price>
     <InventoryIcon texture="goliathstuff.png" sourcerect="401,244,517,258" origin="0.5,0.5" />
     <Sprite texture="goliathstuff.png" sourcerect="401,244,517,258" depth="0.55" origin="0.5,0.5" />
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredSkill identifier="mechanical" level="55" />
       <RequiredSkill identifier="electrical" level="55" />
@@ -9150,7 +9150,7 @@
     </Price>
     <InventoryIcon texture="goliathstuff.png" sourcerect="998,244,517,258" origin="0.5,0.5" />
     <Sprite texture="goliathstuff.png" sourcerect="998,244,517,258" depth="0.55" origin="0.5,0.5" />
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredSkill identifier="mechanical" level="55" />
       <RequiredSkill identifier="electrical" level="55" />
@@ -9245,13 +9245,13 @@
       <Price storeidentifier="merchantarmoryseparatist" multiplier="0.9" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="pltank" amount="2" />
       <RequiredItem identifier="incendium" />
       <RequiredItem identifier="adamantium" amount="4" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="25" />
       <RequiredItem identifier="bigpltank" mincondition="0.0" maxcondition="10" />
       <RequiredItem identifier="incendium" />
@@ -9392,7 +9392,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="" identifier="escherlasgun" variantof="lasgun" category="Weapon" subcategory="gangerweapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,mountableweapon,gunsmith,commonweapon,provocativetohumanai" Scale="0.2" impactsoundtag="impact_metal_light">
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem identifier="lgccircuit" />
       <RequiredItem identifier="steel" amount="3" />
@@ -9479,7 +9479,7 @@
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="steel" amount="4" />
       <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
@@ -9542,13 +9542,13 @@
     <Deconstruct time="10">
       <Item identifier="plastic" copycondition="false" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="eschershotgunmagazine" mincondition="0.0" maxcondition="10.0" usecondition="true" />
       <RequiredItem identifier="copper" amount="2" />
       <RequiredItem identifier="magnesium" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="lead" amount="2" />
       <RequiredItem identifier="plastic" amount="2" />
@@ -9643,13 +9643,13 @@
       <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="10" />
       <Price storeidentifier="ammerchantarmory" multiplier="0.9" minavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="phshevmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="phosphorus" />
       <RequiredItem identifier="phosphorus" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="lead" />
       <RequiredItem identifier="lead" />
@@ -9768,12 +9768,12 @@
       <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="10" />
       <Price storeidentifier="ammerchantarmory" multiplier="0.9" minavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="eradicationbeammagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="incendium" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="copper" />
       <RequiredItem identifier="copper" />
@@ -9811,7 +9811,7 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="85" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="ceramite" />
@@ -9879,7 +9879,7 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="75" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="adamantium" amount="3" />
@@ -9940,13 +9940,13 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="10" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="adamantium" amount="2" />
       <RequiredItem identifier="lead" />
       <RequiredItem identifier="fulgurium" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="gravmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="fulgurium" />
@@ -10002,7 +10002,7 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="90" />
       <RequiredItem identifier="stackofceramite" />
       <RequiredItem identifier="stackofadamantium" />
@@ -10066,13 +10066,13 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="10" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="adamantium" amount="2" />
       <RequiredItem identifier="lead" />
       <RequiredItem identifier="fulgurium" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="20" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="heavygravmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="fulgurium" />
@@ -10187,7 +10187,7 @@
       <Item identifier="fulgurium" />
       <Item identifier="copper" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="90" />
       <RequiredItem identifier="adamantium" amount="6" />
       <RequiredItem identifier="stackofthorium" />
@@ -10288,14 +10288,14 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="70" />
       <RequiredItem identifier="adamantium" amount="2" />
       <RequiredItem identifier="uranium" amount="2" />
       <RequiredItem identifier="fulguriumbatterycell" />
       <RequiredItem identifier="lead" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="transuranicmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="uranium" amount="2" />
@@ -10340,7 +10340,7 @@
       <Item identifier="ceramite" amount="2" />
       <Item identifier="gold" amount="2" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="50" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="50" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="stackofadamantium" />
       <RequiredItem identifier="fpgacircuit" amount="6" />
@@ -10395,7 +10395,7 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true" amount="12">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true" amount="12">
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="adamantium" amount="2" />
       <RequiredItem identifier="flashpowder" amount="2" />
@@ -10457,7 +10457,7 @@
       <Item identifier="flashpowder" />
       <Item identifier="flashpowder" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="100" />
       <RequiredItem identifier="stackofceramite" amount="2" />
       <RequiredItem identifier="stackofadamantium" amount="2" />
@@ -10553,14 +10553,14 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="50" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="50" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="75" />
       <RequiredItem identifier="adamantium" amount="4" />
       <RequiredItem identifier="magnesium" amount="4" />
       <RequiredItem identifier="lead" amount="4" />
       <RequiredItem identifier="compoundn" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="autocannonmag" mincondition="0.0" maxcondition="10.0" usecondition="true" />
       <RequiredItem identifier="lead" amount="2" />
@@ -10597,7 +10597,7 @@
     <Deconstruct time="10">
       <Item identifier="ceramite" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="ceramite" amount="4" />
       <RequiredItem identifier="gold" amount="4" />
@@ -10806,7 +10806,7 @@
         <Reputation faction="lostanddamned" min="25" />
       </Price>
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="90" />
       <RequiredItem identifier="stackofceramite" amount="2" />
       <RequiredItem identifier="stackofadamantium" amount="2" />
@@ -10928,12 +10928,12 @@
       <Item identifier="ceramite" copycondition="true" />
       <Item identifier="adamantium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" displayname="recycleitem" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="smallplasmacannonammobox" mincondition="0.0" maxcondition="0.0" usecondition="false" />
       <RequiredItem identifier="incendium" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="60">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="adamantium" />
       <RequiredItem identifier="adamantium" />
@@ -11006,12 +11006,12 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="2" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="radserpentamagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="uranium" amount="2" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiresrecipe="true" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiresrecipe="true" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="lead" />
@@ -11052,7 +11052,7 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="2" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="50" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="50" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="40" />
       <RequiredSkill identifier="electrical" level="40" />
       <RequiredSkill identifier="weapons" level="40" />
@@ -11149,12 +11149,12 @@
       <Price storeidentifier="ammerchantarmory" multiplier="0.9" minavailable="3" maxavailable="5" />
       <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40" displayname="recycleitem">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" displayname="recycleitem">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="phosphormagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="phosphorus" />
     </Fabricate>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" requiresrecipe="true" />
       <RequiredItem identifier="lead" />
       <RequiredItem identifier="lead" />
@@ -11197,7 +11197,7 @@
       </Price>
       <Price storeidentifier="smuggler" multiplier="2" minavailable="3" maxavailable="5" />
     </Price>
-    <Fabricate suitablefabricators="whfabricator" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="ceramite" />
       <RequiredItem identifier="ceramite" />
@@ -11359,7 +11359,7 @@
     <Deconstruct time="10">
       <Item identifier="plastic" copycondition="false" />
     </Deconstruct>
-    <Fabricate suitablefabricators="whfabricator" displayname="recycleitem" requiredtime="40">
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="relicmlround" mincondition="0.0" maxcondition="10.0" usecondition="false" />
       <RequiredItem identifier="incendium" />

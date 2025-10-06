@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Non-working right hand" identifier="rhandoff" description="" scale="0.5" hideinmenus="true" nonplayerteaminteractable="True" category="Medical">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,0,1,1" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="0,0,1,1" depth="0.6" origin="0.5,0.5" />
+    <Holdable selectkey="Action" pickkey="Use" slots="RightHand" msg="ItemMsgDetach" PickingTime="1" aimpos="85,-10" handle1="0,0" attachable="false" aimable="false">
+      <StatusEffect tags="rlock" type="Always" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect type="OnWearing" target="Character" lockhands="true" setvalue="true" comparison="And">
+        <Conditional HasStatusTag="llock" />
+      </StatusEffect>
+      <StatusEffect type="onnotcontained" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="Always" target="Character, This" disabledeltatime="true" comparison="And">
+        <Conditional righthandfracture="eq 0" />
+        <Conditional amputated_rightarm="lt 10" />
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Non-working left hand" identifier="lhandoff" description="" scale="0.5" hideinmenus="true" nonplayerteaminteractable="True" category="Medical">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,0,1,1" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="0,0,1,1" depth="0.6" origin="0.5,0.5" />
+    <Holdable selectkey="Action" pickkey="Use" slots="LeftHand" msg="ItemMsgDetach" PickingTime="1" aimpos="85,-10" handle1="0,0" attachable="false" aimable="false">
+      <StatusEffect tags="llock" type="Always" target="Character" duration="0.1" stackable="false" />
+      <StatusEffect type="Always" target="Character" lockhands="true" setvalue="true" comparison="And">
+        <Conditional HasStatusTag="rlock" />
+      </StatusEffect>
+      <StatusEffect type="onnotcontained" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="Always" target="Character, This" disabledeltatime="true" comparison="And">
+        <Conditional righthandfracture="eq 0" />
+        <Conditional lefthandfracture="lt 10" />
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="" identifier="additionalhandmutator" hideinmenus="true" category="Medical" maxstacksize="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.25" impactsoundtag="impact_metal_light">
+    <Deconstruct time="20"></Deconstruct>
+    <InventoryIcon texture="%ModDir%/Items/Medicine/Medicines3.png" sourcerect="28,0,28,128" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Medicine/Medicines3.png" sourcerect="28,0,28,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="20" />
+    <ItemComponent>
+      <StatusEffect Type="Always" OneShot="true" Target="Character">
+        <Affliction identifier="genestealeradditionalrightarm" strength="400" />
+      </StatusEffect>
+      <StatusEffect Type="Always" OneShot="true" TargetType="This" delay="0.1" DisableDeltaTime="true">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true" />
+  </Item>
+</Items>
