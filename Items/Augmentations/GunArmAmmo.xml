@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+    <Item name="macrostubber round" identifier="mcstround" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,amweaponsbonus,pistolammoitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+        <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+        <Sprite texture="lground.png" sourcerect="0,0,70,70" depth="0.55" origin="0.5,0.5" />
+        <Body width="40" height="14" density="40" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" hitscan="true" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+        <Attack structuredamage="2.5" targetforce="5" itemdamage="20" severlimbsprobability="0.05" penetration="0.15">
+            <Affliction identifier="gunshotwound" strength="25" />
+            <Affliction identifier="stun" strength="0.1" />
+            <Affliction identifier="bleeding" strength="5" />
+            <Affliction identifier="lacerations" strength="15" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+            <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+            <Conditional entitytype="eq Structure" />
+            <Conditional hastag="eq door" />
+            <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+            <Remove />
+        </StatusEffect>
+        </Projectile>
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="" identifier="mcstmagazine" scale="0.3" category="Weapon" subcategory="admechweapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,amgunsmith,mcstammo,40kammo,rareammo" maxstacksize="8" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="macrostub" minamount="1" maxamount="1" spawnprobability="1" />
+        <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.1" />
+        <PreferredContainer primary="amsecarmcab" minamount="0" maxamount="5" spawnprobability="0.75" />
+        <PreferredContainer primary="secarmcab" />
+        <PreferredContainer secondary="chsecarmcab" />
+        <Price baseprice="150" soldeverywhere="false" minleveldifficulty="15">
+        <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="3" maxavailable="5" />
+        <Price storeidentifier="ammerchantarmory" multiplier="0.9" minavailable="3" maxavailable="5" />
+        <Price storeidentifier="smuggler" multiplier="1.5" minavailable="3" maxavailable="5" />
+        </Price>
+        <Fabricate suitablefabricators="fabricator" requiredtime="40" displayname="recycleitem">
+        <RequiredSkill identifier="weapons" level="40" />
+        <RequiredItem identifier="mcstmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
+        <RequiredItem identifier="lead" />
+        </Fabricate>
+        <Fabricate suitablefabricators="fabricator" requiredtime="40">
+        <RequiredSkill identifier="weapons" level="55" />
+        <RequiredItem identifier="titanium" />
+        <RequiredItem identifier="titanium" />
+        <RequiredItem identifier="lead" />
+        <RequiredItem identifier="lead" />
+        <RequiredItem identifier="magnesium" />
+        </Fabricate>
+        <Deconstruct time="10">
+        <Item identifier="lead" copycondition="false" />
+        <Item identifier="titanium" copycondition="false" />
+        </Deconstruct>
+        <InventoryIcon texture="amwp2.png" sourcerect="610,0,55,85" origin="0.5,0.5" />
+        <Sprite texture="amwp2.png" depth="0.54" sourcerect="610,0,55,85" origin="0.5,0.5" />
+        <Body width="30" height="40" density="50" />
+        <ItemContainer hideitems="true" capacity="4" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="mcstround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+        <Containable items="mcstround" />
+        <!--Spawn an SMG round on use. Condition -5.0 -> 20 shots per magazine.-->
+        <StatusEffect type="OnUse" target="This" condition="-2.0" disabledeltatime="true">
+            <SpawnItem identifiers="mcstround" spawnposition="ThisInventory" />
+        </StatusEffect>
+        </ItemContainer>
+        <!--Magazines can be combined to raise condition.-->
+        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+        <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="phosphor ball" identifier="phsroundhev" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,amweaponsbonus,pistolammoitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="lground.png" sourcerect="0,0,70,70" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+      <Attack structuredamage="5" targetforce="5" itemdamage="20" severlimbsprobability="0.05" Penetration="0.2">
+        <Affliction identifier="phosphorimpact" strength="20" />
+        <Affliction identifier="gunshotwound" strength="40" />
+        <Affliction identifier="stun" strength="0.2" />
+        <Affliction identifier="bleeding" strength="15" />
+        <Affliction identifier="burn" strength="15" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="" identifier="phshevmagazine" scale="0.3" category="Weapon" subcategory="admechweapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,amgunsmith,phshevammo,40kammo" maxstacksize="8" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" />
+    <PreferredContainer secondary="chsecarmcab" />
+    <PreferredContainer secondary="amsecarmcab" />
+    <Price baseprice="450" soldeverywhere="false" minleveldifficulty="20">
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="10" />
+      <Price storeidentifier="ammerchantarmory" multiplier="0.9" minavailable="5" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" displayname="recycleitem">
+      <RequiredSkill identifier="weapons" level="55" />
+      <RequiredItem identifier="phshevmagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
+      <RequiredItem identifier="phosphorus" />
+      <RequiredItem identifier="phosphorus" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
+      <RequiredSkill identifier="weapons" level="55" />
+      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="phosphorus" />
+      <RequiredItem identifier="phosphorus" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="lead" copycondition="false" />
+      <Item identifier="steel" copycondition="false" />
+    </Deconstruct>
+    <InventoryIcon texture="amwp2.png" sourcerect="7,7,85,79" origin="0.5,0.5" />
+    <Sprite texture="amwp2.png" depth="0.54" sourcerect="7,7,85,79" origin="0.5,0.5" />
+    <Body width="30" height="40" density="50" />
+    <ItemContainer hideitems="true" capacity="4" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="phsroundhev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="phsroundhev" />
+      <!--Spawn an SMG round on use. Condition -5.0 -> 20 shots per magazine.-->
+      <StatusEffect type="OnUse" target="This" condition="-2.5" disabledeltatime="true">
+        <SpawnItem identifiers="phsroundhev" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <!--Magazines can be combined to raise condition.-->
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="plasma" identifier="volkiteround" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="plasma.png" sourcerect="0,0,140,140" origin="0.5,0.5" />
+    <Sprite texture="plasma.png" sourcerect="0,0,140,140" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" launchimpulse="60.0" removeonhit="true">
+      <ParticleEmitter particle="tracermeltacharge" particleamount="1" velocitymin="0" velocitymax="0" />
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+      <Attack structuredamage="50" penetration="0.5" targetforce="5" itemdamage="50" severlimbsprobability="0.5">
+        <Affliction identifier="stun" strength="0.2" />
+        <Affliction identifier="plasmadamage" strength="100" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="smoke" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,doorwbuttons,windoweddoorwbuttons,hatchwbuttons" Stuck="-100.0" Condition="-100.0" />
+      <LightComponent LightColor="0.5,0.5,1.0,0.8" range="50" IsOn="true">
+        <LightTexture texture="Content/Lights/light.png" origin="0.5, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true">
+        <!--<Explosion range="100.0" structuredamage="50" itemdamage="1000" force="10.0" flames="true" smoke="true" sparks="false" underwaterbubble="true" flashduration="2" flashrange="100" flashcolor="170,170,255,255" >
+        </Explosion>-->
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="plasma" identifier="eradicationround" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="plasma.png" sourcerect="0,0,140,140" origin="0.5,0.5" />
+    <Sprite texture="plasma.png" sourcerect="0,0,140,140" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" launchimpulse="60.0" removeonhit="true">
+      <ParticleEmitter particle="tracermeltacharge" particleamount="1" velocitymin="0" velocitymax="0" />
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+      <Attack structuredamage="75" penetration="0.75" targetforce="5" itemdamage="75" severlimbsprobability="0.75">
+        <Affliction identifier="stun" strength="0.5" />
+        <Affliction identifier="plasmadamage" strength="100" />
+        <Affliction identifier="explosiondamage" strength="100" />
+        <Affliction identifier="radiationsickness" strength="100" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="smoke" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,doorwbuttons,windoweddoorwbuttons,hatchwbuttons" Stuck="-100.0" Condition="-100.0" />
+      <LightComponent LightColor="0.5,0.5,1.0,0.8" range="50" IsOn="true">
+        <LightTexture texture="Content/Lights/light.png" origin="0.5, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true">
+        <!--<Explosion range="100.0" structuredamage="50" itemdamage="1000" force="10.0" flames="true" smoke="true" sparks="false" underwaterbubble="true" flashduration="2" flashrange="100" flashcolor="170,170,255,255" >
+        </Explosion>-->
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="" identifier="eradicationbeammagazine" scale="0.3" category="Weapon" subcategory="admechweapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,amgunsmith,40kammo" maxstacksize="8" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" />
+    <PreferredContainer secondary="chsecarmcab" />
+    <PreferredContainer secondary="amsecarmcab" />
+    <Price baseprice="450" soldeverywhere="false" minleveldifficulty="20">
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="10" />
+      <Price storeidentifier="ammerchantarmory" multiplier="0.9" minavailable="5" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="40" displayname="recycleitem">
+      <RequiredSkill identifier="weapons" level="55" />
+      <RequiredItem identifier="eradicationbeammagazine" mincondition="0.0" maxcondition="10.0" usecondition="false" />
+      <RequiredItem identifier="incendium" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
+      <RequiredSkill identifier="weapons" level="55" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="titanium" />
+      <RequiredItem identifier="titanium" />
+      <RequiredItem identifier="incendium" />
+      <RequiredItem identifier="incendium" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="titanium" copycondition="false" />
+      <Item identifier="copper" copycondition="false" />
+    </Deconstruct>
+    <InventoryIcon texture="amwp2.png" sourcerect="5,99,35,52" origin="0.5,0.5" />
+    <Sprite texture="amwp2.png" depth="0.54" sourcerect="5,99,35,52" origin="0.5,0.5" />
+    <Body width="30" height="40" density="50" />
+    <ItemContainer hideitems="true" capacity="4" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="eradicationround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="eradicationround" />
+      <!--Spawn an SMG round on use. Condition -5.0 -> 20 shots per magazine.-->
+      <StatusEffect type="OnUse" target="This" condition="-2.5" disabledeltatime="true">
+        <SpawnItem identifiers="eradicationround" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <!--Magazines can be combined to raise condition.-->
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="" identifier="ampltank" scale="0.3" category="Weapon" subcategory="admechweapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,amgunsmith,amplammo,40kammo,loadableplasmasmall,veryrareammo" maxstacksize="3" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="ampg" minamount="1" maxamount="1" spawnprobability="1" />
+    <PreferredContainer primary="amsecarmcab" minamount="0" maxamount="2" spawnprobability="0.25" notcampaign="true" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="secarmcab" />
+    <PreferredContainer secondary="chsecarmcab" />
+    <Price baseprice="300" soldeverywhere="false" minleveldifficulty="25" buyingpricemultiplier="2.0">
+      <Price storeidentifier="merchantforge" multiplier="0.9" minavailable="1" maxavailable="2">
+        <Reputation faction="mechanicus" min="15" />
+      </Price>
+      <Price storeidentifier="ammerchantarmory" multiplier="0.9" minavailable="1" maxavailable="2">
+        <Reputation faction="mechanicus" min="15" />
+      </Price>
+      <Price storeidentifier="merchantmech" multiplier="1.0" minavailable="0" maxavailable="2">
+        <Reputation faction="mechanicus" min="20" />
+      </Price>
+      <Price storeidentifier="smuggler" multiplier="3" minavailable="1" maxavailable="2">
+        <Reputation faction="lostanddamned" min="25" />
+      </Price>
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" copycondition="false" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="40">
+      <RequiredSkill identifier="weapons" level="55" />
+      <RequiredItem identifier="ampltank" mincondition="0.0" maxcondition="10.0" usecondition="false" />
+      <RequiredItem identifier="incendium" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="55" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="incendium" />
+    </Fabricate>
+    <InventoryIcon texture="amwp3.png" depth="0.54" sourcerect="655,75,75,55" origin="0.5,0.5" />
+    <Sprite texture="amwp3.png" depth="0.54" sourcerect="655,75,75,55" origin="0.5,0.5" />
+    <Body width="30" height="40" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="ampround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="ampround" />
+      <!--Spawn an SMG round on use. Condition -5.0 -> 20 shots per magazine.-->
+      <StatusEffect type="OnUse" target="This" condition="-2.5" disabledeltatime="true">
+        <SpawnItem identifiers="ampround" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <!--Magazines can be combined to raise condition.-->
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+</Items>

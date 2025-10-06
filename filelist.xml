@@ -4,6 +4,7 @@
   <Item file="%ModDir%/Items/Augmentations/lowqualityaugmentations.xml" />
   <Item file="%ModDir%/Items/Genetic/Genetic.xml" />
   <Item file="%ModDir%/Items/Medicine/Crutches.xml" />
+  <Item file="%ModDir%/Items/Augmentations/GunArmAmmo.xml" />
   <Afflictions file="%ModDir%/Afflictions.xml" />
   <Afflictions file="%ModDir%/Items/Genetic/AfflictionsGenetic.xml" />
   <Afflictions file="%ModDir%/Items/Augmentations/Augmentationseffects.xml" />
