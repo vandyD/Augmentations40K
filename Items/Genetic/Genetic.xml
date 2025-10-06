@@ -37,7 +37,7 @@
   </Item>
   <Item name="" identifier="geneticmaterialastartes" category="Material" maxstacksize="1" tags="smallitem,geneticmaterialastartes" subcategory="geneseed" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <PreferredContainer primary="medfabcab" />
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="implant1" />
       <RequiredItem identifier="implant2" />
@@ -97,7 +97,7 @@
   </Item>
   <Item name="" identifier="geneticmaterialastartess" descriptionidentifier="geneticmaterialastartes" nameidentifier="geneticmaterialastartes" subcategory="geneseed" category="Material" maxstacksize="1" tags="smallitem,geneticmaterialastartes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <PreferredContainer primary="medfabcab" />
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="implant1" />
       <RequiredItem identifier="implant2" />
@@ -157,7 +157,7 @@
   </Item>
   <Item name="" identifier="geneticmaterialastartesif" descriptionidentifier="geneticmaterialastartes" nameidentifier="geneticmaterialastartes" subcategory="geneseed" category="Material" maxstacksize="1" tags="smallitem,geneticmaterialastartes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <PreferredContainer primary="medfabcab" />
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="implant1" />
       <RequiredItem identifier="implant2" />
@@ -217,7 +217,7 @@
   </Item>
   <Item name="" identifier="geneticmaterialastartesda" descriptionidentifier="geneticmaterialastartes" nameidentifier="geneticmaterialastartes" subcategory="geneseed" category="Material" maxstacksize="1" tags="smallitem,geneticmaterialastartes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <PreferredContainer primary="medfabcab" />
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="implant1" />
       <RequiredItem identifier="implant2" />
@@ -277,7 +277,7 @@
   </Item>
   <Item name="" identifier="geneticmaterialastartesws" descriptionidentifier="geneticmaterialastartes" nameidentifier="geneticmaterialastartes" subcategory="geneseed" category="Material" maxstacksize="1" tags="smallitem,geneticmaterialastartes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <PreferredContainer primary="medfabcab" />
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="implant1" />
       <RequiredItem identifier="implant2" />
@@ -337,7 +337,7 @@
   </Item>
   <Item name="" identifier="geneticmaterialastartesih" descriptionidentifier="geneticmaterialastartes" nameidentifier="geneticmaterialastartes" subcategory="geneseed" category="Material" maxstacksize="1" tags="smallitem,geneticmaterialastartes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <PreferredContainer primary="medfabcab" />
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="implant1" />
       <RequiredItem identifier="implant2" />
@@ -397,7 +397,7 @@
   </Item>
   <Item name="" identifier="geneticmaterialastartesrg" descriptionidentifier="geneticmaterialastartes" nameidentifier="geneticmaterialastartes" subcategory="geneseed" category="Material" maxstacksize="1" tags="smallitem,geneticmaterialastartes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <PreferredContainer primary="medfabcab" />
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="implant1" />
       <RequiredItem identifier="implant2" />
@@ -457,7 +457,7 @@
   </Item>
   <Item name="" identifier="geneticmaterialastartesba" descriptionidentifier="geneticmaterialastartes" nameidentifier="geneticmaterialastartes" subcategory="geneseed" category="Material" maxstacksize="1" tags="smallitem,geneticmaterialastartes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <PreferredContainer primary="medfabcab" />
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="implant1" />
       <RequiredItem identifier="implant2" />
@@ -517,7 +517,7 @@
   </Item>
   <Item name="" identifier="geneticmaterialastartesbl" descriptionidentifier="geneticmaterialastartes" nameidentifier="geneticmaterialastartes" subcategory="geneseed" category="Material" maxstacksize="1" tags="smallitem,geneticmaterialastartes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <PreferredContainer primary="medfabcab" />
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="implant1" />
       <RequiredItem identifier="implant2" />
@@ -577,7 +577,7 @@
   </Item>
   <Item name="" identifier="geneticmaterialastarteswb" descriptionidentifier="geneticmaterialastartes" nameidentifier="geneticmaterialastartes" subcategory="geneseed" category="Material" maxstacksize="1" tags="smallitem,geneticmaterialastartes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <PreferredContainer primary="medfabcab" />
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="implant1" />
       <RequiredItem identifier="implant2" />
@@ -637,7 +637,7 @@
   </Item>
   <Item name="" identifier="geneticmaterialastartesnl" descriptionidentifier="geneticmaterialastartes" nameidentifier="geneticmaterialastartes" subcategory="geneseed" category="Material" maxstacksize="1" tags="smallitem,geneticmaterialastartes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <PreferredContainer primary="medfabcab" />
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="implant1" />
       <RequiredItem identifier="implant2" />
@@ -697,7 +697,7 @@
   </Item>
   <Item name="" identifier="geneticmaterialastartesiw" descriptionidentifier="geneticmaterialastartes" nameidentifier="geneticmaterialastartes" subcategory="geneseed" category="Material" maxstacksize="1" tags="smallitem,geneticmaterialastartes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <PreferredContainer primary="medfabcab" />
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="implant1" />
       <RequiredItem identifier="implant2" />
@@ -757,7 +757,7 @@
   </Item>
   <Item name="" identifier="geneticmaterialastarteswi" descriptionidentifier="geneticmaterialastartes" nameidentifier="geneticmaterialastartes" subcategory="geneseed" category="Material" maxstacksize="1" tags="smallitem,geneticmaterialastartes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <PreferredContainer primary="medfabcab" />
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="implant1" />
       <RequiredItem identifier="implant2" />
@@ -817,7 +817,7 @@
   </Item>
   <Item name="" identifier="geneticmaterialastartesdg" descriptionidentifier="geneticmaterialastartes" nameidentifier="geneticmaterialastartes" subcategory="geneseed" category="Material" maxstacksize="1" tags="smallitem,geneticmaterialastartes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <PreferredContainer primary="medfabcab" />
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="implant1" />
       <RequiredItem identifier="implant2" />
@@ -877,7 +877,7 @@
   </Item>
   <Item name="" identifier="geneticmaterialastartesec" descriptionidentifier="geneticmaterialastartes" nameidentifier="geneticmaterialastartes" subcategory="geneseed" category="Material" maxstacksize="1" tags="smallitem,geneticmaterialastartes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_metal_light" hideconditionbar="true" hideconditionintooltip="false">
     <PreferredContainer primary="medfabcab" />
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="implant1" />
       <RequiredItem identifier="implant2" />
@@ -946,7 +946,7 @@
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="4" maxavailable="8" />
       <Price storeidentifier="merchantexplorator" multiplier="0.75" minavailable="4" maxavailable="10" />
     </Price>
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="75" />
       <RequiredItem tag="geneticmaterial" mincondition="0.0" maxcondition="100.0" />
       <RequiredItem identifier="geneticmaterial_unresearched" amount="1" />
@@ -1026,7 +1026,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price>-->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="1" />
       <RequiredItem identifier="adrenaline" />
@@ -1053,7 +1053,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="1" />
       <RequiredItem identifier="hormones" amount="2" />
@@ -1081,7 +1081,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="1" />
       <RequiredItem identifier="adrenaline" amount="2" />
@@ -1109,7 +1109,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="1" />
       <RequiredItem identifier="adrenaline" amount="2" />
@@ -1138,7 +1138,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="adrenaline" amount="2" />
@@ -1166,7 +1166,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="adrenaline" />
@@ -1194,7 +1194,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="morbusineantidote" />
@@ -1225,7 +1225,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="adrenaline" amount="2" />
@@ -1253,7 +1253,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="1" />
       <RequiredItem identifier="adrenaline" amount="2" />
@@ -1280,7 +1280,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="hormones" amount="2" />
@@ -1307,7 +1307,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="3" />
     </Fabricate>
@@ -1333,7 +1333,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="antinarc" amount="2" />
@@ -1361,7 +1361,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="antirad" amount="2" />
@@ -1388,7 +1388,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="morbusineantidote" />
@@ -1421,7 +1421,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="2" />
     </Fabricate>
@@ -1447,7 +1447,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="1" />
       <RequiredItem identifier="adrenaline" amount="4" />
@@ -1475,7 +1475,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="adrenaline" amount="4" />
@@ -1506,7 +1506,7 @@
       <Price storeidentifier="merchantresearch" multiplier="1.5" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantforge" multiplier="1.25" minavailable="0" maxavailable="1" />
     </Price> -->
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="2" />
       <RequiredItem identifier="adrenaline" amount="4" />
@@ -1533,13 +1533,13 @@
       <Item identifier="carbon" />
       <Item identifier="adrenaline" />
     </Deconstruct>
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="4" />
       <RequiredItem identifier="adrenaline" amount="8" />
-      <RequiredItem identifier="stackofadamantium" />
+      <RequiredItem identifier="titanium" />
       <RequiredItem identifier="hormones" amount="6" />
-      <RequiredItem identifier="stackoffpgacircuit" />
+      <RequiredItem identifier="fpgacircuit" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/Items/Genetic/Genetic.png" sourcerect="405,0,90,105" origin="0.5,0.5" />
     <Sprite name="Carapase" texture="%ModDir%/Items/Genetic/Genetic.png" sourcerect="405,0,90,105" origin="0.5,0.5" />
@@ -1619,15 +1619,15 @@
       <Item identifier="carbon" />
       <Item identifier="adrenaline" />
     </Deconstruct>
-    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="true">
+    <Fabricate suitablefabricators="genefabricator" requiredtime="60" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="100" />
       <RequiredItem identifier="biomaterial" amount="4" />
       <RequiredItem identifier="adrenaline" amount="8" />
-      <RequiredItem identifier="stackofadamantium" />
-      <RequiredItem identifier="stackofrubber" amount="2" />
-      <RequiredItem identifier="stackofcarbon" amount="2" />
+      <RequiredItem identifier="titanium" />
+      <RequiredItem identifier="rubber" amount="2" />
+      <RequiredItem identifier="carbon" amount="2" />
       <RequiredItem identifier="hormones" amount="6" />
-      <RequiredItem identifier="stackoffpgacircuit" amount="2" />
+      <RequiredItem identifier="fpgacircuit" amount="2" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/Items/Genetic/Genetic.png" sourcerect="405,0,90,105" origin="0.5,0.5" />
     <Sprite name="Carapase" texture="%ModDir%/Items/Genetic/Genetic.png" sourcerect="405,0,90,105" origin="0.5,0.5" />
