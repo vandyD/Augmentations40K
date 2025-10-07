@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Afflictions>
   <Affliction identifier="astartesgeneum" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.8" maxresistance="0.8" tag="spacemarine">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" tag="spacemarine">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.5" />
@@ -11,7 +11,7 @@
       <StatValue stattype="SkillGainSpeed" value="1.0" />
       <StatValue stattype="TurretAttackSpeed" value="1.0" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="6.0" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.0" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.0" />
@@ -58,7 +58,7 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="astartesgeneif" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,gammaradiation,burn,warpburn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.85" maxresistance="0.85" tag="spacemarine">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,gammaradiation,burn,warpburn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" tag="spacemarine">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.5" />
@@ -68,7 +68,7 @@
       <StatValue stattype="SkillGainSpeed" value="0.5" />
       <StatValue stattype="TurretAttackSpeed" value="0.5" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="6.25" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.0" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.0" />
@@ -115,7 +115,7 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="astartesgenes" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,warpburn,gammaradiation,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.8" maxresistance="0.8" tag="spacemarine" minfacetint="0,0,0,10" maxfacetint="0,0,0,255" minbodytint="0,0,0,10" maxbodytint="0,0,0,255">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,warpburn,gammaradiation,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" tag="spacemarine" minfacetint="0,0,0,10" maxfacetint="0,0,0,255" minbodytint="0,0,0,10" maxbodytint="0,0,0,255">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.25" />
@@ -125,7 +125,7 @@
       <StatValue stattype="SkillGainSpeed" value="0.6" />
       <StatValue stattype="TurretAttackSpeed" value="0.5" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="6.1" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.0" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.0" />
@@ -171,7 +171,7 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="astartesgeneda" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.8" maxresistance="0.8" tag="spacemarine">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" tag="spacemarine">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.5" />
@@ -181,7 +181,7 @@
       <StatValue stattype="SkillGainSpeed" value="0.7" />
       <StatValue stattype="TurretAttackSpeed" value="0.8" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="6.0" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.0" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.0" />
@@ -228,7 +228,7 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="astartesgenews" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.8" maxresistance="0.8" tag="spacemarine">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" tag="spacemarine">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.75" />
@@ -238,7 +238,7 @@
       <StatValue stattype="SkillGainSpeed" value="0.5" />
       <StatValue stattype="TurretAttackSpeed" value="1.2" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="6.0" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.0" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.0" />
@@ -285,7 +285,7 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="astartesgeneih" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,gammaradiation,burn,warpburn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.85" maxresistance="0.85" tag="spacemarine" minfacetint="155,155,155,10" maxfacetint="155,155,155,150" minbodytint="155,155,155,10" maxbodytint="155,155,155,150">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,gammaradiation,burn,warpburn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" tag="spacemarine" minfacetint="155,155,155,10" maxfacetint="155,155,155,150" minbodytint="155,155,155,10" maxbodytint="155,155,155,150">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.4" />
@@ -295,7 +295,7 @@
       <StatValue stattype="SkillGainSpeed" value="1.0" />
       <StatValue stattype="TurretAttackSpeed" value="0.8" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="6.1" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.0" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.0" />
@@ -342,7 +342,7 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="astartesgenerg" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.8" maxresistance="0.8" tag="spacemarine" minfacetint="255,255,255,10" maxfacetint="255,255,255,150" minbodytint="255,255,255,10" maxbodytint="255,255,255,150">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" tag="spacemarine" minfacetint="255,255,255,10" maxfacetint="255,255,255,150" minbodytint="255,255,255,10" maxbodytint="255,255,255,150">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.3" />
@@ -352,7 +352,7 @@
       <StatValue stattype="SkillGainSpeed" value="1.0" />
       <StatValue stattype="TurretAttackSpeed" value="0.5" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="6.0" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.0" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.0" />
@@ -402,7 +402,7 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="astartesgeneba" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.85" maxresistance="0.85" tag="spacemarine" minfacetint="209,163,164,10" maxfacetint="209,163,164,150" minbodytint="209,163,164,10" maxbodytint="209,163,164,150">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" tag="spacemarine" minfacetint="209,163,164,10" maxfacetint="209,163,164,150" minbodytint="209,163,164,10" maxbodytint="209,163,164,150">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.6" />
@@ -412,7 +412,7 @@
       <StatValue stattype="SkillGainSpeed" value="1.0" />
       <StatValue stattype="TurretAttackSpeed" value="1.0" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="6.0" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.0" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.0" />
@@ -462,7 +462,7 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="astartesgenebl" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,warpburn,phosphorimpact,radiationsicknessgamma" minresistance="0.8" maxresistance="0.8" minfacetint="192,223,144,10" maxfacetint="192,223,144,150" minbodytint="192,223,144,10" maxbodytint="192,223,144,150" tag="spacemarine">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,warpburn,phosphorimpact,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" minfacetint="192,223,144,10" maxfacetint="192,223,144,150" minbodytint="192,223,144,10" maxbodytint="192,223,144,150" tag="spacemarine">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.5" />
@@ -472,7 +472,7 @@
       <StatValue stattype="SkillGainSpeed" minvalue="0.5" maxvalue="0.5" />
       <StatValue stattype="TurretAttackSpeed" minvalue="0.5" maxvalue="0.5" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="6.0" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.0" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.0" />
@@ -520,7 +520,7 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="astartesgenewb" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,warpburn,phosphorimpact,radiationsicknessgamma" minresistance="0.75" maxresistance="0.75" minfacetint="236,196,63,10" maxfacetint="236,196,63,150" minbodytint="236,196,63,10" maxbodytint="236,196,63,150" tag="spacemarine">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,warpburn,phosphorimpact,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" minfacetint="236,196,63,10" maxfacetint="236,196,63,150" minbodytint="236,196,63,10" maxbodytint="236,196,63,150" tag="spacemarine">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.25" />
@@ -530,7 +530,7 @@
       <StatValue stattype="SkillGainSpeed" minvalue="0.5" maxvalue="0.5" />
       <StatValue stattype="TurretAttackSpeed" value="1.5" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="6.0" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.0" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.0" />
@@ -578,7 +578,7 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="astartesgenenl" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,warpburn,phosphorimpact,radiationsicknessgamma" minresistance="0.8" maxresistance="0.8" minfacetint="125,125,125,10" maxfacetint="125,125,125,150" minbodytint="125,125,125,10" maxbodytint="125,125,125,150" tag="spacemarine">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,warpburn,phosphorimpact,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" minfacetint="125,125,125,10" maxfacetint="125,125,125,150" minbodytint="125,125,125,10" maxbodytint="125,125,125,150" tag="spacemarine">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.75" />
@@ -588,7 +588,7 @@
       <StatValue stattype="SkillGainSpeed" minvalue="0.3" maxvalue="0.3" />
       <StatValue stattype="TurretAttackSpeed" minvalue="0.3" maxvalue="0.3" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="6.0" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.0" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.0" />
@@ -637,7 +637,7 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="astartesgeneiw" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,gammaradiation,burn,warpburn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.8" maxresistance="0.8" tag="spacemarine">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,gammaradiation,burn,warpburn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" tag="spacemarine">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.5" />
@@ -647,7 +647,7 @@
       <StatValue stattype="SkillGainSpeed" value="0.75" />
       <StatValue stattype="TurretAttackSpeed" value="0.5" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="6.25" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.0" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.0" />
@@ -695,13 +695,13 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="astartesgenewi" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.8" maxresistance="0.8" tag="spacemarine">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" tag="spacemarine">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.75" />
       <StatValue stattype="MeleeAttackMultiplier" value="3.0" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="7.0" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.0" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.0" />
@@ -749,7 +749,7 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="astartesgenedg" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,nurrglesickness,poison,radiationsicknessgamma" minresistance="0.8" maxresistance="0.8" tag="spacemarine">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,nurrglesickness,poison,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" tag="spacemarine">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.3" />
@@ -759,7 +759,7 @@
       <StatValue stattype="SkillGainSpeed" value="0.5" />
       <StatValue stattype="TurretAttackSpeed" value="0.9" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="8.0" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.0" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.0" />
@@ -806,7 +806,7 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="astartesgeneec" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,noisedamage,radiationsicknessgamma" minresistance="0.8" maxresistance="0.8" tag="spacemarine">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,stun,oxygenlow,pain,phosphorimpact,noisedamage,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" tag="spacemarine">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.6" />
@@ -815,7 +815,7 @@
       <StatValue stattype="RangedSpreadReduction" value="0.3" />
       <StatValue stattype="TurretAttackSpeed" value="1.2" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="6.0" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.5" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.5" />
@@ -863,7 +863,7 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="astartesgeneumforbot" type="astartesgene" isbuff="true" limbspecific="false" showiconthreshold="0" maxstrength="100" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,warpburn,stun,oxygenlow,pain,phosphorimpact,plasmadamageself,fracture,bleeding,radiationsicknessgamma" minresistance="0.8" maxresistance="0.8" tag="spacemarine">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0" resistancefor="damage,burn,warpburn,stun,oxygenlow,pain,phosphorimpact,plasmadamageself,fracture,bleeding,radiationsicknessgamma" minresistance="0.3" maxresistance="0.3" tag="spacemarine">
       <AbilityFlag flagtype="AlwaysStayConscious" />
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
       <StatValue stattype="MeleeAttackSpeed" value="0.5" />
@@ -873,7 +873,7 @@
       <StatValue stattype="SkillGainSpeed" value="1.0" />
       <StatValue stattype="TurretAttackSpeed" value="1.0" />
       <StatValue stattype="FlowResistance" value="1.0" />
-      <StatValue stattype="MaximumHealthMultiplier" value="6.0" />
+      <StatValue stattype="MaximumHealthMultiplier" value="1.0" />
       <StatValue stattype="HoldBreathMultiplier" value="1.0" />
       <StatValue stattype="BuffDurationMultiplier" value="1.0" />
       <StatValue stattype="BuffItemApplyingMultiplier" value="1.0" />
